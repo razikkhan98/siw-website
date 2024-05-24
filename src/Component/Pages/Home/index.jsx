@@ -1,11 +1,11 @@
 import React from "react";
-
+import Navbar from "../../common/navbar";
 const Home = () => {
   return (
     <>
-    
-      <div className="w-screen h-screen flex justify-center	items-center bg-sky-500">
-        <h1>Hello1</h1>
+     
+      <div className="home-img">
+      <Navbar/>
       </div>
     </>
   );
