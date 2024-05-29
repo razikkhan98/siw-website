@@ -1,5 +1,6 @@
-.home-img{
-  background-image: url(../src/component/assets/img/home-image.gif);
+.home-img {
+  background: linear-gradient(rgba(15, 56, 127, 0.5), rgba(40, 58, 90, 0.5)),
+    url(../src/Component/assets/img/home-image.gif);
   height: 100vh;
   background-position: center;
   background-size: cover;
