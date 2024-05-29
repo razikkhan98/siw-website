@@ -7,18 +7,17 @@ import about from "../../assets/img/about-1.jpg";
 const About = () => {
   return (
     <>
-      
-      <section class="bg-[#AEC09A] py-20">
+      <section class="bg1 py-20">
         <div class="container mx-auto px-12">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-[#344C11] rounded ">
-            <div class="flex justify-end  items-center">
-              <img
-                src={about}
-                alt="About Image"
-                class="rounded-lg shadow-lg w-[600px] h-[600px] "
-              />
-            </div>
+              <div class="flex justify-end  items-center">
+                <img
+                  src={about}
+                  alt="About Image"
+                  class="rounded-lg shadow-lg w-[600px] h-[600px] "
+                />
+              </div>
             </div>
             <div class="flex flex-col justify-center  ps-6 ">
               <h2 class="text-3xl font-bold mb-4 text-[#344C11] ">About Us</h2>
@@ -48,11 +47,26 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          {/* <div className="flex">
+            <div class="counter-container">
+              <i class="fab fa-instagram fa-3x"></i>
+              <div class="counter" data-target="12000"></div>
+              <span>Instagram Followers</span>
+            </div>
+            <div class="counter-container">
+              <i class="fab fa-youtube fa-3x"></i>
+              <div class="counter" data-target="5000"></div>
+              <span>YouTube Subscribers</span>
+            </div>
+            <div class="counter-container">
+              <i class="fab fa-facebook fa-3x"></i>
+              <div class="counter" data-target="7500"></div>
+              <span>Facebook Fans</span>
+            </div>
+          </div> */}
         </div>
       </section>
-
-
-      
     </>
   );
 };
