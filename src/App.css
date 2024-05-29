@@ -1,9 +1,41 @@
+:root {
+  --nevy-blue-color: #012e4a;
+  --dark-blue-color: #036280;
+  --blue-color: #378ba4;
+  --sky-blue-color: #81bece;
+  --light-color: #e8ede7;
+}
+
+.bg {
+  background-image: linear-gradient(
+    to top right,
+    #012e4a,
+    #036280,
+    #378ba4,
+    #81bece,
+    #e8ede7
+  );
+}
+.bg1 {
+  background: linear-gradient(
+    to top left,
+    #02315e,
+    #00457e,
+    #2f70af,
+    #b9848c,
+    #806491
+  );
+}
 .home-img {
   background: linear-gradient(rgba(15, 56, 127, 0.5), rgba(40, 58, 90, 0.5)),
-    url(../src/Component/assets/img/home-image.gif);
+    url(../src/Component/assets/img/home-image.gif) fixed center center;
   height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+.about {
+  background-image: url(./Component/assets/img/about.jpg);
+  /* background-color: rgba(32, 40, 44, 0.75); */
 }

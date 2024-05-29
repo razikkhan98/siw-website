@@ -1,5 +1,6 @@
 import React from "react";
-import Navbar from "../../Common/Navbar";
+import Navbar from "../../Common/Navbar/index";
+
 const Home = () => {
   return (
     <>
@@ -52,6 +53,7 @@ const Home = () => {
           </section>
         </div>
       </div>
+
     </>
   );
 };
