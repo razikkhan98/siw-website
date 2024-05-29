@@ -4,121 +4,130 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+
 // Images
-import Team1 from "../../assets/img/testimonial-1.jpg";
-import Team2 from "../../assets/img/testimonial-2.jpg";
-import Team3 from "../../assets/img/testimonial-3.jpg";
-import Team4 from "../../assets/img/testimonial-4.jpg";
+import Team1 from "../../assets/img/team-1.jpg";
+import Team2 from "../../assets/img/team-2.jpg";
+import Team3 from "../../assets/img/team-3.jpg";
+import Team4 from "../../assets/img/team-4.jpg";
 
 const Team = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  let slidesToShow = 3;
+  if (windowWidth < 1200 && windowWidth >= 768) {
+    slidesToShow = 2;
+  } else if (windowWidth < 768) {
+    slidesToShow = 1;
+  }
   const settings = {
     dots: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1000,
   };
   return (
-    <div>
-      <h2>Carousel Component</h2>
-      <Slider {...settings}>
-        <div className="px-8">
-          {/* <h3>FIRST SLIDE</h3> */}
-          <a
-            href="#"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={Team1}
-              alt="Loading"
-            />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </a>
-        </div>
-        <div className="px-8">
-          {/* <h3>SECOND SLIDE</h3> */}
-          <a
-            href="#"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={Team2}
-              alt="Loading"
-            />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-            </div>
-          </a>
+    <div className="container mx-auto px-4 overflow-hidden">
+      <div className="text-center my-8">
+        <h1 className="text-2xl font-bold ">Our Team</h1>
+      </div>
+      <div className="grid grid-cols-3 sm:grid-cols-1 gap-5 ">
+        <Slider {...settings}>
+          {/* <!-- Team Member 1 --> */}
+          <div class="bg-[#AEC670] rounded-lg shadow-md py-6 text-center ms-8">
+            <div class="grid justify-items-center">
+              <img
+                src={Team1}
+                alt="Team Member 1"
+                class="w-64 rounded-full mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+              <p class="text-gray-700">Role: Software Engineer</p>
 
-        </div>
-        <div className="px-8">
-          {/* <h3>THIRD SLIDE</h3> */}
-
-          <a
-            href="#"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <img
-              class="ps-4 w-full rounded-full h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={Team3}
-              alt="Loading"
-            />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
+              <div class="flex text-center gap-8 mt-5">
+                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+              </div>
             </div>
-          </a>
-        </div>
-        <div className="px-8">
-          {/* <h3>FORTH SLIDE</h3> */}
+          </div>
 
-          <a
-            href="#"
-            class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
-            <img
-              class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-              src={Team4}
-              alt="Loading"
-            />
-            <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Noteworthy technology acquisitions 2021
-              </h5>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
+          {/* <!-- Team Member 2 --> */}
+          <div class="bg-gray-200  rounded-lg shadow-md py-6 text-center mx-12 w-[350]">
+            <div className=" grid justify-items-center">
+              <img
+                src={Team2}
+                alt="Team Member 2"
+                class="w-64 rounded-full mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+              <p class="text-gray-700">Role: Graphic Designer</p>
+
+              <div class="flex text-center gap-8 mt-5">
+                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+              </div>
             </div>
-          </a>
-        </div>
+          </div>
 
-      </Slider>
+          {/* <!-- Team Member 2 --> */}
+          <div class="bg-[#AEC670] rounded-lg shadow-md py-6 text-center mx-16">
+            <div className="grid justify-items-center">
+              <img
+                src={Team4}
+                alt="Team Member 2"
+                class="w-64 rounded-full mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
+              <p class="text-gray-700">Role: Graphic Designer</p>
+
+              <div class="flex text-center gap-8 mt-5">
+                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+              </div>
+            </div>
+          </div>
+
+          {/* <!-- Team Member 5 --> */}
+          <div class="bg-gray-200 rounded-lg shadow-md py-6 text-center mx-20 ">
+            <div className="grid justify-items-center">
+              <img
+                src={Team3}
+                alt="Team Member 5"
+                class="w-64 rounded-full mb-4"
+              />
+              <h3 class="text-xl font-semibold mb-2">Emily Brown</h3>
+              <p class="text-gray-700">Role: UX Designer</p>
+
+              <div class="flex text-center gap-8 mt-5">
+                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
+                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
+                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
+                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
+              </div>
+            </div>
+          </div>
+        </Slider>
+      </div>
     </div>
   );
-
- };
+};
 export default Team;
