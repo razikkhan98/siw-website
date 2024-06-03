@@ -3,12 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
-
       <footer className="bg-white">
         <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -133,9 +127,6 @@ const Footer = () => {
                     </svg>
                   </a>
                 </li>
-
-               
-
               </ul>
             </div>
 
@@ -255,7 +246,6 @@ const Footer = () => {
                       Support{" "}
                     </a>
                   </li>
-
                 </ul>
               </div>
 
