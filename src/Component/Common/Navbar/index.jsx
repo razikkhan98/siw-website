@@ -5,7 +5,6 @@ const Navbar = () => {
       <nav class="bg-white-800">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href="https://flowbite.com/"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
