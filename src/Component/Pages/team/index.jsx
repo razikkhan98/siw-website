@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
+import React from "react";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+// Icons
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 // Images
@@ -11,123 +8,290 @@ import Team1 from "../../assets/img/team-1.jpg";
 import Team2 from "../../assets/img/team-2.jpg";
 import Team3 from "../../assets/img/team-3.jpg";
 import Team4 from "../../assets/img/team-4.jpg";
-
 const Team = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  let slidesToShow = 3;
-  if (windowWidth < 1200 && windowWidth >= 768) {
-    slidesToShow = 2;
-  } else if (windowWidth < 768) {
-    slidesToShow = 1;
-  }
-  const settings = {
-    dots: true,
-    speed: 500,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-  };
   return (
-    <div className="container mx-auto px-4 overflow-hidden">
-      <div className="text-center my-8">
-        <h1 className="text-2xl font-bold ">Our Team</h1>
-      </div>
-      <div className="grid grid-cols-3 sm:grid-cols-1 gap-5 ">
-        <Slider {...settings}>
-          {/* <!-- Team Member 1 --> */}
-          <div class="bg-[#AEC670] rounded-lg shadow-md py-6 text-center ms-8">
-            <div class="grid justify-items-center">
-              <img
-                src={Team1}
-                alt="Team Member 1"
-                class="w-64 rounded-full mb-4"
-              />
-              <h3 class="text-xl font-semibold mb-2">John Doe</h3>
-              <p class="text-gray-700">Role: Software Engineer</p>
-
-              <div class="flex text-center gap-8 mt-5">
-                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-              </div>
-            </div>
+    <>
+      {/* <!-- ========== OUR TEAM SECTION ========== --> */}
+      <section
+        id="our-team"
+        class="bg-[--sky-blue-color] py-16 overflow-hidden center fixed relative cover"
+      >
+        <div class="container mx-auto max-w-screen-xl">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold">
+              Our{" "}
+              <span class="font-semibold underline underline-offset-4 relative">
+                Team
+              </span>
+            </h2>
+            <p class="text-lg mt-4">
+              We are northui Team, Working together to build a clean web
+            </p>
           </div>
 
-          {/* <!-- Team Member 2 --> */}
-          <div class="bg-gray-200  rounded-lg shadow-md py-6 text-center mx-12 w-[350]">
-            <div className=" grid justify-items-center">
-              <img
-                src={Team2}
-                alt="Team Member 2"
-                class="w-64 rounded-full mb-4"
-              />
-              <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
-              <p class="text-gray-700">Role: Graphic Designer</p>
+          <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
+              {/* <!-- team-slider --> */}
+              <div class="team-slider space-y-8">
+                <div
+                  class="about-content flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl mt-3"
+                  tabIndex="-1"
+                  id="img-1"
+                >
+                  <div class="flex-none w-full">
+                    <img
+                      src={Team1}
+                      alt="img"
+                      class="w-full h-80 object-cover rounded-t-lg"
+                    />
+                  </div>
+                  <div class="flex-grow text-center p-5">
+                    <div>
+                      <p class="text-lg font-medium">UX DESIGNER</p>
+                      <h3 class="text-2xl">John Doe</h3>
+                      <p class="mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                      <div class="mt-4">
+                        <ul class="flex justify-center gap-10 list-none">
+                          <li>
+                            <a href="#" target="_blank" title="Like Me">
+                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Follow Me">
+                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Hire Me">
+                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Rate Me">
+                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- //item --> */}
 
-              <div class="flex text-center gap-8 mt-5">
-                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
+                <div
+                  class="about-content flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
+                  tabIndex="-1"
+                  id="img-2"
+                >
+                  <div class="flex-none w-full">
+                    <img
+                      src={Team2}
+                      alt="img"
+                      class="w-full h-80 object-cover rounded-t-lg"
+                    />
+                  </div>
+                  <div class="flex-grow text-center p-5">
+                    <div>
+                      <p class="text-lg font-medium">UX DESIGNER</p>
+                      <h3 class="text-2xl">John Doe</h3>
+                      <p class="mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                      <div class="mt-4">
+                        <ul class="flex justify-center gap-10 list-none">
+                          <li>
+                            <a href="#" target="_blank" title="Like Me">
+                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Follow Me">
+                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Hire Me">
+                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Rate Me">
+                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- //item --> */}
+
+                <div
+                  class="about-content flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
+                  tabIndex="-1"
+                  id="img-3"
+                >
+                  <div class="flex-none w-full">
+                    <img
+                      src={Team3}
+                      alt="img"
+                      class="w-full h-80 object-cover rounded-t-lg"
+                    />
+                  </div>
+                  <div class="flex-grow text-center p-5">
+                    <div>
+                      <p class="text-lg font-medium">UX DESIGNER</p>
+                      <h3 class="text-2xl ">John Doe</h3>
+                      <p class="mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                      <div class="mt-4">
+                        <ul class="flex justify-center gap-10 list-none">
+                          <li>
+                            <a href="#" target="_blank" title="Like Me">
+                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Follow Me">
+                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Hire Me">
+                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Rate Me">
+                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- //item --> */}
+
+                <div
+                  class="about-content flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
+                  tabIndex="-1"
+                  id="img-4"
+                >
+                  <div class="flex-none w-full">
+                    <img
+                      src={Team4}
+                      alt="img"
+                      class="w-full h-80 object-cover rounded-t-lg"
+                    />
+                  </div>
+                  <div class="flex-grow text-center p-5">
+                    <div>
+                      <p class="text-lg font-medium">UX DESIGNER</p>
+                      <h3 class="text-2xl ">John Doe</h3>
+                      <p class="mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam.
+                      </p>
+                      <div class="mt-4">
+                        <ul class="flex justify-center gap-10 list-none">
+                          <li>
+                            <a href="#" target="_blank" title="Like Me">
+                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Follow Me">
+                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Hire Me">
+                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" title="Rate Me">
+                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- //item --> */}
               </div>
+              {/* <!-- //#team-slider --> */}
+
+            {/* <!-- team thumb --> */}
+            <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
+              <a href="#img-1">
+                <img
+                  src={Team1}
+                  alt="member"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-lg font-medium">UX DESIGNER</p>
+                  <h4 class="text-xl">John Doe</h4>
+                </div>
+              </a>
+              {/* <!-- //.thumb-item --> */}
+
+              <a href="#img-2">
+                <img
+                  src={Team2}
+                  alt="member"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-lg font-medium">UX DESIGNER</p>
+                  <h4 class="text-xl">John Doe</h4>
+                </div>
+              </a>
+              {/* <!-- //.thumb-item --> */}
+
+              <a href="#img-3">
+                <img
+                  src={Team3}
+                  alt="member"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-lg font-medium">UX DESIGNER</p>
+                  <h4 class="text-xl">John Doe</h4>
+                </div>
+              </a>
+              {/* <!-- //.thumb-item --> */}
+
+              <a href="#img-4">
+                <img
+                  src={Team4}
+                  alt="member"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+                <div class="text-center mt-2">
+                  <p class="text-lg font-medium">UX DESIGNER</p>
+                  <h4 class="text-xl">John Doe</h4>
+                </div>
+              </a>
             </div>
           </div>
-
-          {/* <!-- Team Member 2 --> */}
-          <div class="bg-[#AEC670] rounded-lg shadow-md py-6 text-center mx-16">
-            <div className="grid justify-items-center">
-              <img
-                src={Team4}
-                alt="Team Member 2"
-                class="w-64 rounded-full mb-4"
-              />
-              <h3 class="text-xl font-semibold mb-2">Jane Smith</h3>
-              <p class="text-gray-700">Role: Graphic Designer</p>
-
-              <div class="flex text-center gap-8 mt-5">
-                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded" />
-              </div>
-            </div>
-          </div>
-
-          {/* <!-- Team Member 5 --> */}
-          <div class="bg-gray-200 rounded-lg shadow-md py-6 text-center mx-20 ">
-            <div className="grid justify-items-center">
-              <img
-                src={Team3}
-                alt="Team Member 5"
-                class="w-64 rounded-full mb-4"
-              />
-              <h3 class="text-xl font-semibold mb-2">Emily Brown</h3>
-              <p class="text-gray-700">Role: UX Designer</p>
-
-              <div class="flex text-center gap-8 mt-5">
-                <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
-                <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
-                <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
-                <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#344C11] text-[#AEC670] hover:text-[#1A2902] rounded-full" />
-              </div>
-            </div>
-          </div>
-        </Slider>
-      </div>
-    </div>
+        </div>
+      </section>
+      {/* <!-- //End our-team --> */}
+    </>
   );
 };
 export default Team;

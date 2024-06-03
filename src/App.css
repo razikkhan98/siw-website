@@ -26,6 +26,12 @@
     #806491
   );
 }
+.card{
+  background: linear-gradient(to top left, #2f70af,
+  #b9848c,
+  #00457e,
+  #806491 );
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;}
 .home-img {
   background: linear-gradient(rgba(15, 56, 127, 0.5), rgba(40, 58, 90, 0.5)),
     url(../src/Component/assets/img/home-image.gif) fixed center center;
@@ -38,4 +44,10 @@
 .about {
   background-image: url(./Component/assets/img/about.jpg);
   /* background-color: rgba(32, 40, 44, 0.75); */
+}
+.about-content{
+  display: none;
+}
+.about-content:target{
+  display: block;
 }
