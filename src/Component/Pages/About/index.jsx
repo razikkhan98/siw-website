@@ -33,18 +33,18 @@ const About = () => {
   return (
     <>
       <section class="bg1 py-20">
-        <div class="container mx-auto px-12">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-[#02315e] rounded ">
-              <div class="flex justify-end  items-center">
+        <div class="container mx-auto max-w-screen-xl">
+          <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-12 mt-10">
+            <div class="bg-[#02315e]  relative">
+              <div class="flex   items-center absolute bottom-10 left-10 w-full h-full">
                 <img
                   src={about}
                   alt="About Image"
-                  class="rounded-lg shadow-lg w-[600px] h-[600px] "
+                  class="h-full w-full object-cover shadow-lg"
                 />
               </div>
             </div>
-            <div class="flex flex-col justify-center  ps-6 ">
+            <div class="flex flex-col justify-center  ps-6 md:mx-10 sm:mx-10">
               <h2 class="text-3xl font-bold mb-4 text-[#02315e] ">About Us</h2>
               <p class="text-lg mb-4">
                 This is a simple about section. You can provide information
@@ -73,7 +73,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-12 gap-8">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-12 gap-8 md:mx-10 sm:mx-10">
             <div class="card rounded p-5 flex flex-col items-center">
               <FaUsersCog className="text-5xl font-bold" />
               <div

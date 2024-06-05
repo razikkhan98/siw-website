@@ -26,12 +26,11 @@
     #806491
   );
 }
-.card{
-  background: linear-gradient(to top left, #2f70af,
-  #b9848c,
-  #00457e,
-  #806491 );
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;}
+.card {
+  background: linear-gradient(to top left, #2f70af, #b9848c, #00457e, #806491);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
 .home-img {
   background: linear-gradient(rgba(15, 56, 127, 0.5), rgba(40, 58, 90, 0.5)),
     url(../src/Component/assets/img/home-image.gif) fixed center center;
@@ -41,13 +40,41 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
-.about {
-  background-image: url(./Component/assets/img/about.jpg);
-  /* background-color: rgba(32, 40, 44, 0.75); */
-}
-.about-content{
+.team-content {
   display: none;
 }
-.about-content:target{
+.team-content:target {
   display: block;
+}
+/* Service Start */
+.service-card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.service-bg {
+  background-image: url(../src/Component/assets/img/about.jpg);
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.service-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(40, 58, 90, 0.5);
+  /* z-index: -1; */
+
+}
+/* FAQ Start */
+/* .question-bg {
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+} */
+
+.question {
+  padding: 20px 80px 20px 20px;
+  cursor: pointer;
 }
