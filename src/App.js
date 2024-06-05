@@ -9,8 +9,8 @@ const App = () =>{
     <>
       <Home/>
       <About/>
-      {/* <Team/>
-      <Footer/> */}
+      <Team/>
+      <Footer/>
     </>
   );
 };

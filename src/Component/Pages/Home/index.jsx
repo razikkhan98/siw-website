@@ -1,18 +1,28 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../../Common/Navbar/index";
 
 import { MdManageAccounts } from "react-icons/md";
 
-
 const Home = () => {
+  const settings = {
+    // dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+  };
   return (
     <>
       <div class="home-img">
         <Navbar />
-        <div class="grid gap-6 grid-cols-1 flex max-h-54 lg:justify-center lg:items-center absolute inset-0">
+        <div class="container mx-autogrid gap-6 grid-cols-1 flex max-h-54 lg:mt-[90px] sm:justify-center sm:items-center absolute">
           <section class="dark:bg-gray-900 ">
-            <div class="px-4 text-center">
-              <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl sm:px-16 lg:px-48">
+            <div class=" text-center">
+              <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl ">
                 Welcome To Our Website
               </p>
               <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
@@ -56,67 +66,116 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="cards sm:h-auto max-w-screen-xl mx-auto gap-20 grid grid-cols-3 absolute inset-x-0 -bottom-10">
-          <figure className="sm:max-w-sm h-fit w-fit bg-indigo-500 p-6 rounded-md shadow-2xl">
-            <div className="icon text-6xl text-white h-16 flex items-center justify-center">
-              <MdManageAccounts />
-            </div>
-            <div class="text-center space-y-4">
-              <blockquote>
-                <p class="text-lg font-medium text-white">
-                 “Tailwind CSS is the only framework that I've seen scale on
-                  large teams. It’s adapts to any design.”
-                </p>
-              </blockquote>
-              <figcaption class="font-medium text-white">
-                <div class="font-bold">Sarah Dayan</div>
-                <div class="">
-                  Staff Engineer, Algolia
+        <div className="w-5/6 m-auto absolute left-[9%] -bottom-[150px]">
+          <div className="">
+            <Slider {...settings}>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
                 </div>
-              </figcaption>
-            </div>
-          </figure>
-
-          <figure className="sm:max-w-sm h-fit w-fit bg-indigo-500 p-6 rounded-md">
-            <div className="icon text-6xl text-white w-full h-16 flex items-center justify-center">
-              <MdManageAccounts />
-            </div>
-            <div class="text-center space-y-4">
-              <blockquote>
-                <p class="text-lg font-medium text-white">
-                  “Tailwind CSS is the only framework that I've seen scale on
-                  large teams. It’s adapts to any design.”
-                </p>
-              </blockquote>
-              <figcaption class="font-medium text-white">
-                <div class="font-bold">Sarah Dayan</div>
-                <div class="">
-                  Staff Engineer, Algolia
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
                 </div>
-              </figcaption>
-            </div>
-          </figure>
-
-          <figure className="sm:max-w-sm h-fit w-fit bg-indigo-500 p-6 rounded-md">
-            <div className="icon text-6xl text-white w-full h-16 flex items-center justify-center">
-              <MdManageAccounts />
-            </div>
-            <div class="text-center space-y-4">
-              <blockquote>
-                <p class="text-lg font-medium text-white">
-                “Tailwind CSS is the only framework that I've seen scale on
-                  large teams. It’s adapts to any design.”
-                </p>
-              </blockquote>
-              <figcaption class="font-medium text-white">
-                <div class="font-bold">Sarah Dayan</div>
-                <div class="">
-                  Staff Engineer, Algolia
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
                 </div>
-              </figcaption>
-            </div>
-          </figure>
-
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div className="h-14 rounded-t-xl flex justify-center items-center">
+                  <MdManageAccounts className="h-14 w-14" />
+                </div>
+                <div className="flex flex-col justify-center items-center gap-4 p-4">
+                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-center">
+                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
+                    animi corporis eveniet quod.
+                  </p>
+                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            </Slider>
+          </div>
         </div>
       </div>
     </>
