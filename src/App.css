@@ -1,3 +1,7 @@
+.slick-slide > div {
+  margin: 0 10px;
+}
+
 :root {
   --nevy-blue-color: #012e4a;
   --dark-blue-color: #036280;
