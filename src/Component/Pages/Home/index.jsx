@@ -7,13 +7,50 @@ import Navbar from "../../Common/Navbar/index";
 import { MdManageAccounts } from "react-icons/md";
 
 const Home = () => {
+  const cardData =[
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+    {
+      icon: <MdManageAccounts/>,
+      title: "Jhone Deo",
+      description: "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+    },
+  ]
   const settings = {
     // dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
   };
   return (
     <>
@@ -66,114 +103,25 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="w-5/6 m-auto absolute left-[9%] -bottom-[150px]">
+        <div className="w-5/6 m-auto absolute left-[9%] -bottom-[123px]">
           <div className="">
             <Slider {...settings}>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
+              {cardData.map((link, index)=>(
+              <div className="bg-black text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500" key={index}>
+                <div className="text-6xl mt-3 rounded-t-xl flex justify-center items-center">
+                  {link.icon}
                 </div>
                 <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
+                  <p className="text-xl font-semibold">{link.title}</p>
                   <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
+                    {link.description}
                   </p>
                   <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
                     Read more
                   </button>
                 </div>
               </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
-              <div className="bg-black h-[300px] text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500">
-                <div className="h-14 rounded-t-xl flex justify-center items-center">
-                  <MdManageAccounts className="h-14 w-14" />
-                </div>
-                <div className="flex flex-col justify-center items-center gap-4 p-4">
-                  <p className="text-xl font-semibold">Jhon Deo</p>
-                  <p className="text-center">
-                    Dexplicabo laboriosam exercitationem qui sequi! Dignissimos
-                    animi corporis eveniet quod.
-                  </p>
-                  <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
-                    Read more
-                  </button>
-                </div>
-              </div>
+              ))}
             </Slider>
           </div>
         </div>
