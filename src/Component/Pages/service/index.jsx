@@ -43,9 +43,9 @@ const Service = () => {
   ];
   return (
     <>
-    <div className="service-bg">
-      <div className="container mx-auto max-w-screen-xl">
-        <div className="text-center py-12 relative">
+    <div className="bg-[#A7D1D2]">
+      <div className="container mx-auto max-w-screen-xl px-10">
+        <div className="text-center text-[#033540] py-12 relative">
           <h2 className="text-4xl font-bold">
             Our{" "}
             <span className="font-semibold underline underline-offset-4 relative">
@@ -59,16 +59,16 @@ const Service = () => {
         <div className="grid grid-rows-2 lg:grid-cols-3 md:grid-cols-2 gap-12">
           {/* Card start */}
           {serviceData.map((link, index) => (
-            <div className="service-card relative mx-5 p-6 bg-white text-center border border-gray-200 rounded-lg grid justify-items-center my-10 hover:bg-white transition duration-500 hover:scale-125">
+            <div className="service-card relative mx-5 p-6 bg-white text-center  rounded-lg grid justify-items-center my-10 hover:bg-white transition duration-500 hover:scale-125">
               <div className="h-14 w-14 p-2 rounded-full grid justify-items-center bg-[#81bece] hover:bg-blue-500 transition duration-500 hover:scale-125 mb-7">
                 <FaUnity className="h-10 w-10  text-[#00457e]"/>
               </div>
               <a href="#">
-                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-2xl font-semibold tracking-tight text-[#033540] dark:text-white">
                   {link.title}
                 </h5>
               </a>
-              <p className="mb-3 font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-3 font-normal text-[#015366] dark:text-gray-400">
                 {link.description}
               </p>
             </div>
