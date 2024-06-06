@@ -44,7 +44,7 @@ const Service = () => {
   return (
     <>
     <div className="bg-[#A7D1D2]">
-      <div className="container mx-auto max-w-screen-xl px-10">
+      <div className="container mx-auto max-w-screen-xl px-10 pb-10">
         <div className="text-center text-[#033540] py-12 relative">
           <h2 className="text-4xl font-bold">
             Our{" "}
@@ -59,7 +59,7 @@ const Service = () => {
         <div className="grid grid-rows-2 lg:grid-cols-3 md:grid-cols-2 gap-12">
           {/* Card start */}
           {serviceData.map((link, index) => (
-            <div className="service-card relative mx-5 p-6 bg-white text-center  rounded-lg grid justify-items-center my-10 hover:bg-white transition duration-500 hover:scale-125">
+            <div className="service-card shadow-img bg-[#A7D1D2] relative mx-5 p-6 text-center  rounded-lg grid justify-items-center my-10 hover:bg-white transition duration-500 hover:scale-125">
               <div className="h-14 w-14 p-2 rounded-full grid justify-items-center bg-[#81bece] hover:bg-blue-500 transition duration-500 hover:scale-125 mb-7">
                 <FaUnity className="h-10 w-10  text-[#00457e]"/>
               </div>

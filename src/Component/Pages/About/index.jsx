@@ -15,11 +15,11 @@ const About = () => {
       <div class="container mx-auto max-w-screen-xl">
         <div class="flex flex-wrap items-center">
           <div class="w-full lg:w-1/2 order-2 lg:order-1 pt-2 lg:mt-0">
-            <div class="flex flex-wrap items-center mt-40 mb-10">
+            <div class="flex flex-wrap items-center pt-48 mb-10">
               <div class="w-1/2">
                 <div class="flex flex-col">
                   <div class="w-full mt-4 pt-2">
-                    <div class="about-img bg-white rounded shadow-xl overflow-hidden mr-5 shadow-lg">
+                    <div class="shadow-img bg-white rounded shadow-xl overflow-hidden mr-5 shadow-lg">
                       <img src={abt1} class="w-full" alt="Image" />
                       <div class="bg-dark"></div>
                     </div>
@@ -27,7 +27,7 @@ const About = () => {
                   <div class="w-full mt-4 pt-2 text-right">
                     <a
                       href="javascript:void(0)"
-                      class="btn btn-info bg-blue-700 text-white mr-5 px-4 py-2 rounded-lg"
+                      class="btn btn-info bg-[#033540] text-white mr-5 px-4 py-2 rounded-lg"
                     >
                       Read More <i class="mdi mdi-chevron-right"></i>
                     </a>
@@ -38,13 +38,13 @@ const About = () => {
               <div class="w-1/2">
                 <div class="flex flex-col">
                   <div class="w-full">
-                    <div class="about-img bg-white rounded shadow-xl overflow-hidden shadow-lg">
+                    <div class="shadow-img bg-white rounded shadow-xl overflow-hidden shadow-lg">
                       <img src={abt2} class="w-full" alt="Image" />
                       <div class="bg-dark"></div>
                     </div>
                   </div>
                   <div class="w-full mt-4 pt-2">
-                    <div class="about-img bg-white rounded shadow-xl overflow-hidden shadow-lg">
+                    <div class="shadow-img bg-white rounded shadow-xl overflow-hidden shadow-lg">
                       <img src={abt3} class="w-full" alt="Image" />
                       {/* <div class="bg-dark"></div> */}
                     </div>
@@ -68,7 +68,7 @@ const About = () => {
               </p>
 
               <div class="flex flex-wrap ">
-                <div class="w-full lg:w-2/5 mt-4 pt-2 mr-5">
+                <div class="shadow-img w-full lg:w-2/5 mt-4 pt-2 mr-5">
                   <div class="flex items-center rounded shadow-lg p-3 bg-white">
                        <div className="h-4 mb-2 text-2xl text-[#033540]">
                        <FaPlay />
@@ -81,7 +81,7 @@ const About = () => {
                     </h6>
                   </div>
                 </div>
-                <div class="w-full lg:w-2/5 mt-4 pt-2">
+                <div class="shadow-img w-full lg:w-2/5 mt-4 pt-2">
                   <div class="flex items-center rounded shadow-lg p-3 bg-white">
                     <div className="h-4 mb-2 text-2xl text-[#033540]">
                       <FaFileDownload />
@@ -93,7 +93,7 @@ const About = () => {
                     </h6>
                   </div>
                 </div>
-                <div class="w-full lg:w-2/5 mt-4 pt-2 mr-5">
+                <div class="shadow-img w-full lg:w-2/5 mt-4 pt-2 mr-5">
                   <div class="flex items-center rounded shadow-lg p-3 bg-white">
                     <div className="h-4 mb-2 text-2xl text-[#033540]">
                       <FaUser />
@@ -106,7 +106,7 @@ const About = () => {
                     </h6>
                   </div>
                 </div>
-                <div class="w-full lg:w-2/5 mt-4 pt-2">
+                <div class="shadow-img w-full lg:w-2/5 mt-4 pt-2">
                   <div class="flex items-center rounded shadow-lg p-3 bg-white">
                     <div className="h-4 mb-2 text-2xl text-[#033540]">
                       <FaImage />
