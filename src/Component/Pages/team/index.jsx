@@ -83,7 +83,7 @@ const Team = () => {
             <div className="team-slider relative">
               {teamCardData.map((link, index) => (
                 <div
-                  className="team-content flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
+                  className="team-content shadow-img flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
                   tabIndex="0"
                   id={link.id1}
                 >
@@ -105,22 +105,22 @@ const Team = () => {
                         <ul className="flex justify-center gap-10 list-none">
                           <li>
                             <a href="#" target="_blank" title="Like Me">
-                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
                             <a href="#" target="_blank" title="Follow Me">
-                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
                             <a href="#" target="_blank" title="Hire Me">
-                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
                             <a href="#" target="_blank" title="Rate Me">
-                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#02315e] text-[#806491] hover:text-[#b9848c] rounded" />
+                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                         </ul>
@@ -139,7 +139,7 @@ const Team = () => {
                   <img
                     src={link.img}
                     alt="member"
-                    className="w-full h-full object-cover rounded-lg hover:opacity-50"
+                    className="shadow-img w-full h-full object-cover rounded-lg hover:opacity-50"
                   />
                 </a>
               ))}
