@@ -32,7 +32,7 @@ const About = () => {
 
   return (
     <>
-      <section class="bg1 py-20">
+      <section id="about" class="bg1 py-20">
         <div class="container mx-auto px-12">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-[#02315e] rounded ">

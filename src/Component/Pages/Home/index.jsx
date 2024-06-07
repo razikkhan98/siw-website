@@ -56,9 +56,9 @@ const Home = () => {
     <>
       <div class="home-img">
         <Navbar />
-        <div class="container mx-autogrid gap-6 grid-cols-1 flex max-h-54 lg:mt-[90px] sm:justify-center sm:items-center absolute">
+        <div class=" grid grid-cols-1 sm:mt-[150px] sm:m-10 relative">
           <section class="dark:bg-gray-900 ">
-            <div class=" text-center">
+            <div class="flex flex-col items-center text-center">
               <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl ">
                 Welcome To Our Website
               </p>

@@ -30,6 +30,10 @@
     #806491
   );
 }
+.bg-nav{
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .card{
   background: linear-gradient(to top left, #2f70af,
   #b9848c,
