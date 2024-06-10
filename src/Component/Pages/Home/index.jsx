@@ -104,7 +104,7 @@ const Home = () => {
         </div>
 
         <div className="w-5/6 m-auto absolute left-[9%] -bottom-[123px]">
-          <div className="">
+          
             <Slider {...settings}>
               {cardData.map((link, index)=>(
               <div className="bg-black text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500" key={index}>
@@ -123,7 +123,7 @@ const Home = () => {
               </div>
               ))}
             </Slider>
-          </div>
+          
         </div>
       </div>
     </>
