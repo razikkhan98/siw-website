@@ -40,7 +40,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div class=" w-full md:block md:w-auto" id="navbar-default">
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 text-white-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
