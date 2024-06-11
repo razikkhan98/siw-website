@@ -6,7 +6,7 @@ import Abt2 from "../../assets/img/abt-2.jpg";
 import Abt3 from "../../assets/img/abt-3.jpg";
 
 // Icons
-import { FaPlay, FaFileDownload, FaUser, FaImage } from "react-icons/fa";
+import { FaPlay, FaFileDownload, FaUser, FaImage, FaUsersCog, FaThumbsUp, FaUsers, FaTrophy} from "react-icons/fa";
 
 const About = () => {
   const AboutCard = [
@@ -103,6 +103,43 @@ const About = () => {
               </div>
             </div>
           </div>
+          
+               {/* cards */}
+             <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 py-12 gap-8 mx-10">
+            <div class="shadow-img rounded p-5 flex flex-col items-center">
+              <FaUsersCog className="text-5xl font-bold" />
+              <div
+                class="font-bold my-3 text-3xl counter"
+                data-target="12000"
+              ></div>
+              <span className="text-xl">Experts</span>
+            </div>
+            <div class="shadow-img rounded p-5 flex flex-col items-center">
+              <FaThumbsUp className="text-5xl font-bold" />
+              <div
+                class="font-bold my-3 text-3xl counter"
+                data-target="5000"
+              ></div>
+              <span className="text-xl">Happy Clients</span>
+            </div>
+            <div class="shadow-img rounded p-5 flex flex-col items-center">
+              <FaUsers className="text-5xl font-bold" />
+              <div
+                class="font-bold my-3 text-3xl counter"
+                data-target="7500"
+              ></div>
+              <span className="text-xl">Partners</span>
+            </div>
+            <div class="shadow-img rounded p-5 flex flex-col items-center">
+              <FaTrophy className="text-5xl font-bold" />
+              <div
+                class="font-bold my-3 text-3xl counter"
+                data-target="5000"
+              ></div>
+              <span className="text-xl">IT consultant</span>
+            </div>
+          </div>
+      
         </div>
       </div>
     </>
