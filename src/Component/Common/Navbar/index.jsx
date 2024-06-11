@@ -2,8 +2,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <nav class="bg-white-800">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <nav class="bg-nav fixed w-full z-10">
+        <div class="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
@@ -40,7 +40,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div class=" w-full md:block md:w-auto" id="navbar-default">
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 text-white-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
