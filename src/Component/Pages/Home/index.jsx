@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Navbar from "../../Common/Navbar/index";
 
-import { MdDescription, MdManageAccounts } from "react-icons/md";
+import { MdManageAccounts } from "react-icons/md";
 
 const Home = () => {
   const settings = {
@@ -14,6 +14,32 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const cardData = [
@@ -59,9 +85,9 @@ const Home = () => {
     <>
       <div class="home-img">
         <Navbar />
-        <div class="container mx-autogrid gap-6 grid-cols-1 flex max-h-54 lg:mt-[90px] sm:justify-center sm:items-center absolute">
+        <div class="container sm:w-full mx-autogrid gap-6 grid-cols-1 flex max-h-54 sm:mt-[180px] lg:mt-[100px] sm:justify-center sm:items-center absolute">
           <section class="dark:bg-gray-900 ">
-            <div class=" text-center">
+            <div class="m-7  text-center">
               <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl ">
                 Welcome To Our Website
               </p>
@@ -111,13 +137,11 @@ const Home = () => {
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="bg-black text-white rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500"
+                  className="bg-black text-white rounded-xl  bg-gradient-to-r from-sky-500 to-indigo-500"
                   key={index}
                 >
-                  <div className="h-14 w-full rounded-t-xl flex justify-center items-center">
-                    <div className="text-5xl">
-                      {link.icon}
-                    </div>
+                  <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
+                    {link.icon}
                   </div>
                   <div className="flex flex-col justify-center items-center gap-4 p-4">
                     <p className="text-xl font-semibold">{link.title}</p>
