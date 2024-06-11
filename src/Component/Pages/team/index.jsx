@@ -104,22 +104,22 @@ const Team = () => {
                       <div className="mt-4">
                         <ul className="flex justify-center gap-10 list-none">
                           <li>
-                            <a href="#" target="_blank" title="Like Me">
+                            <a href="#/" target="_blank" title="Like Me">
                               <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" target="_blank" title="Follow Me">
+                            <a href="#/" target="_blank" title="Follow Me">
                               <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" target="_blank" title="Hire Me">
+                            <a href="#/" target="_blank" title="Hire Me">
                               <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>
                           <li>
-                            <a href="#" target="_blank" title="Rate Me">
+                            <a href="#/" target="_blank" title="Rate Me">
                               <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
                             </a>
                           </li>

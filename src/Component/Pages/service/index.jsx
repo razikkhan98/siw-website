@@ -1,6 +1,6 @@
 import React from "react";
 
-import { FaUnity, FaUsers } from "react-icons/fa";
+import { FaUnity } from "react-icons/fa";
 
 const Service = () => {
   const serviceData = [
@@ -63,7 +63,7 @@ const Service = () => {
               <div className="h-14 w-14 p-2 rounded-full grid justify-items-center bg-[#81bece] hover:bg-blue-500 transition duration-500 hover:scale-125 mb-7">
                 <FaUnity className="h-10 w-10  text-[#00457e]"/>
               </div>
-              <a href="#">
+              <a href="#/">
                 <h5 className="mb-2 text-2xl font-semibold tracking-tight text-[#033540] dark:text-white">
                   {link.title}
                 </h5>

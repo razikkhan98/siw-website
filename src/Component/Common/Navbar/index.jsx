@@ -4,7 +4,7 @@ const Navbar = () => {
     <>
       <nav class="bg-white-800">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a
+          <a href="#//"
             class="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img
@@ -44,7 +44,7 @@ const Navbar = () => {
             <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 text-white-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
-                  href="#"
+                  href="#/"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                   aria-current="page"
                 >
@@ -53,7 +53,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
                   About
@@ -61,7 +61,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
                   Services
@@ -69,7 +69,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
                   Pricing
@@ -77,7 +77,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#/"
                   class="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0"
                 >
                   Contact

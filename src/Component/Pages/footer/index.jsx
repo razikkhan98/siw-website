@@ -65,7 +65,7 @@ const Footer = () => {
               <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
                 <li>
                   <a
-                    href="#"
+                    href="#/"
                     rel="noreferrer"
                     target="_blank"
                     className="text-teal-700 transition hover:text-teal-700/75"
@@ -88,7 +88,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="#/"
                     rel="noreferrer"
                     target="_blank"
                     className="text-teal-700 transition hover:text-teal-700/75"
@@ -111,7 +111,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    href="#"
+                    href="#/"
                     rel="noreferrer"
                     target="_blank"
                     className="text-teal-700 transition hover:text-teal-700/75"
@@ -138,7 +138,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       Company History
                     </a>
@@ -147,7 +147,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       Meet the Team
                     </a>
@@ -156,7 +156,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       Employee Handbook
                     </a>
@@ -165,7 +165,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       Careers{" "}
@@ -183,7 +183,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       Web Development
                     </a>
@@ -192,7 +192,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       Web Design{" "}
@@ -202,7 +202,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       Marketing{" "}
@@ -212,7 +212,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       Google Ads{" "}
@@ -230,7 +230,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       FAQs{" "}
@@ -240,7 +240,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="text-gray-700 transition hover:text-gray-700/75"
-                      href="#"
+                      href="#/"
                     >
                       {" "}
                       Support{" "}
@@ -256,7 +256,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                      href="#"
+                      href="#/"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@ const Footer = () => {
                   <li>
                     <a
                       className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                      href="#"
+                      href="#/"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +338,7 @@ const Footer = () => {
 
                 <a
                   className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                  href="#"
+                  href="#/"
                 >
                   Terms & Conditions
                 </a>
@@ -347,7 +347,7 @@ const Footer = () => {
 
                 <a
                   className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                  href="#"
+                  href="#/"
                 >
                   Privacy Policy
                 </a>
