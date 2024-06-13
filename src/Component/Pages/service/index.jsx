@@ -68,7 +68,7 @@ const Service = () => {
               <div className="my-4">
                 <a
                   href="#/"
-                  className="py-3.5 px-5 border-2 border-gray-300 rounded-lg uppercase hover:bg-[#033540]" 
+                  className="py-3.5 px-5 border-2 border-gray-300 rounded-lg uppercase hover:bg-[#033540] relative " 
                 >
                   <span>
                     Read More <FaArrowRightLong className="inline-block mx-2" />
