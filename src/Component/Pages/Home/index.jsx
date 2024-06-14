@@ -12,8 +12,12 @@ const Home = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
     autoplay: true,
-    autoplaySpeed: 1500,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    // cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -83,12 +87,12 @@ const Home = () => {
 
   return (
     <>
-      <div class="home-img">
+      <div class="gradient-overly-right bg-animate h-screen">
         <Navbar />
-        <div class="container sm:w-full mx-autogrid gap-6 grid-cols-1 flex max-h-54 sm:mt-[180px] lg:mt-[100px] sm:justify-center sm:items-center absolute">
-          <section class="dark:bg-gray-900 ">
-            <div class="m-7  text-center">
-              <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl ">
+        <div class="container mx-auto">
+          <section class="gap-6 grid-cols-1 flex justify-center items-center my-16">
+            <div class="text-center">
+              <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl">
                 Welcome To Our Website
               </p>
               <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl dark:text-white">
@@ -99,10 +103,10 @@ const Home = () => {
                 innovation, and capital can unlock long-term value and drive
                 economic growth.
               </p>
-              <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+              <div class="flex flex-row justify-center space-y-0">
                 <a
-                  href="#"
-                  class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+                  href="#/"
+                  class="inline-flex justify-center items-center py-3 px-5 mx-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
                 >
                   Get started
                   <svg
@@ -122,8 +126,8 @@ const Home = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
-                  class="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70"
+                  href="#/"
+                  class="py-3 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70"
                 >
                   Learn more
                 </a>
@@ -132,12 +136,12 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="w-5/6 m-auto flex flex-col absolute left-[9%] -bottom-[118px]">
+        <div className="w-5/6 m-auto flex flex-col absolute left-[9%] -bottom-[140px]">
           <div className="">
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="bg-black text-white rounded-xl  bg-gradient-to-r from-sky-500 to-indigo-500"
+                  className="rounded-xl bg-white text-color-sherpa-blue"
                   key={index}
                 >
                   <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
@@ -146,7 +150,7 @@ const Home = () => {
                   <div className="flex flex-col justify-center items-center gap-4 p-4">
                     <p className="text-xl font-semibold">{link.title}</p>
                     <p className="text-center">{link.description}</p>
-                    <button className="bg-indigo-800 text-white text-lg px-6 py-1 rounded-xl">
+                    <button className="bg-[#033540] text-white text-lg px-6 py-1 rounded-xl">
                       Read more
                     </button>
                   </div>
