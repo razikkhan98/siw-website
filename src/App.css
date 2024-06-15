@@ -12,7 +12,7 @@
 .background-color-sky-blue {
   background-color: var(--sky-blue-color);
 }
-.background-color-light{
+.background-color-light {
   background-color: var(--light-color);
 }
 
@@ -84,7 +84,6 @@
   background: linear-gradient(to top left, #033540, #63898c, #e0f4f5);
 }
 
-
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
@@ -148,3 +147,126 @@
 .bg-gradient {
   background: linear-gradient(to top left, #033540, #63898C, #E0F4F5);
 } */
+
+@keyframes progressAnimation {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 83%;
+  }
+}
+@keyframes barAnimation {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes lastAnimation {
+  0% {
+    width: 5%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+/* Button */
+.theme-btn a {
+  position: relative;
+  display: inline-block;
+  margin-top: 24px;
+  font-family: "cerebri_sanssemibold";
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 13px 29px;
+  transition: 0.3s;
+  border-radius: 5px;
+  vertical-align: middle;
+  border: 2px solid #ececec;
+}
+.theme-btn a::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  background: #033540;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.4s ease;
+}
+.theme-button {
+  color: #033540;
+  z-index: 9;
+  position: relative;
+  transition: 0.3s;
+}
+.theme-btn a:hover {
+  border-color:#033540;
+}
+.theme-btn a:hover::before {
+  width: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.theme-btn a:hover .theme-button {
+  color: #A7D1D2;
+}
+
+.btn--jump:hover {
+  animation: jump 1s ease-out infinite;
+}
+.btn--jump:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: jumpEffect 1s 0.65s ease-out infinite;
+}
+.btn--jump:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  animation: jumpEffect 1s 0.5s ease-out infinite;
+}
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes jumpEffect {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+}

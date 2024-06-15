@@ -55,9 +55,10 @@ const Service = () => {
           <div className="grid lg:grid-cols-3
            gap-4 pt-10">
             {ServiceData.map((link,index) => (
-              <div className="px-8 py-3">
+              <div className=" px-8 py-3">
+                <div className="btn--jump">
               <img src={link.imgUrl} alt="Loading" />
-
+              </div>
               <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
                 {link.title}
               </div>
@@ -65,12 +66,11 @@ const Service = () => {
               <p className="py-6 pr-5 text-gray-600">
                 {link.description}
               </p>
-              <div className="my-4">
+              <div className="theme-btn">
                 <a
-                  href="#/"
-                  className="py-3.5 px-5 border-2 border-gray-300 rounded-lg uppercase hover:bg-[#033540] relative " 
+                  href="#/" 
                 >
-                  <span>
+                  <span className="theme-button">
                     Read More <FaArrowRightLong className="inline-block mx-2" />
                   </span>
                 </a>
