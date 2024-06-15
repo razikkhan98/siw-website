@@ -12,6 +12,8 @@ import {
   FaUser,
   FaImage,
 } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const About = () => {
   const AboutCard = [
@@ -48,12 +50,13 @@ const About = () => {
                           <div className="bg-dark"></div>
                         </div>
                       </div>
-                      <div className="w-full mt-4 pt-2 text-right">
+                      <div className="theme-btn text-right mr-5">
                         <a
                           href="#/"
-                          className="btn btn-info background-color-sherpa-blue text-white mr-5 px-4 py-2 rounded-lg"
                         >
-                          Read More <i className="mdi mdi-chevron-right"></i>
+                          <span className="theme-button">Read More
+                          <FaArrowRightLong className="inline-block mx-2" />
+                          </span>
                         </a>
                       </div>
                     </div>
@@ -79,7 +82,11 @@ const About = () => {
               </div>
               <div className="px-4 pt-10">
                 <div className="lg:ml-5">
-                  <h1 className="text-3xl font-bold mb-3">About Us</h1>
+                  <div className="flex text-3xl font-bold mb-3">
+                  <h1>About Us</h1>
+                  <div className="mr-4 font-extrabold">__ </div>
+                  <div className="font-extrabold">_____</div>
+                  </div>
                   <h4 className="mb-4 font-medium">
                     Our mission is to make your life easier.
                   </h4>
