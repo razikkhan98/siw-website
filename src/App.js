@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-// import Home from "./Component/Pages/Home/index";
+import Home from "./Component/Pages/Home/index";
 // import Footer from "./Component/Pages/footer";
 // import Team from "./Component/Pages/team";
-import Service from "./Component/Pages/Service/index";
+import Service from "./Component/Pages/service/index";
 // import FAQ from "./Component/Pages/faq";
 import About from "./Component/Pages/About";
 const App = () => {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       <About/>
       {/* <Team /> */}
       <Service />
