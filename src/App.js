@@ -7,6 +7,7 @@ import Service from "./Component/Pages/service/index";
 // import FAQ from "./Component/Pages/faq";
 import About from "./Component/Pages/About";
 import Count from "./Component/Pages/demo";
+import Clients from "./Component/Pages/clients";
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
       {/* <Team /> */}
       <Service />
     <Count/>
+    <Clients/>
       {/* <FAQ /> */}
       {/* <Footer /> */}
     </>
