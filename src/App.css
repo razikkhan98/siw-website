@@ -219,7 +219,7 @@ body{
   color: #A7D1D2;
 }
 
-.btn--jump:hover {
+.service-btn:hover .btn--jump {
   animation: jump 1s ease-out infinite;
 }
 .btn--jump:hover:after {
@@ -277,4 +277,10 @@ body{
   margin-right: auto;
   width: 1088px;
   padding-bottom: 25px;
+}
+.demo-bg{
+  background: url(./Component/assets/img/apply-bg.jpg) fixed center center ;
+}
+.counter-box{
+  background-color: rgba(250, 250, 250, 0.3);
 }

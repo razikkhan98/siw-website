@@ -55,7 +55,7 @@ const Service = () => {
           <div className="grid lg:grid-cols-3
            gap-4 pt-10">
             {ServiceData.map((link,index) => (
-              <div className=" px-8 py-3">
+              <div className="service-btn px-8 py-3">
                 <div className="btn--jump">
               <img src={link.imgUrl} alt="Loading" />
               </div>
