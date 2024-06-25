@@ -8,6 +8,8 @@ import Team1 from "../../assets/img/team-1.jpg";
 import Team2 from "../../assets/img/team-2.jpg";
 import Team3 from "../../assets/img/team-3.jpg";
 import Team4 from "../../assets/img/team-4.jpg";
+import Team5 from "../../assets/img/team-5.jpg";
+import Team6 from "../../assets/img/team-6.jpg";
 const Team = () => {
   const teamData = [
     {
@@ -25,6 +27,14 @@ const Team = () => {
     {
       id: "#img-4",
       img: Team4,
+    },
+    {
+      id: "#img-5",
+      img: Team5,
+    },
+    {
+      id: "#img-6",
+      img: Team6,
     },
   ];
   const teamCardData =[
@@ -56,7 +66,20 @@ const Team = () => {
       name: "John Doe",
       description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     },
-  
+    {
+      id1: "img-5",
+      image: Team5,
+      title: "UX DESIGNER",
+      name: "John Doe",
+      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    },
+    {
+      id1: "img-6",
+      image: Team6,
+      title: "WEB DESIGNER",
+      name: "John Doe",
+      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    },
   ]
   return (
     <>
@@ -83,15 +106,14 @@ const Team = () => {
             <div className="team-slider relative">
               {teamCardData.map((link, index) => (
                 <div
-                  className="team-content shadow-img flex flex-col items-center space-x-8 bg-white mx-5 rounded-xl"
-                  tabIndex="0"
+                  className="team-content shadow-img flex flex-col items-center space-x-8 bg-white mx-5 rounded-2xl"
                   id={link.id1}
                 >
                   <div className="flex-none w-full">
-                    <img
+                    <img 
                       src={link.image}
                       alt="img"
-                      className="w-full h-full object-cover rounded-t-lg"
+                      className="w-full h-64 object-cover rounded-t-2xl"
                     />
                   </div>
                   <div className="flex-grow text-center p-5">
@@ -133,13 +155,13 @@ const Team = () => {
             </div>
 
             {/* <!-- team thumb --> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-5 mt-5">
               {teamData.map((link, index) => (
                 <a href={link.id}>
                   <img
                     src={link.img}
                     alt="member"
-                    className="shadow-img w-full h-full object-cover rounded-lg hover:opacity-50"
+                    className="shadow-img w-full h-48 rounded-2xl hover:opacity-50"
                   />
                 </a>
               ))}

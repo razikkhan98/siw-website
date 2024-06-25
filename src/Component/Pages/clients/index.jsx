@@ -14,100 +14,74 @@ const Clients = () => {
     dots: true,
     infinite: true,
     fade: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-  
   };
+  const clientData = [
+    {
+      image: Client1,
+      title: "Our Clients Say",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      name: "JOHNY CLAN",
+    },
+    {
+      image: Client2,
+      title: "Our Clients Say",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      name: "LEO",
+    },
+    {
+      image: Client3,
+      title: "Our Clients Say",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      name: "JOHN JACKSON",
+    },
+    {
+      image: Client4,
+      title: "Our Clients Say",
+      description:
+        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      name: "JOHNY CLAN",
+    },
+  ];
   return (
     <>
-        <div className="container mx-auto py-10">
-          <div className="text-center mb-16">
-            <h1 className="font-semibold text-4xl text-[#033540]"> Our Clients</h1>
-          </div>
-          <Slider {...settings}>
-            <div className="bg-[#A7D1D2] p-8">
-              <div className="flex">
-                <div className="bg-[#033540] mr-20 flex items-center">
-                  <img src={Client1} alt="Loading" />
-                </div>
-                <div className="flex flex-col justify-center items-center">
-                  <FaQuoteRight className="text-4xl text-[#033540]" />
-                  <h1 className="text-4xl mb-3">Our Clients Say</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates, iste omnis fuga quod distinctio et itaque
-                    aspernatur. Ut atque recusandae nemo et amet expedita
-                    perspiciatis?
-                  </p>
-                  <h1 className="font-bold text-2xl mt-3">JOHNY CLAN</h1>
-                  <h3>HAPPY CLIENT</h3>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#A7D1D2] p-8">
-              <div className="flex">
-                <div className="mr-20 flex items-center">
-                  <img src={Client2} alt="Loading" />
-                </div>
-                <div className="flex flex-col justify-center items-center text-center ">
-                  <FaQuoteRight className="text-4xl text-[#033540]" />
-                  <h1 className="text-4xl mb-3">Our Clients Say</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates, iste omnis fuga quod distinctio et itaque
-                    aspernatur. Ut atque recusandae nemo et amet expedita
-                    perspiciatis?
-                  </p>
-                  <h1 className="font-bold text-2xl mt-3">LEO </h1>
-                  <h3>HAPPY CLIENT</h3>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#A7D1D2] p-8">
-              <div className="flex">
-                <div className="mr-20 flex items-center">
-                  <img src={Client3} alt="Loading" />
-                </div>
-                <div className="text-center flex flex-col justify-center items-center">
-                  <FaQuoteRight className="text-4xl text-[#033540]" />
-                  <h1 className="text-4xl mb-3">Our Clients Say</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates, iste omnis fuga quod distinctio et itaque
-                    aspernatur. Ut atque recusandae nemo et amet expedita
-                    perspiciatis?
-                  </p>
-                  <h1 className="font-bold text-2xl mt-3">JOHN JACKSON</h1>
-                  <h3>HAPPY CLIENT</h3>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#A7D1D2] p-8">
-              <div className="flex">
-                <div className="mr-20 flex items-center">
-                  <img src={Client4} alt="Loading" />
-                </div>
-                <div className="text-center flex flex-col justify-center items-center">
-                  <FaQuoteRight className="text-4xl text-[#033540]" />
-                  <h1 className="text-4xl mb-3">Our Clients Say</h1>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates, iste omnis fuga quod distinctio et itaque
-                    aspernatur. Ut atque recusandae nemo et amet expedita
-                    perspiciatis?
-                  </p>
-                  <h1 className="font-bold text-2xl mt-3">JOHN JACKSON</h1>
-                  <h3>HAPPY CLIENT</h3>
-                </div>
-              </div>
-            </div>
-          </Slider>
+      <div className="container mx-auto py-16">
+        <div className="flex items-center justify-center text-center mb-10">
+          <div className="font-extrabold text-3xl">___</div>
+          <h1 className="font-semibold text-4xl text-[#033540] mx-2">
+            Our Clients
+          </h1>
+          <div className="font-extrabold text-3xl">___</div>
         </div>
+
+        <Slider {...settings}>
+          {clientData.map((link, index) => (
+            <div className="bg-[#A7D1D2] p-8 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-[#033540] relative ml-10 h-80 w-32">
+                </div>
+
+                  <div className="absolute top-16 h-72 w-96">
+                    <img src={link.image} alt="Loading" />
+                  </div>
+                <div className="flex flex-col justify-center items-center text-center">
+                  <FaQuoteRight className="text-4xl text-[#033540]" />
+                  <h1 className="text-4xl my-3">{link.title}</h1>
+                  <p>{link.description}</p>
+                  <h1 className="font-bold text-2xl mt-3">{link.name}</h1>
+                  <h3>HAPPY CLIENT</h3>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </>
   );
 };
