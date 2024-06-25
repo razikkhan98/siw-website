@@ -6,14 +6,8 @@ import Abt2 from "../../assets/img/About/abt-2.jpg";
 import Abt3 from "../../assets/img/About/abt-3.jpg";
 
 // Icons
-import {
-  FaPlay,
-  FaFileDownload,
-  FaUser,
-  FaImage,
-} from "react-icons/fa";
+import { FaPlay, FaFileDownload, FaUser, FaImage } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-
 
 const About = () => {
   const AboutCard = [
@@ -45,17 +39,20 @@ const About = () => {
                   <div className="w-1/2">
                     <div className="flex flex-col">
                       <div className="w-full mt-4 pt-2">
-                        <div className="shadow-img bg-white rounded shadow-xl overflow-hidden mr-5">
+                        <div
+                          className="shadow-img bg-white rounded shadow-xl overflow-hidden mr-5"
+                         data-aos="zoom-in"
+                         data-aos-delay="300"
+>
                           <img src={Abt1} className="w-full" alt="Loading" />
                           <div className="bg-dark"></div>
                         </div>
                       </div>
                       <div className="theme-btn text-right mr-5">
-                        <a
-                          href="#/"
-                        >
-                          <span className="theme-button">Read More
-                          <FaArrowRightLong className="inline-block mx-2" />
+                        <a href="#/">
+                          <span className="theme-button">
+                            Read More
+                            <FaArrowRightLong className="inline-block mx-2" />
                           </span>
                         </a>
                       </div>
@@ -65,13 +62,21 @@ const About = () => {
                   <div className="w-1/2">
                     <div className="flex flex-col">
                       <div className="w-full">
-                        <div className="shadow-img bg-white rounded shadow-xl overflow-hidden">
+                        <div
+                          className="shadow-img bg-white rounded shadow-xl overflow-hidden"
+                          data-aos="zoom-in"
+                          data-aos-delay="400"
+                        >
                           <img src={Abt2} className="w-full" alt="Loading" />
                           <div className="bg-dark"></div>
                         </div>
                       </div>
                       <div className="w-full mt-4 pt-2">
-                        <div className="shadow-img bg-white rounded shadow-xl overflow-hidden">
+                        <div
+                          className="shadow-img bg-white rounded shadow-xl overflow-hidden"
+                          data-aos="zoom-in"
+                          data-aos-delay="500"
+                        >
                           <img src={Abt3} className="w-full" alt="Loading" />
                           {/* <div className="bg-dark"></div> */}
                         </div>
@@ -83,15 +88,30 @@ const About = () => {
               <div className="px-4 pt-10">
                 <div className="lg:ml-5">
                   <div className="flex text-3xl font-bold mb-3">
-                  <h1>About Us</h1>
-                  <div className="mr-4 font-extrabold">__ </div>
-                  <div className="font-extrabold">_____</div>
+                    <h1>About Us</h1>
+                    <div className="mr-4 font-extrabold">__ </div>
+                    <div className="font-extrabold">_____</div>
                   </div>
                   <h4 className="mb-4 font-medium">
                     Our mission is to make your life easier.
                   </h4>
                   <p className="text-gray-600 mb-0">
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, beatae excepturi? Nobis veritatis nihil officia assumenda soluta eligendi. Odit et architecto placeat nisi, perspiciatis iste quo, molestias a tenetur neque nemo, excepturi dolores magnam porro doloribus id officia veniam? Deserunt animi eos cupiditate exercitationem eligendi totam modi ipsa nihil dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, beatae excepturi? Nobis veritatis nihil officia assumenda soluta eligendi. Odit et architecto placeat nisi, perspiciatis iste quo, molestias a tenetur neque nemo, excepturi dolores magnam porro doloribus id officia veniam? Deserunt animi eos cupiditate exercitationem eligendi totam modi ipsa nihil dolorum.doloribus id officia veniam? Deserunt animi eos cupiditate exercitationem eligendi totam modi ipsa nihil dolorum.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, beatae excepturi? Nobis veritatis nihil officia
+                    assumenda soluta eligendi. Odit et architecto placeat nisi,
+                    perspiciatis iste quo, molestias a tenetur neque nemo,
+                    excepturi dolores magnam porro doloribus id officia veniam?
+                    Deserunt animi eos cupiditate exercitationem eligendi totam
+                    modi ipsa nihil dolorum. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Obcaecati, beatae excepturi?
+                    Nobis veritatis nihil officia assumenda soluta eligendi.
+                    Odit et architecto placeat nisi, perspiciatis iste quo,
+                    molestias a tenetur neque nemo, excepturi dolores magnam
+                    porro doloribus id officia veniam? Deserunt animi eos
+                    cupiditate exercitationem eligendi totam modi ipsa nihil
+                    dolorum.doloribus id officia veniam? Deserunt animi eos
+                    cupiditate exercitationem eligendi totam modi ipsa nihil
+                    dolorum.
                   </p>
                   <div className="flex flex-wrap">
                     {AboutCard.map((link, index) => (

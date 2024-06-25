@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,7 +6,17 @@ import Navbar from "../../Common/Navbar/index";
 
 import { MdManageAccounts } from "react-icons/md";
 
+// AOS Animation
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+
+    });
+  }, []);
+
   const settings = {
     // dots: true,
     infinite: true,
@@ -91,7 +101,7 @@ const Home = () => {
         <Navbar />
         <div class="container mx-auto">
           <section class="gap-6 grid-cols-1 flex justify-center items-center my-16">
-            <div class="text-center">
+            <div class="text-center" data-aos="flip-up"  data-aos-duration="1500">
               <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl">
                 Welcome To Our Website
               </p>
@@ -136,12 +146,12 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="w-5/6 m-auto flex flex-col absolute left-[9%] -bottom-[140px]">
+        <div className="w-full m-auto flex flex-col absolute -bottom-[140px]">
           <div className="">
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="rounded-xl bg-white text-color-sherpa-blue"
+                  className="rounded-xl bg-white text-color-sherpa-blue" data-aos="zoom-in" data-aos-duration="1500"
                   key={index}
                 >
                   <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">

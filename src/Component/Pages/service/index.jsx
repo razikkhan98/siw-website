@@ -6,37 +6,42 @@ import MarketingStrategy from "../../assets/img/Service/service-icon-marketing-s
 const Service = () => {
   const ServiceData = [
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl : MarketingStrategy,
-      title : "Marketing Strategy",
-      description : " It is a long established fact that a reader will be distracted by the readable content of a page",
+      imgUrl: MarketingStrategy,
+      title: "Marketing Strategy",
+      description:
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
-
-  ]
+  ];
   return (
     <>
       <div className="bg-white">
@@ -52,30 +57,33 @@ const Service = () => {
             We provide exclusive <br /> services for your business
           </h1>
 
-          <div className="grid lg:grid-cols-3
-           gap-4 pt-10">
-            {ServiceData.map((link,index) => (
-              <div className="service-btn px-8 py-3">
+          <div
+            className="grid lg:grid-cols-3
+           gap-4 pt-10"
+          >
+            {ServiceData.map((link, index) => (
+              <div
+                className="service-btn px-8 py-3"
+                data-aos="zoom-in-up"
+                data-aos-duration="2000"
+              >
                 <div className="btn--jump">
-              <img src={link.imgUrl} alt="Loading" />
-              </div>
-              <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
-                {link.title}
-              </div>
+                  <img src={link.imgUrl} alt="Loading" />
+                </div>
+                <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
+                  {link.title}
+                </div>
 
-              <p className="py-6 pr-5 text-gray-600">
-                {link.description}
-              </p>
-              <div className="theme-btn">
-                <a
-                  href="#/" 
-                >
-                  <span className="theme-button">
-                    Read More <FaArrowRightLong className="inline-block mx-2" />
-                  </span>
-                </a>
+                <p className="py-6 pr-5 text-gray-600">{link.description}</p>
+                <div className="theme-btn">
+                  <a href="#/">
+                    <span className="theme-button">
+                      Read More{" "}
+                      <FaArrowRightLong className="inline-block mx-2" />
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
             ))}
             {/* <div className="px-6">
               <img src={MarketingStrategy} alt="Loading" />
