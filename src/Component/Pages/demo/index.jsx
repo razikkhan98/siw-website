@@ -1,7 +1,6 @@
 import React from "react";
 
 //  images
-import about from "../../assets/img/about.jpg";
 const Count = () => {
   function numCounter(tagId, maxCount, speed) {
     var initialNumber = 0;

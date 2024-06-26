@@ -7,7 +7,6 @@ import Abt3 from "../../assets/img/About/abt-3.jpg";
 
 // Icons
 import { FaPlay, FaFileDownload, FaUser, FaImage } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 const About = () => {
   const AboutCard = [
@@ -41,20 +40,13 @@ const About = () => {
                       <div className="w-full mt-4 pt-2">
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden mr-5"
-                         data-aos="zoom-in"
-                         data-aos-delay="300"
->
+                          data-aos="zoom-in"
+                          data-aos-duration="3000"
+                          data-aos-delay="300"
+                        >
                           <img src={Abt1} className="w-full" alt="Loading" />
                           <div className="bg-dark"></div>
                         </div>
-                      </div>
-                      <div className="theme-btn text-right mr-5">
-                        <a href="#/">
-                          <span className="theme-button">
-                            Read More
-                            <FaArrowRightLong className="inline-block mx-2" />
-                          </span>
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -65,6 +57,7 @@ const About = () => {
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden"
                           data-aos="zoom-in"
+                          data-aos-duration="3000"
                           data-aos-delay="400"
                         >
                           <img src={Abt2} className="w-full" alt="Loading" />
@@ -75,6 +68,7 @@ const About = () => {
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden"
                           data-aos="zoom-in"
+                          data-aos-duration="3000"
                           data-aos-delay="500"
                         >
                           <img src={Abt3} className="w-full" alt="Loading" />
@@ -85,7 +79,11 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-4 pt-10">
+              <div
+                className="px-4 pt-10"
+                data-aos="zoom-in-left"
+                data-aos-duration="3000"
+              >
                 <div className="lg:ml-5">
                   <div className="flex text-3xl font-bold mb-3">
                     <h1>About Us</h1>

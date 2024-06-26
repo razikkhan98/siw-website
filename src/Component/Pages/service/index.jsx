@@ -44,7 +44,7 @@ const Service = () => {
   ];
   return (
     <>
-      <div className="bg-white">
+      <div className="bg-[#d9f6f7]">
         <div className="container mx-auto py-10">
           <div className="flex items-center justify-center">
             <div className="h-1 w-9 background-color-sherpa-blue inline-block mx-3 tex"></div>

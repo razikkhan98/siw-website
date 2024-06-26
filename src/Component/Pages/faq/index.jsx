@@ -4,8 +4,8 @@ const FAQ = () => {
     <>
       <section class="bg-[#033540]">
         <div class="container px-5 py-24 mx-auto">
-          <div class="text-center mb-20 ">
-            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">
+          <div class="text-center mb-20 text-[#a7d1d2] ">
+            <h1 class="sm:text-3xl text-2xl font-medium text-center title-font mb-4">
               Frequently Asked Question
             </h1>
             <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
@@ -14,7 +14,11 @@ const FAQ = () => {
             </p>
           </div>
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-            <div class="w-full lg:w-1/2 px-4 pt-2 lg:pb-2">
+            <div
+              class="w-full lg:w-1/2 px-4 pt-2 lg:pb-2"
+              data-aos="zoom-in-right"
+              data-aos-duration="3000"
+            >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl">
                   How Long is this site live?
@@ -49,7 +53,11 @@ const FAQ = () => {
                 </span>
               </details>
             </div>
-            <div class="w-full lg:w-1/2 px-4 pb-2 lg:pt-2">
+            <div
+              class="w-full lg:w-1/2 px-4 pb-2 lg:pt-2"
+              data-aos="zoom-in-left"
+              data-aos-duration="3000"
+            >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl ">
                   Can I change the domain you give me?
@@ -86,7 +94,12 @@ const FAQ = () => {
             </div>
           </div>
           {/* Question box */}
-          <div class="relative grid justify-items-center mt-8">
+          <div
+            class="relative grid justify-items-center mt-8"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            data-aos-anchor-placement="top-center"
+          >
             <div class="shadow-img bg-gray-200 max-w-full py-5 px-20 rounded-xl">
               <div class="text-center ">
                 <h2 class="text-3xl font-bold text-[#033540] mb-4">
@@ -170,18 +183,28 @@ const FAQ = () => {
                   />
                 </div>
                 <div class="col-span-2 ">
-                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" 
-                placeholder="Your E-mail" required />
-                
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Your email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                    placeholder="Your E-mail"
+                    required
+                  />
                 </div>
-              
+
                 <div class="col-span-2">
                   <label
                     for="description"
                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                  Your Question
+                    Your Question
                   </label>
                   <textarea
                     id="description"
