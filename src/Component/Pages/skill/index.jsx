@@ -26,27 +26,27 @@ const Count = () => {
       id: "Projects",
       name: "Projects Completed",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. Libero sapiente dolores.",
+        "Lorem ipsum dolor sit amet consectetur umm adipisicing. Libero sapiente dolores.",
     },
     {
       id: "Costumers",
       name: "Happy Costumers",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. Libero sapiente dolores.",
+        "Lorem ipsum dolor sit amet consectetur umm adipisicing. Libero sapiente dolores.",
       margin: "md:mt-10",
     },
     {
       id: "Awards",
       name: "Win Awards",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. Libero sapiente dolores.",
+        "Lorem ipsum dolor sit amet consectetur umm adipisicing. Libero sapiente dolores.",
       margin: "md:mb-10",
     },
     {
       id: "IT",
       name: "IT Consultants",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing. Libero sapiente dolores.",
+        "Lorem ipsum dolor sit amet consectetur umm adipisicing. Libero sapiente dolores.",
     },
   ];
 
@@ -123,7 +123,7 @@ const Count = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-8 m-10">
               {CounterCard.map((link, index) => (
                 <div
-                  className={`counter-box ${link.margin} text-center sm:text-left rounded-3xl p-4`}
+                  className={`counter-box ${link.margin} text-justify rounded-3xl p-4`}
                   key={index}
                   data-aos="zoom-in"
                   data-aos-duration="2000"

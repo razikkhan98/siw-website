@@ -93,23 +93,17 @@ const About = () => {
                   <h4 className="mb-4 font-medium">
                     Our mission is to make your life easier.
                   </h4>
-                  <p className="text-gray-600 mb-0">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Obcaecati, beatae excepturi? Nobis veritatis nihil officia
-                    assumenda soluta eligendi. Odit et architecto placeat nisi,
-                    perspiciatis iste quo, molestias a tenetur neque nemo,
-                    excepturi dolores magnam porro doloribus id officia veniam?
-                    Deserunt animi eos cupiditate exercitationem eligendi totam
-                    modi ipsa nihil dolorum. Lorem ipsum, dolor sit amet
-                    consectetur adipisicing elit. Obcaecati, beatae excepturi?
-                    Nobis veritatis nihil officia assumenda soluta eligendi.
-                    Odit et architecto placeat nisi, perspiciatis iste quo,
-                    molestias a tenetur neque nemo, excepturi dolores magnam
-                    porro doloribus id officia veniam? Deserunt animi eos
-                    cupiditate exercitationem eligendi totam modi ipsa nihil
-                    dolorum.doloribus id officia veniam? Deserunt animi eos
-                    cupiditate exercitationem eligendi totam modi ipsa nihil
-                    dolorum.
+                  <p className="text-gray-600 mb-0 text-justify">
+                    SIW operates in the education and professional development
+                    sector, focusing on delivering high-quality training
+                    programs, resources, and tools that cater to a diverse range
+                    of industries. Skill Intelligence World (SIW) is a leading
+                    company dedicated to revolutionizing the way individuals and
+                    organizations approach skill development and intelligence
+                    enhancement. With a mission to bridge the gap between
+                    current skill levels and industry demands, SIW offers
+                    innovative solutions designed to empower professionals and
+                    businesses to thrive in an ever-evolving marketplace.
                   </p>
                   <div className="flex flex-wrap">
                     {AboutCard.map((link, index) => (
