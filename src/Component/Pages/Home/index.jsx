@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,9 +12,7 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    AOS.init({
-
-    });
+    AOS.init({});
   }, []);
 
   const settings = {
@@ -101,7 +99,11 @@ const Home = () => {
         <Navbar />
         <div class="container mx-auto">
           <section class="gap-6 grid-cols-1 flex justify-center items-center my-16">
-            <div class="text-center" data-aos="flip-up"  data-aos-duration="1500">
+            <div
+              class="text-center"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <p class="mb-2 text-1xl font-extrabold text-white lg:text-xl">
                 Welcome To Our Website
               </p>
@@ -109,9 +111,9 @@ const Home = () => {
                 Skill Intelligence World
               </h1>
               <p class="mb-5 text-lg font-normal text-white lg:text-xl sm:px-16 lg:px-48">
-                Here at Flowbite we focus on markets where technology,
-                innovation, and capital can unlock long-term value and drive
-                economic growth.
+                Our company operates in the education and professional
+                development sector, focusing on delivering high-quality training
+                programs,
               </p>
               <div class="flex flex-row justify-center space-y-0">
                 <a
@@ -151,7 +153,9 @@ const Home = () => {
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="rounded-xl bg-white text-color-sherpa-blue" data-aos="zoom-in" data-aos-duration="1500"
+                  className="rounded-xl bg-white text-color-sherpa-blue"
+                  data-aos="zoom-in"
+                  data-aos-duration="1500"
                   key={index}
                 >
                   <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">

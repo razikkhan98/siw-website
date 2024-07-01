@@ -23,35 +23,33 @@ const Clients = () => {
     {
       image: Client1,
       title: "Our Clients Say",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      description:"Innovative and flexible training solutions have equipped our team with the latest skills. Outstanding dedication and expertise.",
       name: "JOHNY CLAN",
     },
     {
       image: Client2,
       title: "Our Clients Say",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      description: "Advanced tools to evaluate and enhance skill levels, providing personalized learning pathways for optimal development.",
       name: "LEO",
     },
     {
       image: Client3,
       title: "Our Clients Say",
-      description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+      description: "Customized solutions to help organizations develop and implement effective training strategies.",
       name: "JOHN JACKSON",
     },
     {
       image: Client4,
       title: "Our Clients Say",
       description:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, iste omnis fuga quod distinctio et itaque aspernatur. Ut atque recusandae nemo et amet expedita perspiciatis?",
+        "Flexible training solutions with the latest skills. Outstanding dedication and expertise.",
       name: "JOHNY CLAN",
     },
   ];
   return (
     <>
-      <div className="container mx-auto bg-[#d9f6f7] py-16">
+    <div className="bg-[#d9f6f7]">
+      <div className="container mx-auto  py-16">
         <div className="flex items-center justify-center text-center mb-10">
           <div className="font-extrabold text-3xl">___</div>
           <h1 className="font-semibold text-4xl text-[#033540] mx-2">
@@ -80,6 +78,7 @@ const Clients = () => {
             </div>
           ))}
         </Slider>
+      </div>
       </div>
     </>
   );
