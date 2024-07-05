@@ -34,14 +34,15 @@ const Work = () => {
       title: "BACK-END DEVELOPER",
       name: "Bob Leo",
       image: Team4,
-      description:"Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites. Back-end development means working on server-side software, which focuses on everything you can’t see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers. They use code that helps browsers communicate with databases, store, understand, and delete data.",    },
+      description:
+        "Back-end developers are the experts who build and maintain the mechanisms that process data and perform actions on websites. Back-end development means working on server-side software, which focuses on everything you can’t see on a website. Back-end developers ensure the website performs correctly, focusing on databases, back-end logic, application programming interface (APIs), architecture, and servers. They use code that helps browsers communicate with databases, store, understand, and delete data.",
+    },
     {
       title: " WEB DESIGNER",
       name: "Jack ",
       image: Team5,
       description:
-      "A web designer is an IT professional who is responsible for designing the layout, visual appearance and the usability of a website. A good web designer needs to have both creative graphic skills and technical skills. They need to be able to visualise how a site will look (the graphical design of the site) and how it will function (conversion of a design into a working website). The term Web Designer is often incorrectly interchanged with the term Web Developer and vice versa.  A web developer is often more likely to be a software developer who works with programming languages to create a higher level of interactions on a website such as the integration with a database system ",
-
+        "A web designer is an IT professional who is responsible for designing the layout, visual appearance and the usability of a website. A good web designer needs to have both creative graphic skills and technical skills. They need to be able to visualise how a site will look (the graphical design of the site) and how it will function (conversion of a design into a working website). The term Web Designer is often incorrectly interchanged with the term Web Developer and vice versa.  A web developer is often more likely to be a software developer who works with programming languages to create a higher level of interactions on a website such as the integration with a database system ",
     },
   ];
 
@@ -132,6 +133,7 @@ const Work = () => {
             <h1 className="font-bold text-lg">Jack</h1>
           </button>
         </div>
+
         {/* <!-- Slider controls --> */}
         <button
           type="button"

@@ -51,11 +51,11 @@ const Clients = () => {
     <div className="bg-[#d9f6f7]">
       <div className="container mx-auto  py-16">
         <div className="flex items-center justify-center text-center mb-10">
-          <div className="font-extrabold text-3xl">___</div>
+          <div className="h-1 w-9 bg-[#033540] inline-block mx-3"> </div>
           <h1 className="font-semibold text-4xl text-[#033540] mx-2">
             Our Clients
           </h1>
-          <div className="font-extrabold text-3xl">___</div>
+          <div className="h-1 w-9 bg-[#033540] inline-block mx-3"> </div>
         </div>
 
         <Slider {...settings}>
