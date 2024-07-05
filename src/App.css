@@ -47,7 +47,7 @@ body{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-.home-img {
+/* .home-img {
   background: linear-gradient(
       to top left,
       rgba(3, 53, 64, 0.2),
@@ -60,7 +60,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-}
+} */
 .team-content {
   display: none;
 }
@@ -187,7 +187,7 @@ body{
   transition: 0.3s;
   border-radius: 5px;
   vertical-align: middle;
-  border: 2px solid #ececec;
+  border: 2px solid #a7d1d2;
 }
 .theme-btn a::before {
   content: "";

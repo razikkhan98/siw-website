@@ -54,7 +54,7 @@ const Count = () => {
     <>
       <div className="demo-bg">
         <div className="container mx-auto max-w-screen-xl py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 m-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-8">
             <div
               class="self-center w-full h-full bg-black px-10 py-8 rounded-2xl uppercase"
               data-aos="flip-right"
@@ -120,7 +120,7 @@ const Count = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-8 m-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 gap-8">
               {CounterCard.map((link, index) => (
                 <div
                   className={`counter-box ${link.margin} text-justify rounded-3xl p-4`}

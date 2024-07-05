@@ -85,10 +85,10 @@ const About = () => {
                 data-aos-duration="3000"
               >
                 <div className="lg:ml-5">
-                  <div className="flex text-3xl font-bold mb-3">
+                  <div className="flex items-center text-3xl font-bold mb-3">
                     <h1>About Us</h1>
-                    <div className="mr-4 font-extrabold">__ </div>
-                    <div className="font-extrabold">_____</div>
+                    <div className="h-1 w-5 bg-[#033540] inline-block mx-3"> </div>
+                    <div className="h-1 w-10 bg-[#033540] inline-block mx-0"> </div>
                   </div>
                   <h4 className="mb-4 font-medium">
                     Our mission is to make your life easier.
@@ -126,42 +126,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-
-            {/* cards */}
-            {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-8 px-6">
-              <div class="shadow-img rounded p-5 flex flex-col items-center">
-                <FaUsersCog className="text-5xl font-bold" />
-                <div
-                  class="font-bold my-3 text-3xl counter"
-                  data-target="12000"
-                ></div>
-                <span className="text-xl">Experts</span>
-              </div>
-              <div class="shadow-img rounded p-5 flex flex-col items-center">
-                <FaThumbsUp className="text-5xl font-bold" />
-                <div
-                  class="font-bold my-3 text-3xl counter"
-                  data-target="5000"
-                ></div>
-                <span className="text-xl">Happy Clients</span>
-              </div>
-              <div class="shadow-img rounded p-5 flex flex-col items-center">
-                <FaUsers className="text-5xl font-bold" />
-                <div
-                  class="font-bold my-3 text-3xl counter"
-                  data-target="7500"
-                ></div>
-                <span className="text-xl">Partners</span>
-              </div>
-              <div class="shadow-img rounded p-5 flex flex-col items-center">
-                <FaTrophy className="text-5xl font-bold" />
-                <div
-                  class="font-bold my-3 text-3xl counter"
-                  data-target="5000"
-                ></div>
-                <span className="text-xl">IT consultant</span>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

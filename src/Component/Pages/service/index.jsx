@@ -1,42 +1,48 @@
 import React from "react";
 
 import { FaArrowRightLong } from "react-icons/fa6";
-import MarketingStrategy from "../../assets/img/Service/service-icon-marketing-strategy.png";
+// import MarketingStrategy from "../../assets/img/Service/service-icon-marketing-strategy.png";
+import Service1 from "../../assets/img/Service/service-1.svg";
+import Service2 from "../../assets/img/Service/service-2.svg";
+import Service3 from "../../assets/img/Service/service-3.svg";
+import Service4 from "../../assets/img/Service/service-4.svg";
+import Service5 from "../../assets/img/Service/service-5.svg";
+import Service6 from "../../assets/img/Service/service-6.svg";
 
 const Service = () => {
   const ServiceData = [
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service1,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service2,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service3,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service4,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service5,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
-      imgUrl: MarketingStrategy,
+      imgUrl: Service6,
       title: "Marketing Strategy",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
@@ -47,14 +53,14 @@ const Service = () => {
       <div className="bg-[#d9f6f7]">
         <div className="container mx-auto py-10">
           <div className="flex items-center justify-center">
-            <div className="h-1 w-9 background-color-sherpa-blue inline-block mx-3 tex"></div>
-            <div className="inline-block text-lg text-color-sherpa-blue font-semibold uppercase">
+            <div className="h-1 w-9 bg-[#033540] inline-block mx-3 tex"></div>
+            <div className="inline-block text-4xl text-color-sherpa-blue font-semibold">
               Our Service
             </div>
-            <div className="h-1 w-9 background-color-sherpa-blue inline-block mx-3"></div>
+            <div className="h-1 w-9 bg-[#033540] inline-block mx-3"></div>
           </div>
-          <h1 className="my-4 text-center text-4xl font-medium">
-            We provide exclusive <br /> services for your business
+          <h1 className="my-4 text-center text-xl font-medium">
+            We provide exclusive services for your business
           </h1>
 
           <div
@@ -68,7 +74,7 @@ const Service = () => {
                 data-aos-duration="2000"
               >
                 <div className="btn--jump">
-                  <img src={link.imgUrl} alt="Loading" />
+                  <img className="h-24" src={link.imgUrl} alt="Loading" />
                 </div>
                 <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
                   {link.title}
