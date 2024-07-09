@@ -139,10 +139,10 @@ const FAQ = () => {
         <Modal.Header />
         <Modal.Body>
           <div className="space-y-6 px-6">
-            <h3 className="text-xl font-medium text-gray-900 dark:text-white">Ask a Question</h3>
+            <h3 className="text-xl font-medium text-gray-900">Ask a Question</h3>
             <div>
               <div className="mb-2 block">
-                <Label htmlFor="username" value="Name" />
+                <Label className="dark:text-dark" htmlFor="username" value="Name" />
               </div>
               <TextInput id="username"
               placeholder="Enter Your Name"
@@ -150,7 +150,7 @@ const FAQ = () => {
             </div>
             <div>
               <div className="mb-2 block">
-                <Label htmlFor="email" value="Your Email" />
+                <Label className="dark:text-dark" htmlFor="email" value="Your Email" />
               </div>
               <TextInput
                 id="email"
@@ -164,7 +164,7 @@ const FAQ = () => {
 
             <div>
               <div className="mb-2 block">
-                <Label htmlFor="comment" value="Your Question" />
+                <Label className="dark:text-dark" htmlFor="comment" value="Your Question" />
               </div>
               <Textarea id="comment"  type="text" required rows={4} />
             </div>

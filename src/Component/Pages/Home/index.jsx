@@ -2,9 +2,13 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Navbar from "../../Common/Navbar/index";
+import Nav from "../../Common/Navbar/index";
 
-import { MdManageAccounts } from "react-icons/md";
+// import { MdManageAccounts } from "react-icons/md";
+import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
+import { GrSystem } from "react-icons/gr";
+import {  SiCplusplus } from "react-icons/si";
+import { FaHtml5, FaCss3 } from "react-icons/fa";
 
 // AOS Animation
 import AOS from "aos";
@@ -16,12 +20,9 @@ const Home = () => {
   }, []);
 
   const settings = {
-    // dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 1000,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
@@ -56,49 +57,51 @@ const Home = () => {
 
   const cardData = [
     {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
+      icon: <FaHtml5 />,
+      title: "HTML5",
       description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+        "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
     },
     {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
+      icon: <FaCss3 />,
+      title: "CSS3",
       description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+        "PHP is an open-source, server-side programming language that can be used to create websites, applications, customer relationship management systems.",
     },
     {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
+      icon: <GrSystem />,
+      title: "Ethical Hacking",
       description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+        "Ethical hacking is an authorized attempt to gain unauthorized access to a computer system, application, or data using the strategies and actions of malicious attackers",
     },
     {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
+      icon: <IoLogoPython />,
+      title: "Python",
       description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+        "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structure.",
+    },
+
+    {
+      icon: <IoLogoJavascript />,
+      title: "Javascript",
+      description:
+        "A general-purpose, operating system-agnostic, procedural language that supports structured programming and provides low-level access to the system memory.",
     },
     {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
+      icon: <SiCplusplus />,
+      title: "Advanced C++",
       description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
-    },
-    {
-      icon: <MdManageAccounts />,
-      title: "Jhon Deo",
-      description:
-        "Dexplicabo laboriosam exercitationem qui sequi! Dignissimos animi corporis eveniet quod.",
+        "C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.",
     },
   ];
 
   return (
     <>
-      <div class="gradient-overly-right bg-animate h-screen">
-        <Navbar />
+      <Nav />
+
+      <div class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center">
         <div class="container mx-auto">
-          <section class="gap-6 grid-cols-1 flex justify-center items-center my-16">
+          <section class="gap-6 grid-cols-1 ">
             <div
               class="text-center"
               data-aos="flip-up"

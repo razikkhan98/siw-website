@@ -8,14 +8,16 @@ import FAQ from "./Component/Pages/faq";
 import About from "./Component/Pages/About";
 import Count from "./Component/Pages/skill";
 import Clients from "./Component/Pages/clients";
-import Work from "./Component/Pages/work/index";
+// import Work from "./Component/Pages/work/index";
+// import Teamdemo from "./Component/Pages/team-demo/team-demo.jsx";
 const App = () => {
   return (
     <>
       <Home />
       <About/>
       {/* <Team /> */}
-    <Work/>
+    {/* <Work/> */}
+    {/* <Teamdemo/> */}
       <Service />
     <Count/>
     <Clients/>
