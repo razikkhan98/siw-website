@@ -123,6 +123,26 @@ body{
     var(--sherpa-blue-color)
   ) !important;
 }
+
+.header{
+  position: fixed;
+  padding: 15px 0px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: .3s ease-in;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.header-bg{
+  background-color: rgba(187, 221, 216, 0.9);
+  transform: rotateY(360deg);
+  transition: 2s;
+}
+
+
 /* .gradient-overly-right:before {
   background: linear-gradient(
     90deg,

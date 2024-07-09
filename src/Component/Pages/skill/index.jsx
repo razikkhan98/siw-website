@@ -32,7 +32,7 @@ const Count = () => {
       id: "Costumers",
       name: "Happy Costumers",
       description:
-        "Lorem ipsum dolor sit amet consectetur umm adipisicing. Libero sapiente dolores.",
+        "Great service, always get helpful and quick responses.",
       margin: "md:mt-10",
     },
     {

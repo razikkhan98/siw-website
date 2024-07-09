@@ -13,25 +13,25 @@ const Service = () => {
   const ServiceData = [
     {
       imgUrl: Service1,
-      title: "Marketing Strategy",
+      title: "Web Development",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
       imgUrl: Service2,
-      title: "Marketing Strategy",
+      title: "Search Engine Optimization",
       description:
-        " It is a long established fact that a reader will be distracted by the readable content of a page",
+        " SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for:",
     },
     {
       imgUrl: Service3,
-      title: "Marketing Strategy",
+      title: "User Interface",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
       imgUrl: Service4,
-      title: "Marketing Strategy",
+      title: "Machine Learning",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
@@ -43,7 +43,7 @@ const Service = () => {
     },
     {
       imgUrl: Service6,
-      title: "Marketing Strategy",
+      title: "Automation Testing",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
@@ -53,11 +53,17 @@ const Service = () => {
       <div className="bg-[#d9f6f7]">
         <div className="container mx-auto py-10">
           <div className="flex items-center justify-center">
-            <div className="h-1 w-9 bg-[#033540] inline-block mx-3 tex"></div>
+          <div className="flex flex-col items-end mx-3">
+            <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
+            <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+            </div>
             <div className="inline-block text-4xl text-color-sherpa-blue font-semibold">
               Our Service
             </div>
-            <div className="h-1 w-9 bg-[#033540] inline-block mx-3"></div>
+            <div className="flex flex-col mx-3">
+            <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
+            <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+            </div>
           </div>
           <h1 className="my-4 text-center text-xl font-medium">
             We provide exclusive services for your business
@@ -74,7 +80,7 @@ const Service = () => {
                 data-aos-duration="2000"
               >
                 <div className="btn--jump">
-                  <img className="h-24" src={link.imgUrl} alt="Loading" />
+                  <img className="h-24 w-32" src={link.imgUrl} alt="Loading" />
                 </div>
                 <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
                   {link.title}

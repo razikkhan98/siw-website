@@ -1,7 +1,7 @@
 import React from "react";
 
 // Images
-import Team1 from "../../assets/img/team/membr-1.png";
+import Team1 from "../../assets/img/team/member-1.png";
 import Team2 from "../../assets/img/team/member-2.png";
 import Team3 from "../../assets/img/team-3.jpg";
 import Team4 from "../../assets/img/team/member-3.png";
