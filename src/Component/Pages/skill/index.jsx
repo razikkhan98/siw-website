@@ -52,7 +52,7 @@ const Count = () => {
 
   return (
     <>
-      <div className="demo-bg">
+      <div className="skill-bg">
         <div className="container mx-auto max-w-screen-xl py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-8">
             <div

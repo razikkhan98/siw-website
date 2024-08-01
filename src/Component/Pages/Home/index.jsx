@@ -99,7 +99,7 @@ const Home = () => {
     <>
       <Nav />
 
-      <div class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center">
+      <div class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center" id="Home">
         <div class="container mx-auto">
           <section class="gap-6 grid-cols-1 ">
             <div
@@ -156,7 +156,7 @@ const Home = () => {
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="rounded-xl bg-white text-color-sherpa-blue"
+                  className="rounded-xl bg-white text-color-sherpa-blue h-80 md:h-72"
                   data-aos="zoom-in"
                   data-aos-duration="1500"
                   key={index}
@@ -164,10 +164,10 @@ const Home = () => {
                   <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
                     {link.icon}
                   </div>
-                  <div className="flex flex-col justify-center items-center gap-4 p-4">
-                    <p className="text-xl font-semibold">{link.title}</p>
+                  <div className="flex flex-col justify-center items-center gap-2 p-4">
+                    <p className="text-xl font-bold">{link.title}</p>
                     <p className="text-center">{link.description}</p>
-                    <button className="bg-[#033540] text-white text-lg px-6 py-1 rounded-xl">
+                    <button className="bg-[#033540] text-white text-lg px-6 py-1 mt-2 rounded-xl">
                       Read more
                     </button>
                   </div>

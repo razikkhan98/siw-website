@@ -23,7 +23,7 @@ const Nav = () => {
   window.addEventListener("scroll", changeColor);
   return (
     <>
-      <Navbar fluid rounded className={color ? "header header-bg" : "header"}>
+      <Navbar fluid className= {color ? "header header-bg" : "header"}>
         <NavbarBrand href="https://flowbite-react.com">
           <img
             src={logo}
@@ -34,15 +34,15 @@ const Nav = () => {
             Flowbite React
           </span>
         </NavbarBrand>
-        <NavbarToggle />
-        <NavbarCollapse>
-          <NavbarLink href="#" active>
+        <NavbarToggle className="p-2" />
+        <NavbarCollapse className="pe-10">
+          <NavbarLink  className="me-16 font-bold" href="#Home" active>
             Home
           </NavbarLink>
-          <NavbarLink href="#">About</NavbarLink>
-          <NavbarLink href="#">Services</NavbarLink>
-          <NavbarLink href="#">Pricing</NavbarLink>
-          <NavbarLink href="#">Contact</NavbarLink>
+          <NavbarLink className="me-16 font-bold" href="#About">About</NavbarLink>
+          <NavbarLink  className="me-16 font-bold" href="#Service">Services</NavbarLink>
+          <NavbarLink  className="me-16 font-bold" href="#">Pricing</NavbarLink>
+          <NavbarLink  className="font-bold" href="#">Contact</NavbarLink>
         </NavbarCollapse>
       </Navbar>
     </>

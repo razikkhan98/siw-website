@@ -1,177 +1,154 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-// Icons
-import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
-
-// Images
-import Team1 from "../../assets/img/team-1.jpg";
-import Team2 from "../../assets/img/team-2.jpg";
-import Team3 from "../../assets/img/team-3.jpg";
-import Team4 from "../../assets/img/team-4.jpg";
-import Team5 from "../../assets/img/team-5.jpg";
-import Team6 from "../../assets/img/team-6.jpg";
 const Team = () => {
-  const teamData = [
+  const [currentCard, setCurrentCard] = useState("m1");
+
+  const cardData = [
     {
-      id: "#img-1",
-      img: Team1,
+      id: "m1",
+      image:
+        "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=400&auto=format&fit=crop",
+      name: "Jhone Deo",
+      title: "Founder",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
-      id: "#img-2",
-      img: Team2,
+      id: "m2",
+      image:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop",
+      name: "Isra Beljik",
+      title: "Chief Technology Officer",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
-      id: "#img-3",
-      img: Team3,
+      id: "m3",
+      image:
+        "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=400&auto=format&fit=crop",
+      name: "Justin Lager",
+      title: "Chief Operator Officer",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
-      id: "#img-4",
-      img: Team4,
+      id: "m4",
+      image:
+        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop",
+      name: "Georgea Potter",
+      title: "Chief Financial Officer",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
-      id: "#img-5",
-      img: Team5,
+      id: "m5",
+      image:
+        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400&auto=format&fit=crop",
+      name: "Emilly Jacks",
+      title: "Member",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
-      id: "#img-6",
-      img: Team6,
+      id: "m6",
+      image:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
+      name: "Sophia Wingston",
+      title: "Engineer",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+    },
+    {
+      id: "m7",
+      image:
+        "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=400&auto=format&fit=crop",
+      name: "Chris Denial",
+      title: "Co-Founder",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+    },
+    {
+      id: "m8",
+      image:
+        "https://images.unsplash.com/photo-1569913486515-b74bf7751574?q=80&w=400&auto=format&fit=crop",
+      name: "Olivia Brook",
+      title: "B.Tech",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+    },
+    {
+      id: "m9",
+      image:
+        "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=400&auto=format&fit=crop",
+      name: "Harry Parker",
+      title: "Consulting Member",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+    },
+    {
+      id: "m10",
+      image:
+        "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=400&auto=format&fit=crop",
+      name: "Jhony Deap",
+      title: "Team Head",
+      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
   ];
-  const teamCardData =[
-    {
-      id1: "img-1",
-      image: Team1,
-      title: "UX DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-      id1: "img-2",
-      image: Team2,
-      title: "WEB DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-      id1: "img-3",
-      image: Team3,
-      title: "FRONT-END DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-      id1: "img-4",
-      image: Team4,
-      title: "BACK-END DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-      id1: "img-5",
-      image: Team5,
-      title: "UX DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-    {
-      id1: "img-6",
-      image: Team6,
-      title: "WEB DESIGNER",
-      name: "John Doe",
-      description:"   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    },
-  ]
+
+  useEffect(() => {
+    setCurrentCard("m1");
+  }, []);
+
   return (
     <>
-      {/* <!-- ========== OUR TEAM SECTION ========== --> */}
-      <section
-        id="our-team"
-        className="bg-[#033540] py-16 overflow-hidden center fixed relative cover"
-      >
+       <section className="team py-10 px-5  bg-[#033540]">
         <div className="container mx-auto max-w-screen-xl">
-          <div className="text-center  text-[#A7D1D2] mb-12">
-            <h2 className="text-4xl font-bold">
-              Our{" "}
-              <span className="font-semibold underline underline-offset-4 relative">
-                Team
-              </span>
-            </h2>
-            <p className="text-lg mt-4">
-              We are northui Team, Working together to build a clean web
-            </p>
+          <div className="text-center mb-12 text-[#a7d1d2]">
+            <h1 className="text-4xl font-bold ">Our Team</h1>
+            <h6 className="text-lg mt-4">
+              Meet our skilled professionals who bring a wealth of experience to your learning journey.
+            </h6>
           </div>
-
-          <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4">
-            {/* <!-- team-slider --> */}
-            <div className="team-slider relative">
-              {teamCardData.map((link, index) => (
-                <div
-                  className="team-content shadow-img flex flex-col items-center space-x-8 bg-white mx-5 rounded-2xl"
-                  id={link.id1}
-                >
-                  <div className="flex-none w-full">
-                    <img 
+          <div className="snap-x flex overflow-x-auto mb-12 ">
+            {cardData.map((item) => (
+              <div
+                key={item.id}
+                className={`snap-start flex-shrink-0 w-40 h-32 m-2 p-1 rounded-full cursor-pointer bg-gray-800 overflow-hidden transform ${
+                  currentCard === item.id ? "scale-75 border-4 border-blue-500" : "scale-70 grayscale"
+                } transition-all duration-200 ease-in-out hover:grayscale-50 hover:scale-80`}
+                onClick={() => setCurrentCard(item.id)}
+              >
+                <img src={item.image} alt={item.name} className="w-full h-full rounded-full object-cover" />
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-center">
+            {cardData.map((link, index) => (
+              <div
+                key={index}
+                className={`w-full md:w-full lg:w-2/3 p-8  background-color-sky-blue rounded-lg shadow-lg transition-all duration-300 ${
+                  currentCard === link.id ? "block" : "hidden"
+                }`}
+              >
+                <div className="flex flex-col items-center md:flex-row">
+                  <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
+                    <img
                       src={link.image}
-                      alt="img"
-                      className="w-full h-64 object-cover rounded-t-2xl"
+                      alt="Loading"
+                      className="w-52 h-56 object-cover rounded-lg"
                     />
                   </div>
-                  <div className="flex-grow text-center p-5">
-                    <div>
-                      <p className="text-lg font-medium">{link.title}</p>
-                      <h3 className="text-2xl">{link.name}</h3>
-                      <p className="mt-4">
-                     {link.description}
-                      </p>
-                      <div className="mt-4">
-                        <ul className="flex justify-center gap-10 list-none">
-                          <li>
-                            <a href="#/" target="_blank" title="Like Me">
-                              <FaTwitter className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#/" target="_blank" title="Follow Me">
-                              <FaFacebook className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#/" target="_blank" title="Hire Me">
-                              <FaInstagram className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#/" target="_blank" title="Rate Me">
-                              <FaWhatsapp className="h-8 w-8 text-justify p-1 bg-[#033540] text-[#A7D1D2] hover:text-[#b9848c] rounded" />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                  <div>
+                    <div className="text-2xl font-bold text-dark mb-2">
+                      {link.name}
+                    </div>
+                    <div className="text-xl text-yellow-500 mb-4">
+                      {link.title}
+                    </div>
+                    <div className="text-dark">
+                      <p>{link.bio}</p>
+                      <p>{link.bio}</p>
                     </div>
                   </div>
                 </div>
-              ))}
-              {/* <!-- //item --> */}
-            </div>
-
-            {/* <!-- team thumb --> */}
-            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-5 mt-5">
-              {teamData.map((link, index) => (
-                <a href={link.id}>
-                  <img
-                    src={link.img}
-                    alt="member"
-                    className="shadow-img w-full h-48 rounded-2xl hover:opacity-50"
-                  />
-                </a>
-              ))}
-              {/* <!-- //.thumb-item --> */}
-            </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      {/* <!-- //End our-team --> */}
     </>
   );
 };
+
 export default Team;

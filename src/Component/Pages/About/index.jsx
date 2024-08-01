@@ -29,7 +29,7 @@ const About = () => {
   ];
   return (
     <>
-      <div className="background-color-sky-blue">
+      <div className="background-color-sky-blue" id="About">
         <div className="container mx-auto">
           <div className="pt-48 pb-20">
             <div className="grid lg:grid-cols-2 gap-2 py-10">
@@ -81,7 +81,7 @@ const About = () => {
               </div>
               <div
                 className="px-4 pt-10"
-                data-aos="zoom-in-left"
+                data-aos="zoom-in-right"
                 data-aos-duration="3000"
               >
                 <div className="lg:ml-5">
