@@ -27,7 +27,7 @@ const FAQ = () => {
           <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
             <div
               class="w-full lg:w-1/2 px-4 pt-2 lg:pb-2"
-              data-aos="zoom-in-right"
+              data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
@@ -66,7 +66,7 @@ const FAQ = () => {
             </div>
             <div
               class="w-full lg:w-1/2 px-4 pb-2 lg:pt-2"
-              data-aos="zoom-in-left"
+              data-aos="zoom-in-up"
               data-aos-duration="3000"
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
@@ -107,7 +107,7 @@ const FAQ = () => {
           {/* Question box */}
           <div
             class="relative grid justify-items-center mt-8"
-            data-aos="fade-up"
+            data-aos="zoom-in-up"
             data-aos-duration="3000"
             data-aos-anchor-placement="top-center"
           >

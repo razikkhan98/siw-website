@@ -50,7 +50,7 @@ const Service = () => {
   ];
   return (
     <>
-      <div className="bg-[#d9f6f7]">
+      <div className="bg-[#d9f6f7]" id="Service">
         <div className="container mx-auto py-10">
           <div className="flex items-center justify-center">
           <div className="flex flex-col items-end mx-3">

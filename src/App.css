@@ -47,25 +47,18 @@ body{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-/* .home-img {
-  background: linear-gradient(
-      to top left,
-      rgba(3, 53, 64, 0.2),
-      rgb(99, 137, 140, 0.2),
-      rgb(224, 244, 245, 0.2)
-    ),
-    url(../src/Component/assets/img/gif.gif) fixed center center;
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
-} */
+/* Team Start */
 .team-content {
   display: none;
 }
 .team-content:target {
   display: block;
+}
+.scrolling-wrapper{
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 /* Service Start */
 .service-card:hover {
@@ -126,7 +119,7 @@ body{
 
 .header{
   position: fixed;
-  padding: 15px 0px;
+  /* padding: 15px; */
   width: 100%;
   top: 0;
   left: 0;
@@ -137,38 +130,10 @@ body{
   color: #fff;
 }
 .header-bg{
-  background-color: rgba(187, 221, 216, 0.9);
+  background-color: rgb(187, 221, 216);
   transform: rotateY(360deg);
   transition: 2s;
 }
-
-
-/* .gradient-overly-right:before {
-  background: linear-gradient(
-    90deg,
-    #0a0a15 2%,
-    rgb(29 30 61 / 50%),
-    var(--sherpa-blue-color)
-  ) !important;
-} */
-/* Service Start */
-/* .service-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} */
-
-/* FAQ Start */
-/* .question {
-  padding: 20px 80px 20px 20px;
-  cursor: pointer;
-}
-.shadow-img{
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
-.bg-gradient {
-  background: linear-gradient(to top left, #033540, #63898C, #E0F4F5);
-} */
 
 @keyframes progressAnimation {
   0% {
@@ -298,7 +263,7 @@ body{
   width: 75%;
   padding-bottom: 25px;
 }
-.demo-bg{
+.skill-bg{
   background: url(./Component/assets/img/apply-bg.jpg) fixed center center ;
 }
 .counter-box{
