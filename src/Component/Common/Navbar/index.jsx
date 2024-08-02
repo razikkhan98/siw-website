@@ -10,7 +10,7 @@ import {
 } from "flowbite-react";
 
 // Images
-import logo from "../../assets/img/logo/mylogosiw.png"
+import logo from "../../assets/img/logo/SIW LOGO (1).png"
 const Nav = () => {
   const [color, setColor] = useState(false);
   const changeColor = () => {

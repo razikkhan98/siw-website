@@ -7,7 +7,7 @@ import Nav from "../../Common/Navbar/index";
 // import { MdManageAccounts } from "react-icons/md";
 import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
 import { GrSystem } from "react-icons/gr";
-import {  SiCplusplus } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
 import { FaHtml5, FaCss3 } from "react-icons/fa";
 
 // AOS Animation
@@ -78,7 +78,7 @@ const Home = () => {
       icon: <IoLogoPython />,
       title: "Python",
       description:
-        "Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structure.",
+        "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
     },
 
     {
@@ -99,7 +99,10 @@ const Home = () => {
     <>
       <Nav />
 
-      <div class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center" id="Home">
+      <div
+        class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center"
+        id="Home"
+      >
         <div class="container mx-auto">
           <section class="gap-6 grid-cols-1 ">
             <div
@@ -118,7 +121,7 @@ const Home = () => {
                 development sector, focusing on delivering high-quality training
                 programs,
               </p>
-              <div class="flex flex-row justify-center space-y-0">
+              <div class="flex flex-row justify-center space-y-0 mb-10">
                 <a
                   href="#/"
                   class="inline-flex justify-center items-center py-3 px-5 mx-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
@@ -151,30 +154,28 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="w-full m-auto flex flex-col absolute -bottom-[140px]">
-          <div className="">
-            <Slider {...settings}>
-              {cardData.map((link, index) => (
-                <div
-                  className="rounded-xl bg-white text-color-sherpa-blue " style={{height: "24rem"}}
-                  data-aos="zoom-in"
-                  data-aos-duration="1500"
-                  key={index}
-                >
-                  <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
-                    {link.icon}
-                  </div>
-                  <div className="flex flex-col justify-center items-center gap-2 p-4">
-                    <p className="text-xl font-bold">{link.title}</p>
-                    <p className="text-center">{link.description}</p>
-                    <button className="bg-[#033540] text-white text-lg px-6 py-1 mt-2 rounded-xl">
-                      Read more
-                    </button>
-                  </div>
+        <div className="w-full m-auto flex flex-col absolute -bottom-[150px]">
+          <Slider {...settings}>
+            {cardData.map((link, index) => (
+              <div
+                className="rounded-xl bg-white text-color-sherpa-blue h-74" style={{height:"100%"}}
+                data-aos="zoom-in"
+                data-aos-duration="1500"
+                key={index}
+              >
+                <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
+                  {link.icon}
                 </div>
-              ))}
-            </Slider>
-          </div>
+                <div className="flex flex-col justify-center items-center gap-2 p-4">
+                  <p className="text-xl font-bold">{link.title}</p>
+                  <p className="text-center">{link.description}</p>
+                  <button className="bg-[#033540] text-white text-lg px-6 py-1 mt-2 rounded-xl">
+                    Read more
+                  </button>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </>
