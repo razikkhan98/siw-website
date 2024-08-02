@@ -156,7 +156,7 @@ const Home = () => {
             <Slider {...settings}>
               {cardData.map((link, index) => (
                 <div
-                  className="rounded-xl bg-white text-color-sherpa-blue h-80 md:h-72"
+                  className="rounded-xl bg-white text-color-sherpa-blue " style={{height: "24rem"}}
                   data-aos="zoom-in"
                   data-aos-duration="1500"
                   key={index}
