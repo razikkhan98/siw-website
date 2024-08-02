@@ -2,51 +2,51 @@ import React from "react";
 
 import { FaArrowRightLong } from "react-icons/fa6";
 // import MarketingStrategy from "../../assets/img/Service/service-icon-marketing-strategy.png";
-import Service1 from "../../assets/img/Service/service-1.svg";
-import Service2 from "../../assets/img/Service/service-2.svg";
-import Service3 from "../../assets/img/Service/service-3.svg";
-import Service4 from "../../assets/img/Service/service-4.svg";
-import Service5 from "../../assets/img/Service/service-5.svg";
-import Service6 from "../../assets/img/Service/service-6.svg";
+import Service1 from "../../assets/img/clients/rumenologo.png";
+import Service2 from "../../assets/img/clients/intelligencetrade.png";
+import Service3 from "../../assets/img/clients/intelligence-educator.png";
+// import Service4 from "../../assets/img/Service/service-4.svg";
+// import Service5 from "../../assets/img/Service/service-5.svg";
+// import Service6 from "../../assets/img/Service/service-6.svg";
 
 const Service = () => {
   const ServiceData = [
     {
       imgUrl: Service1,
-      title: "Web Development",
+      title: "Rumeno",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
     {
       imgUrl: Service2,
-      title: "Search Engine Optimization",
+      title: "Trade",
       description:
         " SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for:",
     },
     {
       imgUrl: Service3,
-      title: "User Interface",
+      title: "Educator",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
-    {
-      imgUrl: Service4,
-      title: "Machine Learning",
-      description:
-        " It is a long established fact that a reader will be distracted by the readable content of a page",
-    },
-    {
-      imgUrl: Service5,
-      title: "Marketing Strategy",
-      description:
-        " It is a long established fact that a reader will be distracted by the readable content of a page",
-    },
-    {
-      imgUrl: Service6,
-      title: "Automation Testing",
-      description:
-        " It is a long established fact that a reader will be distracted by the readable content of a page",
-    },
+    // {
+    //   imgUrl: Service4,
+    //   title: "Machine Learning",
+    //   description:
+    //     " It is a long established fact that a reader will be distracted by the readable content of a page",
+    // },
+    // {
+    //   imgUrl: Service5,
+    //   title: "Marketing Strategy",
+    //   description:
+    //     " It is a long established fact that a reader will be distracted by the readable content of a page",
+    // },
+    // {
+    //   imgUrl: Service6,
+    //   title: "Automation Testing",
+    //   description:
+    //     " It is a long established fact that a reader will be distracted by the readable content of a page",
+    // },
   ];
   return (
     <>
@@ -88,7 +88,7 @@ const Service = () => {
 
                 <p className="py-6 pr-5 text-gray-600">{link.description}</p>
                 <div className="theme-btn">
-                  <a href="#/">
+                  <a href="#clients">
                     <span className="theme-button">
                       Read More{" "}
                       <FaArrowRightLong className="inline-block mx-2" />
