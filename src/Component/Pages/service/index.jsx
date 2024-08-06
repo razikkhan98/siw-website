@@ -53,16 +53,16 @@ const Service = () => {
       <div className="bg-[#d9f6f7]" id="Service">
         <div className="container mx-auto py-10">
           <div className="flex items-center justify-center">
-          <div className="flex flex-col items-end mx-3">
-            <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-            <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+            <div className="flex flex-col items-end mx-3">
+              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
+              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
             </div>
             <div className="inline-block text-4xl text-color-sherpa-blue font-semibold">
               Our Service
             </div>
             <div className="flex flex-col mx-3">
-            <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-            <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
+              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
             </div>
           </div>
           <h1 className="my-4 text-center text-xl font-medium">
@@ -74,26 +74,34 @@ const Service = () => {
            gap-4 pt-10"
           >
             {ServiceData.map((link, index) => (
-              <div
-                className="service-btn px-8 py-3"
-                data-aos="zoom-in-up"
-                data-aos-duration="2000"
-              >
-                <div className="btn--jump">
-                  <img className="h-24 w-32" src={link.imgUrl} alt="Loading" />
-                </div>
-                <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
-                  {link.title}
-                </div>
+              <div className="flip-container">
+                <div className="flipper">
+                  <div
+                    className="front background-color-sky-blue"
+                  >
+                    <img
+                      className="h-24 w-32 lazyload"
+                      src={link.imgUrl}
+                      alt="Loading"
+                      style={{ width: "200px", height: "120px" }}
+                    />
+                    <h3>{link.title}</h3>
+                  </div>
 
-                <p className="py-6 pr-5 text-gray-600">{link.description}</p>
-                <div className="theme-btn">
-                  <a href="#clients">
-                    <span className="theme-button">
-                      Read More{" "}
-                      <FaArrowRightLong className="inline-block mx-2" />
-                    </span>
-                  </a>
+                  <div
+                    className="back background-color-sky-blue"
+                  >
+                    <h5>{link.title}</h5>
+                    <p>{link.description}</p>
+                    <div className="theme-btn">
+                      <a href="#clients">
+                        <span className="theme-button">
+                          Read More{" "}
+                          <FaArrowRightLong className="inline-block mx-2" />
+                        </span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
