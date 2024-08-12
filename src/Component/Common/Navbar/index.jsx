@@ -27,11 +27,11 @@ const Nav = () => {
         <NavbarBrand href="https://flowbite-react.com">
           <img
             src={logo}
-            className="ms-10 h-24 sm:h-16"
+            className="h-24 sm:h-16"
             alt="Flowbite React Logo"
           />
           <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white ms-3">
-            Flowbite React
+            Intelligence World
           </span>
         </NavbarBrand>
         <NavbarToggle className="p-2" />

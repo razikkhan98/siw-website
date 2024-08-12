@@ -21,8 +21,8 @@ const Service = () => {
       imgUrl: Service2,
       title: "Trade",
       description:
-        " SEO means the process of improving your website to increase its visibility in Google, Microsoft Bing, and other search engines whenever people search for:",
-    },
+      " It is a long established fact that a reader will be distracted by the readable content of a page",
+  },
     {
       imgUrl: Service3,
       title: "Educator",
@@ -50,9 +50,14 @@ const Service = () => {
   ];
   return (
     <>
-      <div className="bg-[#d9f6f7]" id="Service">
-        <div className="container mx-auto py-10">
-          <div className="flex items-center justify-center">
+      <section className="service bg-[#d9f6f7]" id="Service">
+        <div
+          className="container pt-20 pb-5"
+          // data-aos="zoom-in"
+          // data-aos-duration="3000"
+          // data-aos-delay="500"
+        >
+          <div className="service-head flex items-center justify-center">
             <div className="flex flex-col items-end mx-3">
               <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
               <div className="h-1 w-16 bg-[#033540] inline-block "></div>
@@ -65,33 +70,26 @@ const Service = () => {
               <div className="h-1 w-16 bg-[#033540] inline-block "></div>
             </div>
           </div>
-          <h1 className="my-4 text-center text-xl font-medium">
+          <h1 className=" text-center text-xl font-medium">
             We provide exclusive services for your business
           </h1>
 
           <div
-            className="grid lg:grid-cols-3
-           gap-4 pt-10"
+            className="grid lg:grid-cols-3 gap-10
+            py-10"
           >
             {ServiceData.map((link, index) => (
-              <div className="flip-container">
-                <div className="flipper">
-                  <div
-                    className="front background-color-sky-blue"
-                  >
+              <div className="main">
+                <div className="profile">
+                  <div className="img">
                     <img
-                      className="h-24 w-32 lazyload"
                       src={link.imgUrl}
                       alt="Loading"
-                      style={{ width: "200px", height: "120px" }}
+                      // style={{ width: "200px", height: "120px" }}
                     />
-                    <h3>{link.title}</h3>
                   </div>
-
-                  <div
-                    className="back background-color-sky-blue"
-                  >
-                    <h5>{link.title}</h5>
+                  <div className="caption">
+                    <h3>{link.title}</h3>
                     <p>{link.description}</p>
                     <div className="theme-btn">
                       <a href="#clients">
@@ -105,31 +103,9 @@ const Service = () => {
                 </div>
               </div>
             ))}
-            {/* <div className="px-6">
-              <img src={MarketingStrategy} alt="Loading" />
-
-              <div className="text-color-sherpa-blue font-bold text-2xl mt-3">
-                Marketing Strategy
-              </div>
-
-              <p className="py-6 text-gray-600">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page
-              </p>
-              <div className="my-4">
-                <a
-                  href="#/"
-                  className="py-3.5 px-7 border-2 border-[#A7D1D2] rounded-lg"
-                >
-                  <span>
-                    Read More <FaArrowRightLong className="inline-block mx-2" />
-                  </span>
-                </a>
-              </div>
-            </div> */}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
