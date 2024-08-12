@@ -108,7 +108,7 @@ const FAQ = () => {
           <div
             class="relative grid justify-items-center mt-8"
             data-aos="zoom-in-up"
-            data-aos-duration="3000"
+            data-aos-duration="1500"
             data-aos-anchor-placement="top-center"
           >
             <div class="shadow-img bg-gray-200 max-w-full py-5 px-20 rounded-xl">

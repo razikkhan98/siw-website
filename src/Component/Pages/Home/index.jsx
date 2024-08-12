@@ -99,7 +99,7 @@ const Home = () => {
     <>
       <Nav />
 
-      <div
+      <section
         class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center"
         id="Home"
       >
@@ -154,13 +154,16 @@ const Home = () => {
           </section>
         </div>
 
-        <div className="w-full m-auto flex flex-col absolute -bottom-[150px]">
+        <div
+          className="w-full m-auto flex flex-col absolute -bottom-[150px]"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <Slider {...settings}>
             {cardData.map((link, index) => (
               <div
-                className="rounded-xl bg-white text-color-sherpa-blue h-74" style={{height:"100%"}}
-                data-aos="zoom-in"
-                data-aos-duration="1500"
+                className="rounded-xl bg-white text-color-sherpa-blue h-74"
+                style={{ height: "100%" }}
                 key={index}
               >
                 <div className="h-14 w-14 m-auto pt-7 text-6xl rounded-t-xl flex justify-center items-center">
@@ -177,7 +180,7 @@ const Home = () => {
             ))}
           </Slider>
         </div>
-      </div>
+      </section>
     </>
   );
 };
