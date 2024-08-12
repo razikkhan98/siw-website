@@ -29,6 +29,7 @@ const Service = () => {
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
+    
     // {
     //   imgUrl: Service4,
     //   title: "Machine Learning",
@@ -52,7 +53,7 @@ const Service = () => {
     <>
       <section className="service bg-[#d9f6f7]" id="Service">
         <div
-          className="container pt-20 pb-5"
+          className="container mx-auto max-w-screen-xl pt-24 pb-5"
           // data-aos="zoom-in"
           // data-aos-duration="3000"
           // data-aos-delay="500"
@@ -75,7 +76,7 @@ const Service = () => {
           </h1>
 
           <div
-            className="grid lg:grid-cols-3 gap-10
+            className="grid lg:grid-cols-3
             py-10"
           >
             {ServiceData.map((link, index) => (

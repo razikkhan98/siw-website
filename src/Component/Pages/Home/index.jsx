@@ -154,7 +154,7 @@ const Home = () => {
           </section>
         </div>
 
-        <div
+        {/* <div
           className="w-full m-auto flex flex-col absolute -bottom-[150px]"
           data-aos="fade-down"
           data-aos-duration="2000"
@@ -179,7 +179,7 @@ const Home = () => {
               </div>
             ))}
           </Slider>
-        </div>
+        </div> */}
       </section>
     </>
   );
