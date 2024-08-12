@@ -41,7 +41,7 @@ const FooterSection = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 pb-4">
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="about us" />
+                    <FooterTitle title="about us" className="text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Company History</FooterLink>
                       <FooterLink href="#">Meet the Team</FooterLink>
@@ -50,7 +50,7 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Our Services" />
+                    <FooterTitle title="Our Services"  className="text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Web Development</FooterLink>
                       <FooterLink href="#">App Development</FooterLink>
@@ -59,7 +59,7 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Legal" />
+                    <FooterTitle title="Legal"  className="text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Privacy Policy</FooterLink>
                       <FooterLink href="#">Terms &amp; Conditions</FooterLink>

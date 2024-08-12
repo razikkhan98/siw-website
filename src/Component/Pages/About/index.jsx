@@ -31,7 +31,7 @@ const About = () => {
     <>
       <section className="background-color-sky-blue" id="About">
         <div className="container mx-auto">
-          <div className="pt-48 pb-20">
+          <div className="pt-12 pb-20">
             <div className="grid lg:grid-cols-2 gap-2 py-10">
               <div className="px-6">
                 <div className="flex flex-wrap items-center">

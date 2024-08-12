@@ -94,11 +94,11 @@ const Team = () => {
     <>
       <section className="team   bg-[#033540]">
         <div
-          className="container mx-auto max-w-screen-xl"
+          className="container mx-auto max-w-screen-xl pt-14 pb-8"
           data-aos="flip-left"
           data-aos-duration="2000"
         >
-          <div className="text-center text-[#a7d1d2] py-16">
+          <div className="text-center text-[#a7d1d2] py-10">
             <h1 className="text-4xl font-bold ">Our Team</h1>
             <h6 className="text-lg mt-4">
               Meet our skilled professionals who bring a wealth of experience to
