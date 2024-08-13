@@ -14,8 +14,8 @@ const FAQ = () => {
   return (
     <>
       <section class="bg-[#033540]">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="text-center mb-20 text-[#a7d1d2] ">
+        <div class="container px-5 pt-28 pb-24 mx-auto">
+          <div class="text-center mb-14 text-[#a7d1d2] ">
             <h1 class="sm:text-3xl text-2xl font-medium text-center title-font mb-4">
               Frequently Asked Question
             </h1>
@@ -106,10 +106,10 @@ const FAQ = () => {
           </div>
           {/* Question box */}
           <div
-            class="relative grid justify-items-center mt-8"
-            data-aos="zoom-in-up"
-            data-aos-duration="3000"
-            data-aos-anchor-placement="top-center"
+            class="relative grid justify-items-center mt-6"
+            // data-aos="zoom-in-down"
+            // data-aos-duration="500"
+            // data-aos-anchor-placement="top-center"
           >
             <div class="shadow-img bg-gray-200 max-w-full py-5 px-20 rounded-xl">
               <div class="text-center ">
@@ -135,7 +135,7 @@ const FAQ = () => {
       </section>
 
       {/* Modal Start */}
-      <Modal show={openModal} size="md" popup onClose={onCloseModal} >
+      <Modal show={openModal} size="md" popup onClose={onCloseModal} className="pt-36">
         <Modal.Header />
         <Modal.Body>
           <div className="space-y-6 px-6">

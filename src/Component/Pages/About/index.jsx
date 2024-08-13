@@ -29,9 +29,9 @@ const About = () => {
   ];
   return (
     <>
-      <div className="background-color-sky-blue" id="About">
+      <section className="background-color-sky-blue" id="About">
         <div className="container mx-auto">
-          <div className="pt-48 pb-20">
+          <div className="pt-12 pb-20">
             <div className="grid lg:grid-cols-2 gap-2 py-10">
               <div className="px-6">
                 <div className="flex flex-wrap items-center">
@@ -40,7 +40,7 @@ const About = () => {
                       <div className="w-full mt-4 pt-2">
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden mr-5"
-                          data-aos="zoom-in"
+                          data-aos="fade-right"
                           data-aos-duration="3000"
                           data-aos-delay="300"
                         >
@@ -56,7 +56,7 @@ const About = () => {
                       <div className="w-full">
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden"
-                          data-aos="zoom-in"
+                          data-aos="fade-down"
                           data-aos-duration="3000"
                           data-aos-delay="400"
                         >
@@ -67,7 +67,7 @@ const About = () => {
                       <div className="w-full mt-4 pt-2">
                         <div
                           className="shadow-img bg-white rounded shadow-xl overflow-hidden"
-                          data-aos="zoom-in"
+                          data-aos="fade-up"
                           data-aos-duration="3000"
                           data-aos-delay="500"
                         >
@@ -130,7 +130,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

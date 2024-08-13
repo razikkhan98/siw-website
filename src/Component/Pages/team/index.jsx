@@ -92,24 +92,35 @@ const Team = () => {
 
   return (
     <>
-       <section className="team py-10 px-5  bg-[#033540]">
-        <div className="container mx-auto max-w-screen-xl">
-          <div className="text-center mb-12 text-[#a7d1d2]">
+      <section className="team   bg-[#033540]">
+        <div
+          className="container mx-auto max-w-screen-xl pt-14 pb-8"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
+          <div className="text-center text-[#a7d1d2] py-10">
             <h1 className="text-4xl font-bold ">Our Team</h1>
             <h6 className="text-lg mt-4">
-              Meet our skilled professionals who bring a wealth of experience to your learning journey.
+              Meet our skilled professionals who bring a wealth of experience to
+              your learning journey.
             </h6>
           </div>
-          <div className="snap-x flex overflow-x-auto mb-12 ">
+          <div className="snap-x flex overflow-x-auto mb-10 ">
             {cardData.map((item) => (
               <div
                 key={item.id}
                 className={`snap-start flex-shrink-0 w-40 h-32 m-2 p-1 rounded-full cursor-pointer bg-gray-800 overflow-hidden transform ${
-                  currentCard === item.id ? "scale-75 border-4 border-blue-500" : "scale-70 grayscale"
+                  currentCard === item.id
+                    ? "scale-75 border-4 border-blue-500"
+                    : "scale-70 grayscale"
                 } transition-all duration-200 ease-in-out hover:grayscale-50 hover:scale-80`}
                 onClick={() => setCurrentCard(item.id)}
               >
-                <img src={item.image} alt={item.name} className="w-full h-full rounded-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
             ))}
           </div>
@@ -137,7 +148,6 @@ const Team = () => {
                       {link.title}
                     </div>
                     <div className="text-dark">
-                      <p>{link.bio}</p>
                       <p>{link.bio}</p>
                     </div>
                   </div>
