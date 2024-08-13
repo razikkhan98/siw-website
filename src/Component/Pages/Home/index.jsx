@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Nav from "../../Common/Navbar/index";
 
 // import { MdManageAccounts } from "react-icons/md";
-import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
-import { GrSystem } from "react-icons/gr";
-import { SiCplusplus } from "react-icons/si";
-import { FaHtml5, FaCss3 } from "react-icons/fa";
+// import { IoLogoPython, IoLogoJavascript } from "react-icons/io";
+// import { GrSystem } from "react-icons/gr";
+// import { SiCplusplus } from "react-icons/si";
+// import { FaHtml5, FaCss3 } from "react-icons/fa";
 
 // AOS Animation
 import AOS from "aos";
@@ -19,81 +19,81 @@ const Home = () => {
     AOS.init({});
   }, []);
 
-  const settings = {
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
-    // cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
+  // const settings = {
+  //   infinite: true,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   speed: 2000,
+  //   autoplaySpeed: 2000,
+  //   // cssEase: "linear",
+  //   responsive: [
+  //     {
+  //       breakpoint: 1024,
+  //       settings: {
+  //         slidesToShow: 3,
+  //         slidesToScroll: 3,
+  //         infinite: true,
+  //         dots: true,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 991,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         initialSlide: 2,
+  //       },
+  //     },
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //       },
+  //     },
+  //   ],
+  // };
 
-  const cardData = [
-    {
-      icon: <FaHtml5 />,
-      title: "HTML5",
-      description:
-        "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
-    },
-    {
-      icon: <FaCss3 />,
-      title: "CSS3",
-      description:
-        "PHP is an open-source, server-side programming language that can be used to create websites, applications, customer relationship management systems.",
-    },
-    {
-      icon: <GrSystem />,
-      title: "Ethical Hacking",
-      description:
-        "Ethical hacking is an authorized attempt to gain unauthorized access to a computer system, application, or data using the strategies and actions of malicious attackers",
-    },
-    {
-      icon: <IoLogoPython />,
-      title: "Python",
-      description:
-        "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
-    },
+  // const cardData = [
+  //   {
+  //     icon: <FaHtml5 />,
+  //     title: "HTML5",
+  //     description:
+  //       "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
+  //   },
+  //   {
+  //     icon: <FaCss3 />,
+  //     title: "CSS3",
+  //     description:
+  //       "PHP is an open-source, server-side programming language that can be used to create websites, applications, customer relationship management systems.",
+  //   },
+  //   {
+  //     icon: <GrSystem />,
+  //     title: "Ethical Hacking",
+  //     description:
+  //       "Ethical hacking is an authorized attempt to gain unauthorized access to a computer system, application, or data using the strategies and actions of malicious attackers",
+  //   },
+  //   {
+  //     icon: <IoLogoPython />,
+  //     title: "Python",
+  //     description:
+  //       "Game development is the process of creating a video game, involving a combination of several disciplines such as design, art, programming, audio, and testing.",
+  //   },
 
-    {
-      icon: <IoLogoJavascript />,
-      title: "Javascript",
-      description:
-        "A general-purpose, operating system-agnostic, procedural language that supports structured programming and provides low-level access to the system memory.",
-    },
-    {
-      icon: <SiCplusplus />,
-      title: "Advanced C++",
-      description:
-        "C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.",
-    },
-  ];
+  //   {
+  //     icon: <IoLogoJavascript />,
+  //     title: "Javascript",
+  //     description:
+  //       "A general-purpose, operating system-agnostic, procedural language that supports structured programming and provides low-level access to the system memory.",
+  //   },
+  //   {
+  //     icon: <SiCplusplus />,
+  //     title: "Advanced C++",
+  //     description:
+  //       "C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.",
+  //   },
+  // ];
 
   return (
     <>
