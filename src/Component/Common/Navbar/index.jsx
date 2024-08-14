@@ -50,20 +50,24 @@ const Nav = () => {
       </button>
 
       {/* Navbar Links */}
-      <NavbarCollapse className={`hidden lg:flex lg:items-center ${isNavOpen ? "block" : ""}`}>
-        <NavbarLink className="me-16 font-bold text-white" href="#Home">
+      <NavbarCollapse
+        className={`navcol hidden lg:flex lg:items-center  ${
+          isNavOpen ? "block" : ""
+        }`}
+      >
+        <NavbarLink className="lg:me-16 font-bold  text-white" href="#Home">
           Home
         </NavbarLink>
-        <NavbarLink className="me-16 font-bold text-white" href="#About">
+        <NavbarLink className="lg:me-16 font-bold text-white" href="#About">
           About
         </NavbarLink>
-        <NavbarLink className="me-16 font-bold text-white" href="#Service">
+        <NavbarLink className="lg:me-16 font-bold text-white" href="#Service">
           Services
         </NavbarLink>
-        <NavbarLink className="me-16 font-bold text-white" href="#">
+        <NavbarLink className="lg:me-16 font-bold text-white" href="#">
           Pricing
         </NavbarLink>
-        <NavbarLink className="font-bold text-white" href="#">
+        <NavbarLink className="lg:me-16 font-bold text-white" href="#">
           Contact
         </NavbarLink>
       </NavbarCollapse>
@@ -72,3 +76,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
+;

@@ -80,7 +80,7 @@ const Service = () => {
             py-10"
           >
             {ServiceData.map((link, index) => (
-              <div className="main">
+              <div className="main lg:h-96">
                 <div className="profile">
                   <div className="img">
                     <img
