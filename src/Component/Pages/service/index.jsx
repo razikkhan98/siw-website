@@ -80,18 +80,19 @@ const Service = () => {
             py-10"
           >
             {ServiceData.map((link, index) => (
-              <div className="main lg:h-96">
-                <div className="profile">
-                  <div className="img">
+              <div className="service-main lg:h-96">
+                <div className="service-profile relative font-sans w-56 h-56 p-7 bg-white shadow-[0_0_22px_rgba(51,51,51,0.4)] mx-6">
+                  <div className="service-img w-full h-full relative ">
                     <img
                       src={link.imgUrl}
                       alt="Loading"
+                      className="w-full h-full shadow-[0_0_22px_rgba(51,51,51,0.4)] "
                       // style={{ width: "200px", height: "120px" }}
                     />
                   </div>
-                  <div className="caption">
-                    <h3>{link.title}</h3>
-                    <p>{link.description}</p>
+                  <div className="service-caption text-center ">
+                    <h3 className="font-bold font-sans text-xl">{link.title}</h3>
+                    <p className="font-sans text-base text-[#0d1117] my-1">{link.description}</p>
                     <div className="theme-btn">
                       <a href="#clients">
                         <span className="theme-button">
