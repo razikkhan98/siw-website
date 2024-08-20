@@ -55,19 +55,19 @@ const Nav = () => {
           isNavOpen ? "block" : ""
         }`}
       >
-        <NavbarLink className="lg:me-16 font-bold  text-white" href="#Home">
+        <NavbarLink className="lg:me-16 font-bold  text-white hover:text-slate-400" href="#Home">
           Home
         </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white" href="#About">
+        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#About">
           About
         </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white" href="#Service">
+        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#Service">
           Services
         </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white" href="#">
+        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#">
           Pricing
         </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white" href="#">
+        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#">
           Contact
         </NavbarLink>
       </NavbarCollapse>

@@ -55,15 +55,15 @@ const Clients = () => {
         <div className="container mx-auto py-16">
           <div className="flex items-center justify-center text-center my-10">
             <div className="flex flex-col items-end mx-3">
-              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+              <div className="h-1 w-7 background-color-sherpa-blue inline-block mb-2"></div>
+              <div className="h-1 w-16 background-color-sherpa-blue inline-block"></div>
             </div>
-            <h1 className="font-semibold text-4xl text-[#033540] mx-2">
+            <h1 className="font-semibold text-4xl text-color-sherpa-blue mx-2">
               Our Clients
             </h1>
             <div className="flex flex-col mx-3">
-              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+              <div className="h-1 w-7 background-color-sherpa-blue inline-block mb-2"></div>
+              <div className="h-1 w-16 background-color-sherpa-blue inline-block"></div>
             </div>
           </div>
 
@@ -76,13 +76,13 @@ const Clients = () => {
                 data-aos-anchor-palacement="top-bottom"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-[#033540] relative ml-16 h-80 w-32"></div>
+                  <div className="background-color-sherpa-blue relative ml-16 h-80 w-32"></div>
 
                   <div className="absolute top-16 h-72 w-96">
                     <img src={link.image} alt="Loading" />
                   </div>
                   <div className="flex flex-col justify-center items-center text-center">
-                    <FaQuoteRight className="text-4xl text-[#033540]" />
+                    <FaQuoteRight className="text-4xl text-color-sherpa-blue" />
                     <h1 className="text-4xl my-3">{link.title}</h1>
                     <p>{link.description}</p>
                     <h1 className="font-bold text-2xl mt-3">{link.name}</h1>

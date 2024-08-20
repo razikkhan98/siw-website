@@ -18,6 +18,9 @@ import {
   BsInstagram,
   BsTwitter,
 } from "react-icons/bs";
+
+// Images
+import Logo from "../../assets/img/logo/SIW LOGO (1).png";
 const FooterSection = () => {
   return (
     <>
@@ -29,8 +32,8 @@ const FooterSection = () => {
                 <div>
                   <FooterBrand
                     href="https://flowbite.com"
-                    src="https://flowbite.com/docs/images/logo.svg"
-                    alt="Flowbite Logo"
+                    src={Logo}
+                    alt="Logo"
                     name="SIW"
                   />
                   <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
@@ -41,7 +44,7 @@ const FooterSection = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 pb-4">
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="about us" className="text-bold text-2xl"/>
+                    <FooterTitle title="about us" className="text-color-sherpa-blue text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Company History</FooterLink>
                       <FooterLink href="#">Meet the Team</FooterLink>
@@ -50,7 +53,7 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Our Services"  className="text-bold text-2xl"/>
+                    <FooterTitle title="Our Services"  className="text-color-sherpa-blue text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Web Development</FooterLink>
                       <FooterLink href="#">App Development</FooterLink>
@@ -59,7 +62,7 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Legal"  className="text-bold text-2xl"/>
+                    <FooterTitle title="Legal"  className="text-color-sherpa-blue text-bold text-2xl"/>
                     <FooterLinkGroup col>
                       <FooterLink href="#">Privacy Policy</FooterLink>
                       <FooterLink href="#">Terms &amp; Conditions</FooterLink>

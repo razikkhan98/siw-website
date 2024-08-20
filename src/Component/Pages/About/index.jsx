@@ -85,11 +85,15 @@ const About = () => {
                 data-aos-duration="3000"
               >
                 <div className="lg:ml-5">
-                  <div className="flex items-center text-3xl font-bold mb-3">
+                  <div className="flex items-center text-3xl text-color-sherpa-blue font-bold mb-3">
                     <h1>About Us</h1>
                     <div className="flex flex-col  mx-3">
-                    <div className="h-1 w-7 bg-[#033540] inline-block mb-2"> </div>
-                    <div className="h-1 w-16 bg-[#033540] inline-block "> </div>
+                      <div className="h-1 w-7 background-color-sherpa-blue inline-block mb-2">
+                        {" "}
+                      </div>
+                      <div className="h-1 w-16 background-color-sherpa-blue inline-block">
+                        {" "}
+                      </div>
                     </div>
                   </div>
                   <h4 className="mb-4 font-medium">

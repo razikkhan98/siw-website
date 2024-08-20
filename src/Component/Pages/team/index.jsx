@@ -92,32 +92,32 @@ const Team = () => {
 
   return (
     <>
-      <section className="team   bg-[#033540]">
+      <section className="team background-color-sherpa-blue">
         <div
           className="container mx-auto max-w-screen-xl pt-14 pb-8"
           data-aos="flip-left"
           data-aos-duration="2000"
         >
           <div className="text-center text-[#a7d1d2] py-10">
-          <div className="service-head flex items-center justify-center">
-            <div className="flex flex-col items-end mx-3">
-              <div className="h-1 w-7 bg-[#87acb5] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#87acb5] inline-block "></div>
+            <div className="service-head flex items-center justify-center">
+              <div className="flex flex-col items-end mx-3">
+                <div className="h-1 w-7 bg-[#87acb5] inline-block mb-2"></div>
+                <div className="h-1 w-16 bg-[#87acb5] inline-block"></div>
+              </div>
+              <div className="inline-block text-4xl text-[#a7d1d2] font-semibold">
+                Our Team
+              </div>
+              <div className="flex flex-col mx-3">
+                <div className="h-1 w-7 bg-[#87acb5] inline-block mb-2"></div>
+                <div className="h-1 w-16 bg-[#87acb5] inline-block"></div>
+              </div>
             </div>
-            <div className="inline-block text-4xl text-[#a7d1d2] font-semibold">
-              Our Team
-            </div>
-            <div className="flex flex-col mx-3">
-              <div className="h-1 w-7 bg-[#87acb5] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#87acb5] inline-block "></div>
-            </div>
-          </div>
             <h6 className="text-lg mt-4">
               Meet our skilled professionals who bring a wealth of experience to
               your learning journey.
             </h6>
           </div>
-          <div className="snap-x flex overflow-x-auto mb-10 ">
+          <div className="snap-x flex overflow-x-auto mb-10">
             {cardData.map((item) => (
               <div
                 key={item.id}
