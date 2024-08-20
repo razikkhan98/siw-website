@@ -1,21 +1,20 @@
-import React,{useState} from "react";
-
+import React, { useState } from "react";
 
 import { Button, Label, Modal, TextInput, Textarea } from "flowbite-react";
 const FAQ = () => {
   const [openModal, setOpenModal] = useState(false);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   function onCloseModal() {
     setOpenModal(false);
-    setEmail('');
+    setEmail("");
   }
-  
+
   return (
     <>
-      <section class="bg-[#033540]">
+      <section class="background-color-sherpa-blue">
         <div class="container px-5 pt-28 pb-24 mx-auto">
-          <div class="text-center mb-14 text-[#a7d1d2] ">
+          <div class="text-center mb-14 text-[#a7d1d2]">
             <h1 class="sm:text-3xl text-2xl font-medium text-center title-font mb-4">
               Frequently Asked Question
             </h1>
@@ -53,7 +52,7 @@ const FAQ = () => {
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
-                <summary class="font-semibold rounded-xl ">
+                <summary class="font-semibold rounded-xl">
                   How can I migrate to another site?
                 </summary>
 
@@ -70,7 +69,7 @@ const FAQ = () => {
               data-aos-duration="1500"
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
-                <summary class="font-semibold rounded-xl ">
+                <summary class="font-semibold rounded-xl">
                   Can I change the domain you give me?
                 </summary>
 
@@ -114,7 +113,7 @@ const FAQ = () => {
           >
             <div class="shadow-img bg-gray-200 max-w-full py-5 px-20 rounded-xl">
               <div class="text-center ">
-                <h2 class="text-3xl font-bold text-[#033540] mb-4">
+                <h2 class="text-3xl font-bold text-color-sherpa-blue mb-4">
                   Any questions?
                 </h2>
                 <p class="text-gray-600 mb-6">
@@ -122,8 +121,9 @@ const FAQ = () => {
                   your questions!
                 </p>
                 <div class="mt-6">
-                  <button onClick={() => setOpenModal(true)}
-                    class="shadow-img bg-[#033540] text-[#A7D1D2] hover:border border-[#A7D1D2]  px-4 py-2 rounded"
+                  <button
+                    onClick={() => setOpenModal(true)}
+                    class="shadow-img background-color-sherpa-blue text-[#A7D1D2] hover:border border-[#A7D1D2]  px-4 py-2 rounded"
                     type="button"
                   >
                     Ask a question
@@ -136,22 +136,42 @@ const FAQ = () => {
       </section>
 
       {/* Modal Start */}
-      <Modal show={openModal} size="md" popup onClose={onCloseModal} className="pt-36">
+      <Modal
+        show={openModal}
+        size="md"
+        popup
+        onClose={onCloseModal}
+        className="pt-36"
+      >
         <Modal.Header />
         <Modal.Body>
           <div className="space-y-6 px-6">
-            <h3 className="text-xl font-medium text-gray-900">Ask a Question</h3>
+            <h3 className="text-xl font-medium text-gray-900">
+              Ask a Question
+            </h3>
             <div>
               <div className="mb-2 block">
-                <Label className="dark:text-dark" htmlFor="username" value="Name" />
+                <Label
+                  className="dark:text-dark"
+                  htmlFor="username"
+                  value="Name"
+                />
               </div>
-              <TextInput id="username"
-              placeholder="Enter Your Name"
-              type="text" sizing="lg" required />
+              <TextInput
+                id="username"
+                placeholder="Enter Your Name"
+                type="text"
+                sizing="lg"
+                required
+              />
             </div>
             <div>
               <div className="mb-2 block">
-                <Label className="dark:text-dark" htmlFor="email" value="Your Email" />
+                <Label
+                  className="dark:text-dark"
+                  htmlFor="email"
+                  value="Your Email"
+                />
               </div>
               <TextInput
                 id="email"
@@ -165,16 +185,19 @@ const FAQ = () => {
 
             <div>
               <div className="mb-2 block">
-                <Label className="dark:text-dark" htmlFor="comment" value="Your Question" />
+                <Label
+                  className="dark:text-dark"
+                  htmlFor="comment"
+                  value="Your Question"
+                />
               </div>
-              <Textarea id="comment"  type="text" required rows={4} />
+              <Textarea id="comment" type="text" required rows={4} />
             </div>
             <div>
-            <div className="w-full mb-5">
-              <Button className="bg-[#033540] px-4">Send</Button>
+              <div className="w-full mb-5">
+                <Button className="bg-[#033540] px-4">Send</Button>
+              </div>
             </div>
-          </div>
-            
           </div>
         </Modal.Body>
       </Modal>

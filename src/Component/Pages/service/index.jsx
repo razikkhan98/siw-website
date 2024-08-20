@@ -21,15 +21,15 @@ const Service = () => {
       imgUrl: Service2,
       title: "Trade",
       description:
-      " It is a long established fact that a reader will be distracted by the readable content of a page",
-  },
+        " It is a long established fact that a reader will be distracted by the readable content of a page",
+    },
     {
       imgUrl: Service3,
       title: "Educator",
       description:
         " It is a long established fact that a reader will be distracted by the readable content of a page",
     },
-    
+
     // {
     //   imgUrl: Service4,
     //   title: "Machine Learning",
@@ -60,15 +60,15 @@ const Service = () => {
         >
           <div className="service-head flex items-center justify-center">
             <div className="flex flex-col items-end mx-3">
-              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+              <div className="h-1 w-7 background-color-sherpa-blue inline-block mb-2"></div>
+              <div className="h-1 w-16 background-color-sherpa-blue inline-block"></div>
             </div>
             <div className="inline-block text-4xl text-color-sherpa-blue font-semibold">
               Our Service
             </div>
             <div className="flex flex-col mx-3">
-              <div className="h-1 w-7 bg-[#033540] inline-block mb-2"></div>
-              <div className="h-1 w-16 bg-[#033540] inline-block "></div>
+              <div className="h-1 w-7 background-color-sherpa-blue inline-block mb-2"></div>
+              <div className="h-1 w-16 background-color-sherpa-blue inline-block"></div>
             </div>
           </div>
           <h1 className=" text-center text-xl font-medium">
@@ -82,17 +82,21 @@ const Service = () => {
             {ServiceData.map((link, index) => (
               <div className="service-main lg:h-96">
                 <div className="service-profile relative font-sans w-56 h-56 p-7 bg-white shadow-[0_0_22px_rgba(51,51,51,0.4)] mx-6">
-                  <div className="service-img w-full h-full relative ">
+                  <div className="service-img w-full h-full relative">
                     <img
                       src={link.imgUrl}
                       alt="Loading"
-                      className="w-full h-full shadow-[0_0_22px_rgba(51,51,51,0.4)] "
+                      className="w-full h-full shadow-[0_0_22px_rgba(51,51,51,0.4)]"
                       // style={{ width: "200px", height: "120px" }}
                     />
                   </div>
-                  <div className="service-caption text-center ">
-                    <h3 className="font-bold font-sans text-xl">{link.title}</h3>
-                    <p className="font-sans text-base text-[#0d1117] my-1">{link.description}</p>
+                  <div className="service-caption text-center">
+                    <h3 className="font-bold font-sans text-color-sherpa-blue text-xl">
+                      {link.title}
+                    </h3>
+                    <p className="font-sans text-base text-[#0d1117] my-1">
+                      {link.description}
+                    </p>
                     <div className="theme-btn">
                       <a href="#clients">
                         <span className="theme-button">

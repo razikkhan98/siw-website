@@ -104,7 +104,7 @@ const Home = () => {
         id="Home"
       >
         <div class="container mx-auto">
-          <section class="gap-6 grid-cols-1 ">
+          <section class="gap-6 grid-cols-1">
             <div
               class="text-center"
               data-aos="flip-up"
