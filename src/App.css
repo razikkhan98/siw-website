@@ -82,6 +82,30 @@ section {
   margin: 0 10px;
 }
 
+/*======== Home Start ========== */
+.home-head{
+  animation: slide-left 2s;
+}
+@keyframes slide-left {
+  from{
+    transform: translateX(-300%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.home-content{
+  animation: slide-right 2s;
+}
+@keyframes slide-right {
+  from{
+    transform: translateX(300%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
 /*======== Team Start ========== */
 .team {
   padding: 20px 15px;
@@ -117,6 +141,11 @@ section {
   background: linear-gradient(to top left, #033540, #63898c, #e0f4f5);
 }
 
+/* .bg-animate {
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  animation: animatedBackground 30s linear infinite;
+}
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
@@ -124,36 +153,134 @@ section {
   to {
     background-position: 100% 0;
   }
-}
-
-.bg-animate {
-  background-position: 0 0;
-  background-repeat: repeat-x;
-  animation: animatedBackground 30s linear infinite;
-}
+} */
 
 .gradient-overly-right {
   z-index: 1;
   /* width: 100vw;
   min-width: 100vw; */
   position: relative;
-  background-image: url(./Component/assets/img/bannerbackgrd.jpeg);
+  background-image: url(./Component/assets/img/logo/homegif1.gif);
   background-position: center;
   background-size: cover;
 }
-.gradient-overly-right:before {
+/* .gradient-overly-right:before {
   content: "";
   z-index: -1;
   position: absolute;
   height: 100%;
   width: 100%;
-  background: linear-gradient(
+   background: linear-gradient(
     90deg,
     #0a0a15 2%,
     rgb(29 30 61 / 50%),
     var(--sherpa-blue-color)
-  ) !important;
+  ) !important; 
+} */
+
+/* <-------Bubble Animation Start---------> */
+.bubbles{
+  position:absolute;
+  width:100%;
+  height: 100%;
+  z-index:0;
+  overflow:hidden;
+  top:0;
+  left:0;
 }
+.bubble{
+  position: absolute;
+  bottom:-100px;
+  width:40px;
+  height: 40px;
+  background:#fff;
+  border-radius:50%;
+  /* opacity:0.5; */
+  animation: rise 10s infinite ease-in;
+}
+.bubble:nth-child(1){
+  width:40px;
+  height:40px;
+  left:10%;
+  animation-duration:8s;
+}
+.bubble:nth-child(2){
+  width:20px;
+  height:20px;
+  left:20%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(3){
+  width:50px;
+  height:50px;
+  left:35%;
+  animation-duration:7s;
+  animation-delay:2s;
+}
+.bubble:nth-child(4){
+  width:80px;
+  height:80px;
+  left:50%;
+  animation-duration:11s;
+  animation-delay:0s;
+}
+.bubble:nth-child(5){
+  width:35px;
+  height:35px;
+  left:55%;
+  animation-duration:6s;
+  animation-delay:1s;
+}
+.bubble:nth-child(6){
+  width:45px;
+  height:45px;
+  left:65%;
+  animation-duration:8s;
+  animation-delay:3s;
+}
+.bubble:nth-child(7){
+  width:90px;
+  height:90px;
+  left:70%;
+  animation-duration:12s;
+  animation-delay:2s;
+}
+.bubble:nth-child(8){
+  width:25px;
+  height:25px;
+  left:80%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bubble:nth-child(9){
+  width:15px;
+  height:15px;
+  left:70%;
+  animation-duration:5s;
+  animation-delay:1s;
+}
+.bubble:nth-child(10){
+  width:90px;
+  height:90px;
+  left:25%;
+  animation-duration:10s;
+  animation-delay:4s;
+}
+@keyframes rise{
+  0%{
+    bottom:-100px;
+    transform:translateX(0);
+  }
+  50%{
+    transform:translate(100px);
+  }
+  100%{
+    bottom:1080px;
+    transform:translateX(-200px);
+  }
+}
+/* <----Bubble Animation End-------> */
 
 .header {
   position: fixed;
@@ -168,7 +295,7 @@ section {
   color: #fff;
 }
 .header-bg {
-  background-color: rgb(187, 221, 216);
+  background-image: linear-gradient(to top, #a7d1d2 0%, #0c6073 100%);
   transform: rotateY(360deg);
   transition: 2s;
 }
@@ -312,72 +439,82 @@ section {
 .service {
   width: 100%;
   padding: 20px 0px;
+	background-image: repeating-radial-gradient(circle at left bottom,#a7d1d2,#d9f6f7 50%);
+}
+/* .service-card {
+  background: #2b8da3;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -5px;
+  animation: slide-in-left 5s;
+}
+.service-card:hover {
+  transform: scale(1.07);
+}
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}  */
+
+/* styles.css or any CSS-in-JS solution */
+.service-card {
+  background: #2b8da3;
+  border-radius: 20px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -5px;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-300%); /* Start slightly off-screen */
+  transition: opacity 0.6s ease-out, transform 4s ease-out;
 }
 
-.service-main {
-  width: 100%;
-  padding: 30px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.service-card.show {
+  opacity: 1;
+  transform: translateY(0);
 }
-.service-profile {
-  /* position: relative; */
-  /* font-family: sans-serif; */
-  /* width: 230px; */
-  /* height: 220px; */
-  /* background: #fff; */
-  /* padding: 30px; */
-  border-radius: 50%;
-  /* box-shadow: 0 0 22px #3336; */
-  transition: 0.6s;
-  /* margin: 0 25px; */
+
+.service-card:hover {
+  transform: scale(1.09);
 }
-.service-profile:hover {
-  border-radius: 10px;
-  height: 350px;
+
+
+
+
+.service-textBox {
+  animation: anim 3s infinite;
 }
-.service-img {
-  transition: 0.6s;
-}
-.service-profile:hover .service-img {
-  transform: translateY(-50px);
-}
-.service-img img {
-  /* width: 100%; */
-  /* height: 100%; */
-  border-radius: 50%;
-  /* box-shadow: 0 0 22px #3336; */
-  transition: 0.6s;
-}
-.service-profile:hover img {
-  border-radius: 10px;
-  height: 150px;
-}
-.service-caption {
-  /* text-align: center; */
-  transform: translateY(-180px);
-  opacity: 0;
-  transition: 0.6s;
-}
-.service-profile:hover .service-caption {
+
+.service-card:hover .service-textBox {
   opacity: 1;
 }
-/* .service-caption h3 {
-  font-size: 21px;
-  font-weight: 700;
-  font-family: sans-serif;
-} */
-/* .service-caption p {
-  font-size: 16px;
-  color: #0d1117;
-  font-family: sans-serif;
-  margin: 5px 0px;
-} */
+
+.service-card:hover > .service-img {
+  height: 65%;
+  filter: blur(7px);
+  animation: anim 3s infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 
 /* <-------Service Css End -------> */
 
 .client {
   /* height: 100vh; */
   padding: 10px 0px;
+	background-image: repeating-radial-gradient(circle at left bottom,#a7d1d2,#d9f6f7 50%);
 }
