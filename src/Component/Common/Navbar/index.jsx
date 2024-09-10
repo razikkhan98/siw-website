@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import {
   Navbar,
   NavbarBrand,
@@ -32,10 +33,10 @@ const Nav = () => {
 
   return (
     <Navbar fluid className={color ? "header header-bg" : "header"}>
-      <NavbarBrand href="https://flowbite-react.com">
+      <NavbarBrand href="">
         <img src={logo} className="h-24 sm:h-16" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white ms-3">
-          Intelligence World
+        <span className="play self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          intelligence world
         </span>
       </NavbarBrand>
 
@@ -51,30 +52,56 @@ const Nav = () => {
 
       {/* Navbar Links */}
       <NavbarCollapse
-        className={`navcol hidden lg:flex lg:items-center  ${
-          isNavOpen ? "block" : ""
-        }`}
+        className={`navcol hidden  ${isNavOpen ? "block" : ""}`}
       >
-        <NavbarLink className="lg:me-16 font-bold  text-white hover:text-slate-400" href="#Home">
-          Home
-        </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#About">
-          About
-        </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#Service">
-          Services
-        </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#">
-          Pricing
-        </NavbarLink>
-        <NavbarLink className="lg:me-16 font-bold text-white hover:text-slate-400" href="#">
-          Contact
-        </NavbarLink>
+        <div>
+          <NavLink
+            className="lg:me-16 font-bold text-white hover:text-slate-400"
+            // href="#Home"
+            to="/"
+          >
+            Home
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            className="lg:me-16 font-bold text-white hover:text-slate-400"
+            // href="#About"
+            to="/about"
+          >
+            About
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            className="lg:me-16 font-bold text-white hover:text-slate-400"
+            // href="#Service"
+            to="/service"
+          >
+            Services
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            className="lg:me-16 font-bold text-white hover:text-slate-400"
+            // href="#"
+            to="/tools"
+          >
+            Tools
+          </NavLink>
+        </div>
+        <div>
+          <NavLink
+            className="lg:me-16 font-bold text-white hover:text-slate-400"
+            // href="#"
+            to="/contact"
+          >
+            Contact
+          </NavLink>
+        </div>
       </NavbarCollapse>
     </Navbar>
   );
 };
 
 export default Nav;
-
-;

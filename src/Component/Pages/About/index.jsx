@@ -6,29 +6,32 @@ import Abt2 from "../../assets/img/About/abt-2.jpg";
 import Abt3 from "../../assets/img/About/abt-3.jpg";
 
 // Icons
-import { FaPlay, FaFileDownload, FaUser, FaImage } from "react-icons/fa";
+import { FaUser, FaImage } from "react-icons/fa";
+import Nav from "../../Common/Navbar";
 
 const About = () => {
   const AboutCard = [
-    {
-      icon: <FaPlay />,
-      title: "Responsive",
-    },
-    {
-      icon: <FaFileDownload />,
-      title: "Free Download",
-    },
+    // {
+    //   icon: <FaPlay />,
+    //   title: "Responsive",
+    // },
+    // {
+    //   icon: <FaFileDownload />,
+    //   title: "Free Download",
+    // },
     {
       icon: <FaUser />,
-      title: "Support",
+      title: "Service",
+      link: "#Service"
     },
     {
       icon: <FaImage />,
-      title: "Development",
+      title: "Product",
     },
   ];
   return (
     <>
+    <Nav/>
       <section className="background-color-sky-blue" id="About">
         <div className="container mx-auto">
           <div className="pt-12 pb-20">
@@ -112,17 +115,17 @@ const About = () => {
                     businesses to thrive in an ever-evolving marketplace.
                   </p>
                   <div className="flex flex-wrap">
-                    {AboutCard.map((link, index) => (
+                    {AboutCard.map((items, index) => (
                       <div className="shadow-img w-full lg:w-2/5 mt-4 pt-2 lg:mr-5">
                         <div className="flex items-center rounded shadow-lg p-3 bg-white">
                           <div className="h-4 mb-2 text-2xl text-color-sherpa-blue">
                             {/* <FaPlay /> */}
-                            {link.icon}
+                            {items.icon}
                           </div>
                           <h6 className="ml-3 mb-0">
-                            <a href="#/" className="text-dark">
+                            <a href={items.link} className="text-dark">
                               {/* Responsive */}
-                              {link.title}
+                              {items.title}
                             </a>
                           </h6>
                         </div>

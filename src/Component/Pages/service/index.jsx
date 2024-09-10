@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import Service1 from '../../assets/img/clients/rumenologo.png';
 import Service2 from '../../assets/img/logo/SIW LOGO (1).png'
+
+import Nav from "../../Common/Navbar/index";
 // Import your CSS file
 
 const Service = () => {
@@ -43,6 +45,8 @@ const Service = () => {
   ];
 
   return (
+    <>
+    <Nav/>
     <section className="service" id="Service">
       <div className="container mx-auto max-w-screen-xl pt-24 pb-5">
         <div className="service-head flex items-center justify-center">
@@ -64,8 +68,9 @@ const Service = () => {
               className={`service-card w-4/5 h-72 flex flex-col items-center justify-center m-auto transition duration-700 ease-in-out ${showCards[index] ? 'show' : ''}`}
               key={index}
             >
-              <div className="service-img h-48 absolute transition duration-700 ease-in-out z-5">
-                <img className="h-full w-full" src={item.image} alt={item.title} />
+              <div className="service-img h-48 absolute transition duration-700 ease-in-out z-5 flex flex-col items-center justify-center">
+                <img className="h-2/3 w-3/5" src={item.image} alt={item.title} />
+                <p className='text-white text-lg text-center pt-2 px-5'>Lorem ipsum, dolor sit amet that consectetur adipisicing elit.</p>
               </div>
               <div className="service-textBox px-5 text-center flex flex-col items-center justify-center opacity-0 gap-3.5 transition duration-700 ease-in-out z-10">
                 <h1 className="service-textHead text-teal-50 font-bold text-2xl">{item.title}</h1>
@@ -83,6 +88,7 @@ const Service = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
