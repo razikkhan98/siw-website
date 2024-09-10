@@ -2,8 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 
 // Images
-import Client1 from "../../assets/img/team-5.jpg";
-import Client2 from "../../assets/img/team-2.jpg";
+import Client1 from "../../assets/img/clients/rumenologo.png";
+import Client2 from "../../assets/img/clients/logo.png";
 import Client3 from "../../assets/img/team-3.jpg";
 import Client4 from "../../assets/img/team-4.jpg";
 // Icons
@@ -26,6 +26,7 @@ const Clients = () => {
       description:
         "Innovative and flexible training solutions have equipped our team with the latest skills. Outstanding dedication and expertise.",
       name: "JOHNY CLAN",
+      sites: "https://rumeno.in/",
     },
     {
       image: Client2,
@@ -33,6 +34,7 @@ const Clients = () => {
       description:
         "Advanced tools to evaluate and enhance skill levels, providing personalized learning pathways for optimal development.",
       name: "LEO",
+      sites: "https://superchicks.online/",
     },
     {
       image: Client3,
@@ -74,12 +76,15 @@ const Clients = () => {
                 data-aos="fade-up"
                 data-aos-duration="3000"
                 data-aos-anchor-palacement="top-bottom"
+                key={index}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="background-color-sherpa-blue relative ml-16 h-80 w-32"></div>
 
-                  <div className="absolute top-16 h-72 w-96">
+                  <div className="absolute top-16 lg:h-72 lg:w-96">
+                  <a href={link.sites} target="_blank" rel="noopener noreferrer">
                     <img src={link.image} alt="Loading" />
+                    </a>
                   </div>
                   <div className="flex flex-col justify-center items-center text-center">
                     <FaQuoteRight className="text-4xl text-color-sherpa-blue" />

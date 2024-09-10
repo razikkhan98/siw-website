@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,8 +13,24 @@ import Nav from "../../Common/Navbar/index";
 // AOS Animation
 import AOS from "aos";
 import "aos/dist/aos.css";
+import About from "../About";
+import Service from "../service";
+import Team from "../team";
+import Clients from "../clients";
+import FAQ from "../faq";
+import FooterSection from "../footer";
+import { FaUser } from "react-icons/fa";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { IoIosMail, IoLogoWhatsapp } from "react-icons/io";
 
 const Home = () => {
+  const [showButtons, setShowButtons] = useState(false);
+
+  const showClick = (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    setShowButtons(!showButtons);
+  };
+
   useEffect(() => {
     AOS.init({});
   }, []);
@@ -98,6 +114,25 @@ const Home = () => {
   return (
     <>
       <Nav />
+
+      <div className="fixed-button">
+        <a href="/"  className="btn" onClick={showClick}>
+          <FaUser />
+        </a>
+        {showButtons && (
+          <div className="additional-buttons" data-aos="fade-left">
+            <a href="tel:+1234567890" className="btn additional-btn top">
+              <BiSolidPhoneCall />
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn additional-btn right">
+              <IoLogoWhatsapp />
+            </a>
+            <a href="mailto:example@example.com" className="btn additional-btn bottom">
+              <IoIosMail />
+            </a>
+          </div>
+        )}
+      </div>
 
       <section
         class="gradient-overly-right bg-animate h-screen flex flex-col justify-center items-center"
@@ -193,36 +228,6 @@ const Home = () => {
                 development sector, focusing on delivering high-quality training
                 programs,
               </p>
-              
-              <div class="flex flex-row justify-center space-y-0 mb-10">
-                <a
-                  href="#/"
-                  class="inline-flex justify-center items-center py-3 px-5 mx-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-                >
-                  Get started
-                  <svg
-                    class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#/"
-                  class="py-3 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-70"
-                >
-                  Learn more
-                </a>
-              </div>
             </div>
           </section>
         </div>
@@ -254,6 +259,12 @@ const Home = () => {
           </Slider>
         </div> */}
       </section>
+      <About />
+      <Service />
+      <Team />
+      <Clients />
+      <FAQ />
+      <FooterSection />
     </>
   );
 };

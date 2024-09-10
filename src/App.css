@@ -7,6 +7,10 @@
 }
 body {
   overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;  
+  font-style: italic;
 }
 html {
   /* Create a snapping rule on the html element */
@@ -46,6 +50,24 @@ html {
 .navbar-toggle.active .bar:nth-child(3) {
   transform: rotate(-45deg) translateY(-13px);
 }
+.navcol div{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: italic;
+}
+.navcol div :hover{
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+  color: #67b3ca;
+}
+
+.play{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
 /* Custom media queries for specific breakpoints */
 /* @media (max-width: 767px) and (min-width: 330px) {
@@ -82,7 +104,65 @@ section {
   margin: 0 10px;
 }
 
+/* <-------Tools Start--------> */
+.tools{
+  width: 100%;
+  height: 100vh;
+  background-color: #238ca3;
+}
+
 /*======== Home Start ========== */
+.fixed-button {
+  position: fixed;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+.fixed-button .btn {
+  font-size: 24px;
+  padding: 20px 15px;
+  background: #238ca3;
+  color: #fff;
+  border-radius: 30px 0px 0px 30px;
+  text-decoration: none;
+  pointer-events: all;
+}
+.fixed-button .additional-buttons {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  /* transform: translate(-50%, -50%); Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixed-button .additional-buttons .btn {
+  position: absolute;
+  border-radius: 25px;
+  padding: 10px 10px;
+}
+
+.fixed-button .additional-buttons .btn.top {
+  right: 2px;
+  top: -80px; /* Position above the login button */
+}
+
+.fixed-button .additional-buttons .btn.right {
+  right: 40px;
+  top: -20px; /* Position to the right of the login button */
+}
+
+.fixed-button .additional-buttons .btn.bottom {
+  right: 1px;
+  top: 35px; /* Position below the login button */
+}
+
+
 .home-head{
   animation: slide-left 2s;
 }
@@ -156,11 +236,11 @@ section {
 } */
 
 .gradient-overly-right {
-  z-index: 1;
+  /* z-index: 1; */
   /* width: 100vw;
   min-width: 100vw; */
   position: relative;
-  background-image: url(./Component/assets/img/logo/homegif1.gif);
+  background-image: url(./Component/assets/img/home/homeimg2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -179,7 +259,7 @@ section {
 } */
 
 /* <-------Bubble Animation Start---------> */
-.bubbles{
+/* .bubbles{
   position:absolute;
   width:100%;
   height: 100%;
@@ -195,7 +275,6 @@ section {
   height: 40px;
   background:#fff;
   border-radius:50%;
-  /* opacity:0.5; */
   animation: rise 10s infinite ease-in;
 }
 .bubble:nth-child(1){
@@ -279,7 +358,7 @@ section {
     bottom:1080px;
     transform:translateX(-200px);
   }
-}
+} */
 /* <----Bubble Animation End-------> */
 
 .header {
@@ -517,4 +596,16 @@ section {
   /* height: 100vh; */
   padding: 10px 0px;
 	background-image: repeating-radial-gradient(circle at left bottom,#a7d1d2,#d9f6f7 50%);
+}
+.icon-style{
+  color: #113435;
+}
+.icon-style :hover{
+  /* background-color: #033540; */
+  color: #a7d1d2;
+  background-color: #144550;
+  box-shadow: 0 0 15px #033540;
+  text-shadow: 0 0 15px #033540;
+  padding: 5px;
+  border-radius: 50px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 // import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import {
@@ -6,21 +7,17 @@ import {
   FooterBrand,
   FooterCopyright,
   FooterDivider,
-  FooterIcon,
   FooterLink,
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
-import {
-  BsDribbble,
-  BsFacebook,
-  BsGithub,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
 
 // Images
 import Logo from "../../assets/img/logo/SIW LOGO (1).png";
+import { RiInstagramLine } from "react-icons/ri";
+import { AiOutlineFacebook } from "react-icons/ai";
+import { CiLinkedin } from "react-icons/ci";
+
 const FooterSection = () => {
   return (
     <>
@@ -30,13 +27,8 @@ const FooterSection = () => {
             <div className="mx-auto max-w-screen-xl">
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                  <FooterBrand
-                    href="https://flowbite.com"
-                    src={Logo}
-                    alt="Logo"
-                    name="SIW"
-                  />
-                  <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+                  <FooterBrand href="/" src={Logo} alt="Logo" name="SIW" />
+                  <p className="mt-6 max-w-md text-center leading-relaxed text-dark-500 sm:max-w-xs sm:text-left">
                     A team of experienced professionals with deep industry
                     knowledge ensures that SIW’s offerings are relevant and
                     up-to-date.
@@ -44,8 +36,11 @@ const FooterSection = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 pb-4">
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="about us" className="text-color-sherpa-blue text-bold text-2xl"/>
-                    <FooterLinkGroup col>
+                    <FooterTitle
+                      title="about us"
+                      className="text-bold text-2xl"
+                    />
+                    <FooterLinkGroup col className="text-dark-500">
                       <FooterLink href="#">Company History</FooterLink>
                       <FooterLink href="#">Meet the Team</FooterLink>
                       <FooterLink href="#">Employee Handbook</FooterLink>
@@ -53,8 +48,11 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Our Services"  className="text-color-sherpa-blue text-bold text-2xl"/>
-                    <FooterLinkGroup col>
+                    <FooterTitle
+                      title="Our Services"
+                      className="text-bold text-2xl"
+                    />
+                    <FooterLinkGroup col className="text-dark-500">
                       <FooterLink href="#">Web Development</FooterLink>
                       <FooterLink href="#">App Development</FooterLink>
                       <FooterLink href="#">Marketing</FooterLink>
@@ -62,36 +60,61 @@ const FooterSection = () => {
                     </FooterLinkGroup>
                   </div>
                   <div className="text-center sm:text-left">
-                    <FooterTitle title="Legal"  className="text-color-sherpa-blue text-bold text-2xl"/>
-                    <FooterLinkGroup col>
+                    <FooterTitle
+                      title="Legal"
+                      className="text-bold text-2xl"
+                    />
+                    <FooterLinkGroup col className="text-dark-500">
                       <FooterLink href="#">Privacy Policy</FooterLink>
-                      <FooterLink href="#">Terms &amp; Conditions</FooterLink>
+                      <FooterLink href="#">Terms & Conditions Apply</FooterLink>
                     </FooterLinkGroup>
                   </div>
-                  {/* <div className="text-center sm:text-left">
-                  <FooterTitle title="Contact us" />
-                  <FooterLinkGroup col>
-                    <FooterLink href="#">Web Development</FooterLink>
-                    <FooterLink href="#">App Development</FooterLink>
-                    <FooterLink href="#">Marketing</FooterLink>
-                    <FooterLink href="#">Google Ads</FooterLink>
-                  </FooterLinkGroup>
-                </div> */}
+                  <div className="text-center sm:text-left">
+                    <FooterTitle
+                      title="CAREER"
+                      className="text-bold text-2xl"
+                    />
+                    <FooterLinkGroup col className="text-dark-500">
+                      <FooterLink href="#">Web Development</FooterLink>
+                      <FooterLink href="#">App Development</FooterLink>
+                      <FooterLink href="#">Marketing</FooterLink>
+                      <FooterLink href="#">Google Ads</FooterLink>
+                    </FooterLinkGroup>
+                  </div>
                 </div>
               </div>
               <FooterDivider />
-              <div className="w-full pt-4 flex items-center justify-between">
+              <div className="w-full flex items-center justify-between">
                 <FooterCopyright
                   href="#"
                   by="Skill Intelligence World"
                   year={2022}
                 />
-                <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-                  <FooterIcon href="#" icon={BsFacebook} />
-                  <FooterIcon href="#" icon={BsInstagram} />
-                  <FooterIcon href="#" icon={BsTwitter} />
-                  <FooterIcon href="#" icon={BsGithub} />
-                  <FooterIcon href="#" icon={BsDribbble} />
+
+                <div className="mt-4 items-center justify-evenly flex space-x-6 sm:mt-0 sm:justify-center">
+                  <NavLink
+                    href=""
+                    className="icon-style text-4xl"
+                    to="https://www.facebook.com/profile.php?id=61550891938064"
+                    target="_blank"
+                  >
+                    <AiOutlineFacebook />
+                  </NavLink>
+                  <NavLink
+                    className="icon-style text-4xl"
+                    to="https://www.instagram.com/skill_intelligence_world_9213/"
+                    target="_blank"
+                  >
+                    <RiInstagramLine />
+                  </NavLink>
+
+                  <NavLink
+                    className="icon-style text-4xl"
+                    to="https://www.linkedin.com/company/skill-intelligence-world/"
+                    target="_blank"
+                  >
+                    <CiLinkedin />
+                  </NavLink>
                 </div>
               </div>
             </div>
