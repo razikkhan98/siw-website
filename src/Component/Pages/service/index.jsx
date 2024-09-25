@@ -30,24 +30,18 @@ const Service = () => {
   const cardData = [
     {
       image: Service2,
-      title: "Rumeno",
-      describe:
-        "It is a long established fact that a reader will be distracted by the readable content of a page.",
+      describe: "We offer the best and innovative IT solutions for your business .With a team of skilled professionals, we specialize in a wide range of services,including software development, cybersecurity, and IT consulting.",
       content: "INTELLIGENCE FUSION TECHNOLOGY",
     },
     {
       image: Service2,
-      title: "Rumeno",
-      describe:
-        "It is a long established fact that a reader will be distracted by the readable content of a page.",
-      content: "SKILL INTELLIGENCE WORLD",
+      describe:"Your Success, Our Algorithm. With our expert insights and tailored strategies, we help you to make smart and confident trading decisions.",
+      content: "SKILL INTELLIGENCE TRADING",
     },
     {
       image: Service2,
-      title: "Rumeno",
-      describe:
-        "It is a long established fact that a reader will be distracted by the readable content of a page.",
-      content: "SKILL INTELLIGENCE EDUCATOR",
+      describe:"If you are looking for  a way to expand your knowledge in the field of IT, Intelligence Educators is here to support you every step of the way.",
+      content: "INTELLIGENCE EDUCATOR",
     },
   ];
 
@@ -92,10 +86,8 @@ const Service = () => {
                   </p>
                 </div>
                 <div className="service-textBox px-5 text-center flex flex-col items-center justify-center opacity-0 gap-3.5 transition duration-700 ease-in-out z-10">
-                  <h1 className="service-textHead text-teal-50 font-bold text-2xl">
-                    {item.title}
-                  </h1>
-                  <p className="text-gray-200 text-xl">{item.describe}</p>
+                  
+                  <p className="text-gray-200 text-base">{item.describe}</p>
                   <div className="theme-btn">
                     <a href="#clients">
                       <span className="theme-button">
