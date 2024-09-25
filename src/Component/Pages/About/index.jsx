@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: <FaUser />,
       title: "Service",
-      link: "#service"
+      link: "#service",
     },
     {
       icon: <FaImage />,
@@ -31,7 +31,7 @@ const About = () => {
   ];
   return (
     <>
-    <Nav/>
+      <Nav />
       <section className="background-color-sky-blue" id="about">
         <div className="container mx-auto">
           <div className="pt-12 pb-20">
@@ -103,16 +103,36 @@ const About = () => {
                     Our mission is to make your life easier.
                   </h4>
                   <p className="text-gray-600 mb-0 text-justify">
-                    SIW operates in the education and professional development
-                    sector, focusing on delivering high-quality training
-                    programs, resources, and tools that cater to a diverse range
-                    of industries. Skill Intelligence World (SIW) is a leading
-                    company dedicated to revolutionizing the way individuals and
-                    organizations approach skill development and intelligence
-                    enhancement. With a mission to bridge the gap between
-                    current skill levels and industry demands, SIW offers
-                    innovative solutions designed to empower professionals and
-                    businesses to thrive in an ever-evolving marketplace.
+                    Welcome to SIW , where we believe in "Transforming Ideas
+                    into IT Realities". We are a dynamic group dedicated to
+                    empowering individuals and businesses through our complete
+                    range of services in IT, trading, and education. VISION : At
+                    Skill Intelligence World, we believe in pushing the
+                    boundaries of technology to achieve greater heights and
+                    capabilities to create opportunities and drive success. Our
+                    vision is to Transform Tech Challenges into Victories.
+                    MISSION : Our mission is to help people and businesses
+                    succeed by providing innovative IT services, smart trading
+                    solutions, and valuable educational programs. We aim to make
+                    technology accessible, trading understandable, and learning
+                    enjoyable, so everyone can reach their goals and grow. What
+                    We Offer : IT Services : Our IT division INTELLIGENCE FUSION
+                    TECHNOLOGY, helps in providing best technology solutions
+                    tailored to your business needs. From software development
+                    and cybersecurity to cloud services and IT consultancy, we
+                    ensure you stay ahead in a this Tech-leading world. Trading
+                    Services : At INTELLIGENCE TRADE, we offer expert trading
+                    services that empower individuals and businesses to navigate
+                    the financial markets confidently. Our team of seasoned
+                    traders and analysts provide the insights and strategies
+                    needed to optimize investments and maximize returns.
+                    Educational Services : Knowledge is power, and our
+                    educational services are designed to enlighten and to craft
+                    a person in such a way that they shall be able to master the
+                    desired skills. INTELLIGENCE EDUACTORS offer a variety of
+                    training programs and online/offline courses aimed at
+                    enhancing skills in IT , ensuring our clients are
+                    well-equipped for the future.
                   </p>
                   <div className="flex flex-wrap">
                     {AboutCard.map((items, index) => (

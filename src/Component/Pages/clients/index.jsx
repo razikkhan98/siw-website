@@ -4,10 +4,8 @@ import Slider from "react-slick";
 // Images
 import Client1 from "../../assets/img/clients/rumenologo.png";
 import Client2 from "../../assets/img/clients/logo.png";
-import Client3 from "../../assets/img/team-3.jpg";
-import Client4 from "../../assets/img/team-4.jpg";
-// Icons
-import { FaQuoteRight } from "react-icons/fa";
+// import Client3 from "../../assets/img/team-3.jpg";
+// import Client4 from "../../assets/img/team-4.jpg";
 
 const Clients = () => {
   var settings = {
@@ -22,33 +20,19 @@ const Clients = () => {
   const clientData = [
     {
       image: Client1,
-      title: "Our Clients Say",
+      title: "RUMENO",
       description:
-        "Innovative and flexible training solutions have equipped our team with the latest skills. Outstanding dedication and expertise.",
+        "Rumeno Farmotech is a nutrition and feed supplement technologies company",
       name: "JOHNY CLAN",
       sites: "https://rumeno.in/",
     },
     {
       image: Client2,
-      title: "Our Clients Say",
+      title: "SUPER CHICKS",
       description:
-        "Advanced tools to evaluate and enhance skill levels, providing personalized learning pathways for optimal development.",
+        "Delivering fresh Chicken,fresh Mutton,and fresh Fish to your doorstep",
       name: "LEO",
       sites: "https://superchicks.online/",
-    },
-    {
-      image: Client3,
-      title: "Our Clients Say",
-      description:
-        "Customized solutions to help organizations develop and implement effective training strategies.",
-      name: "JOHN JACKSON",
-    },
-    {
-      image: Client4,
-      title: "Our Clients Say",
-      description:
-        "Flexible training solutions with the latest skills. Outstanding dedication and expertise.",
-      name: "JOHNY CLAN",
     },
   ];
   return (
@@ -81,7 +65,7 @@ const Clients = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="background-color-sherpa-blue relative ml-14 h-80 w-32"></div>
 
-                  <div className="absolute mr-7 top-16 lg:h-72 lg:w-96">
+                  <div className="absolute mr-7 top-16 lg:h-72 lg:w-80">
                     <a
                       href={link.sites}
                       target="_blank"
@@ -91,7 +75,7 @@ const Clients = () => {
                     </a>
                   </div>
                   <div className="flex flex-col justify-center items-center text-center">
-                    <FaQuoteRight className="text-4xl text-color-sherpa-blue" />
+                    <img src={link.image} className="w-20" alt="" />
                     <h1 className="text-4xl my-3">{link.title}</h1>
                     <p>{link.description}</p>
                     <h1 className="font-bold text-2xl mt-3">{link.name}</h1>

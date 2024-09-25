@@ -7,6 +7,7 @@ import Avatar6 from "../../assets/img/team/avatar6.jpg";
 import Avatar7 from "../../assets/img/team/avatar7.png";
 import Avatar8 from "../../assets/img/team/avatar8.jpg";
 import Avatar9 from "../../assets/img/team/avatar9.png";
+import Avatar10 from "../../assets/img/team/avatar11.jpeg"
 const Team = () => {
   const [currentCard, setCurrentCard] = useState("m1");
 
@@ -69,8 +70,7 @@ const Team = () => {
     },
     {
       id: "m9",
-      image:
-        "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=400&auto=format&fit=crop",
+      image: Avatar10,
       name: "Harry Parker",
       title: "Consulting Member",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",

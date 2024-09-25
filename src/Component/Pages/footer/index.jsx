@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { IoLocation } from "react-icons/io5";
 // import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Image from "../../assets/img/logo/SIW LOGO.png";
 
@@ -28,11 +29,12 @@ const FooterSection = () => {
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div className="text-center flex-col items-center justify-center">
                   <div className="lg:flex lg:items-start lg:justify-start w-full h-1/1">
-                    <a href="/" className="flex items-center justify-center gap-3">
+                    <a
+                      href="/"
+                      className="flex items-center justify-center gap-3"
+                    >
                       <img src={Image} alt="" className="w-1/5" />
-                      <p className="items-center text-4xl font-black">
-                        SIW
-                      </p>
+                      <p className="items-center text-4xl font-black">SIW</p>
                     </a>
                   </div>
                   <p className="mt-6 max-w-md text-center leading-relaxed text-dark-500">
@@ -43,10 +45,7 @@ const FooterSection = () => {
                 </div>
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 pb-4">
                   <div className="text-center sm:text-left">
-                    <FooterTitle
-                      title="pages"
-                      className="text-bold text-2xl"
-                    />
+                    <FooterTitle title="pages" className="text-bold text-2xl" />
                     <FooterLinkGroup col className="text-dark-500">
                       <FooterLink href="/">Home</FooterLink>
                       <FooterLink href="#about">About</FooterLink>
@@ -90,8 +89,18 @@ const FooterSection = () => {
                       title="location"
                       className="text-bold text-2xl"
                     />
-                    <FooterLinkGroup col className="text-dark-500">
-                      <FooterLink href="https://maps.app.goo.gl/kgEpwAB3TN8hK9MCA" target="_blank">Sapna Sangeeta Road, Manish Bag Colony, Indore</FooterLink>
+                    <FooterLinkGroup
+                      row
+                      className="text-dark-500 flex items-center justify-center"
+                    >
+                      <IoLocation className="w-10 h-8" />
+                      <FooterLink
+                        href="https://maps.app.goo.gl/kgEpwAB3TN8hK9MCA"
+                        target="_blank"
+                        className="w-36"
+                      >
+                        Sangeeta Road, Manish Bag Colony, Indore
+                      </FooterLink>
                     </FooterLinkGroup>
                   </div>
                 </div>
