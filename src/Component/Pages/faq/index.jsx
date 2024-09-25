@@ -31,35 +31,95 @@ const FAQ = () => {
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl">
-                  How Long is this site live?
+                  Information About Business ?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  <p>1. Intelligence Fusion Technology</p>
+                  <p>
+                    :- We provide a range of IT services including software
+                    development, IT consulting, cybersecurity solutions, and
+                    cloud computing services.
+                  </p>
+                </span>
+                <span>
+                  <br />
+                  <p>2. Skill Educator</p>
+                  <p>
+                    We offer a variety of IT training programs, including
+                    courses on programming languages, web development,
+                    cybersecurity, and data analytics.
+                  </p>
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold  rounded-xl">
-                  Can I install/upload anything I want on there?
+                  Our Previous Project
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  <p>
+                    1.{" "}
+                    <a
+                      href="https://rumeno.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Rumeno
+                    </a>
+                  </p>
+                  <p>
+                    The objective of the Rumeno project was to develop an online
+                    platform for the sale and distribution of animal food and
+                    medicine products, enhancing accessibility for pet owners
+                    and farmers. Rumeno saw an increase in sales and customer
+                    engagement, as well as improved brand reputation due to the
+                    accessible and informative platform we developed.
+                  </p>
+                </span>
+                <span>
+                  <p>
+                    2.{" "}
+                    <a
+                      href="https://superchicks.online/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Super Chicks
+                    </a>
+                  </p>
+                  <p>
+                    The Super Chiks project focused on developing a
+                    user-friendly mobile application for ordering food, aimed at
+                    enhancing customer convenience and increasing sales. We
+                    implemented industry-standard security measures, including
+                    data encryption and secure payment gateways, to protect user
+                    information and transactions.
+                  </p>
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl">
-                  How can I migrate to another site?
+                  Client Satisfaction
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  <p>1. Client Satisfaction On Rumeno</p>
+                  <p>
+                    Rumeno reported high levels of satisfaction with the
+                    user-friendly interface, efficient checkout process, and the
+                    positive impact on their sales and customer engagement.
+                  </p>
+                </span>
+                <span>
+                  <p>2. Client satisfaction on Super Chicks</p>
+                  <p>
+                    Super Chiks expressed satisfaction with the app’s intuitive
+                    design, ease of use, and its positive impact on their
+                    business. High client satisfaction has led to increased
+                    customer retention, higher sales volume, and an improved
+                    brand reputation in the competitive food delivery market.
+                  </p>
                 </span>
               </details>
             </div>
@@ -69,25 +129,35 @@ const FAQ = () => {
               data-aos-duration="1500"
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
-                <summary class="font-semibold rounded-xl">
-                  Can I change the domain you give me?
-                </summary>
+                <summary class="font-semibold rounded-xl">Competitor</summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  Our main competitors include other IT service providers,
+                  software development companies, and consulting firms that
+                  offer similar services in software development, cybersecurity,
+                  and IT consulting. We differentiate ourselves through our
+                  tailored solutions, focus on customer collaboration, and
+                  commitment to using the latest technologies to ensure
+                  high-quality outcomes. We conduct regular market analysis,
+                  attend industry conferences, and utilize tools for competitive
+                  intelligence to stay informed about our competitors’ offerings
+                  and strategies.
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold  rounded-xl">
-                  How many sites I can create at once?
+                  Education Related
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  We offer a variety of programs, including courses in
+                  programming languages such as HTML,CSS, JAVASCRIPT, REACT,
+                  NODE, PYTHON, ANGULAR. We provide courses for all skill
+                  levels, from complete beginners to advanced learners, ensuring
+                  everyone can find a suitable program. Our instructors are
+                  experienced professionals with backgrounds in the IT industry,
+                  ensuring that students receive practical knowledge and
+                  insights relevant to current job markets.
                 </span>
               </details>
               <details class="question shadow-img mb-4 bg-gray-200  rounded-xl">

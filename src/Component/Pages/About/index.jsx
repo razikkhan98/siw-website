@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: <FaUser />,
       title: "Service",
-      link: "#Service"
+      link: "#service"
     },
     {
       icon: <FaImage />,
@@ -32,7 +32,7 @@ const About = () => {
   return (
     <>
     <Nav/>
-      <section className="background-color-sky-blue" id="About">
+      <section className="background-color-sky-blue" id="about">
         <div className="container mx-auto">
           <div className="pt-12 pb-20">
             <div className="grid lg:grid-cols-2 gap-2 py-10">
