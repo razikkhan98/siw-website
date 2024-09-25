@@ -79,11 +79,15 @@ const Clients = () => {
                 key={index}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="background-color-sherpa-blue relative ml-16 h-80 w-32"></div>
+                  <div className="background-color-sherpa-blue relative ml-14 h-80 w-32"></div>
 
-                  <div className="absolute top-16 lg:h-72 lg:w-96">
-                  <a href={link.sites} target="_blank" rel="noopener noreferrer">
-                    <img src={link.image} alt="Loading" />
+                  <div className="absolute mr-7 top-16 lg:h-72 lg:w-96">
+                    <a
+                      href={link.sites}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src={link.image} alt="Loading" />
                     </a>
                   </div>
                   <div className="flex flex-col justify-center items-center text-center">

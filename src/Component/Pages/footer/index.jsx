@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 // import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import Image from "../../assets/img/logo/SIW LOGO.png";
 
 import {
   Footer,
-  FooterBrand,
   FooterCopyright,
   FooterDivider,
   FooterLink,
@@ -13,7 +13,7 @@ import {
 } from "flowbite-react";
 
 // Images
-import Logo from "../../assets/img/logo/SIW LOGO (1).png";
+// import Logo from "../../assets/img/logo/SIW LOGO (1).png";
 import { RiInstagramLine } from "react-icons/ri";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { CiLinkedin } from "react-icons/ci";
@@ -26,9 +26,16 @@ const FooterSection = () => {
           <div className="w-full py-8">
             <div className="mx-auto max-w-screen-xl">
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                <div>
-                  <FooterBrand href="/" src={Logo} alt="Logo" name="SIW" />
-                  <p className="mt-6 max-w-md text-center leading-relaxed text-dark-500 sm:max-w-xs sm:text-left">
+                <div className="text-center flex-col items-center justify-center">
+                  <div className="lg:flex lg:items-start lg:justify-start w-full h-1/1">
+                    <a href="/" className="flex items-center justify-center gap-3">
+                      <img src={Image} alt="" className="w-1/5" />
+                      <p className="items-center text-4xl font-black">
+                        SIW
+                      </p>
+                    </a>
+                  </div>
+                  <p className="mt-6 max-w-md text-center leading-relaxed text-dark-500">
                     A team of experienced professionals with deep industry
                     knowledge ensures that SIW’s offerings are relevant and
                     up-to-date.
@@ -37,17 +44,17 @@ const FooterSection = () => {
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 pb-4">
                   <div className="text-center sm:text-left">
                     <FooterTitle
-                      title="about us"
+                      title="pages"
                       className="text-bold text-2xl"
                     />
                     <FooterLinkGroup col className="text-dark-500">
-                      <FooterLink href="#">Company History</FooterLink>
-                      <FooterLink href="#">Meet the Team</FooterLink>
-                      <FooterLink href="#">Employee Handbook</FooterLink>
-                      <FooterLink href="#">Career</FooterLink>
+                      <FooterLink href="/">Home</FooterLink>
+                      <FooterLink href="#about">About</FooterLink>
+                      <FooterLink href="#service">Service</FooterLink>
+                      <FooterLink href="/tools">Tools</FooterLink>
                     </FooterLinkGroup>
                   </div>
-                  <div className="text-center sm:text-left">
+                  {/* <div className="text-center sm:text-left">
                     <FooterTitle
                       title="Our Services"
                       className="text-bold text-2xl"
@@ -58,12 +65,9 @@ const FooterSection = () => {
                       <FooterLink href="#">Marketing</FooterLink>
                       <FooterLink href="#">Google Ads</FooterLink>
                     </FooterLinkGroup>
-                  </div>
+                  </div> */}
                   <div className="text-center sm:text-left">
-                    <FooterTitle
-                      title="Legal"
-                      className="text-bold text-2xl"
-                    />
+                    <FooterTitle title="Legal" className="text-bold text-2xl" />
                     <FooterLinkGroup col className="text-dark-500">
                       <FooterLink href="#">Privacy Policy</FooterLink>
                       <FooterLink href="#">Terms & Conditions Apply</FooterLink>
@@ -79,6 +83,15 @@ const FooterSection = () => {
                       <FooterLink href="#">App Development</FooterLink>
                       <FooterLink href="#">Marketing</FooterLink>
                       <FooterLink href="#">Google Ads</FooterLink>
+                    </FooterLinkGroup>
+                  </div>
+                  <div className="text-center sm:text-left">
+                    <FooterTitle
+                      title="location"
+                      className="text-bold text-2xl"
+                    />
+                    <FooterLinkGroup col className="text-dark-500">
+                      <FooterLink href="https://maps.app.goo.gl/kgEpwAB3TN8hK9MCA" target="_blank">Sapna Sangeeta Road, Manish Bag Colony, Indore</FooterLink>
                     </FooterLinkGroup>
                   </div>
                 </div>

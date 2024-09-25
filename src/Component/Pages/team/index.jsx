@@ -1,69 +1,68 @@
 import React, { useState, useEffect } from "react";
-
+import Avatar from "../../assets/img/team/avatar.jpg";
+import Avatar2 from "../../assets/img/team/avatar2.avif";
+import Avatar4 from "../../assets/img/team/avatar4.png";
+import Avatar5 from "../../assets/img/team/avatar5.png";
+import Avatar6 from "../../assets/img/team/avatar6.jpg";
+import Avatar7 from "../../assets/img/team/avatar7.png";
+import Avatar8 from "../../assets/img/team/avatar8.jpg";
+import Avatar9 from "../../assets/img/team/avatar9.png";
 const Team = () => {
   const [currentCard, setCurrentCard] = useState("m1");
 
   const cardData = [
     {
       id: "m1",
-      image:
-        "https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=400&auto=format&fit=crop",
+      image: Avatar,
       name: "Jhone Deo",
       title: "Founder",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m2",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400&auto=format&fit=crop",
+      image: Avatar2,
       name: "Isra Beljik",
       title: "Chief Technology Officer",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m3",
-      image:
-        "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=400&auto=format&fit=crop",
+      image: Avatar5,
       name: "Justin Lager",
       title: "Chief Operator Officer",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m4",
-      image:
-        "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=400&auto=format&fit=crop",
+      image: Avatar4,
       name: "Georgea Potter",
       title: "Chief Financial Officer",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m5",
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=400&auto=format&fit=crop",
+      image: Avatar6,
       name: "Emilly Jacks",
       title: "Member",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m6",
-      image:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
+      image: Avatar7,
       name: "Sophia Wingston",
       title: "Engineer",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m7",
-      image:
-        "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=400&auto=format&fit=crop",
+      image: Avatar8,
       name: "Chris Denial",
       title: "Co-Founder",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
     },
     {
       id: "m8",
-      image:
-        "https://images.unsplash.com/photo-1569913486515-b74bf7751574?q=80&w=400&auto=format&fit=crop",
+      image: Avatar9 ,
       name: "Olivia Brook",
       title: "B.Tech",
       bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
@@ -145,11 +144,11 @@ const Team = () => {
                 }`}
               >
                 <div className="flex flex-col items-center md:flex-row">
-                  <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-6">
+                  <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-6 ">
                     <img
                       src={link.image}
                       alt="Loading"
-                      className="w-52 h-56 object-cover rounded-lg"
+                      className="w-52 h-56 object-cover rounded-lg "
                     />
                   </div>
                   <div>
