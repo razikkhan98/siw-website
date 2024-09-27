@@ -31,94 +31,52 @@ const FAQ = () => {
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl">
-                  Information About Business ?
-                </summary>
-
-                <span>
-                  <p>1. Intelligence Fusion Technology</p>
-                  <p>
-                    :- We provide a range of IT services including software
-                    development, IT consulting, cybersecurity solutions, and
-                    cloud computing services.
-                  </p>
-                </span>
-                <span>
-                  <br />
-                  <p>2. Skill Educator</p>
-                  <p>
-                    We offer a variety of IT training programs, including
-                    courses on programming languages, web development,
-                    cybersecurity, and data analytics.
-                  </p>
-                </span>
-              </details>
-              <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
-                <summary class="font-semibold  rounded-xl">
-                  Our Previous Project
+                  What technologies do you use?
                 </summary>
 
                 <span>
                   <p>
-                    1.{" "}
-                    <a
-                      href="https://rumeno.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Rumeno
-                    </a>
-                  </p>
-                  <p>
-                    The objective of the Rumeno project was to develop an online
-                    platform for the sale and distribution of animal food and
-                    medicine products, enhancing accessibility for pet owners
-                    and farmers. Rumeno saw an increase in sales and customer
-                    engagement, as well as improved brand reputation due to the
-                    accessible and informative platform we developed.
-                  </p>
-                </span>
-                <span>
-                  <p>
-                    2.{" "}
-                    <a
-                      href="https://superchicks.online/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Super Chicks
-                    </a>
-                  </p>
-                  <p>
-                    The Super Chiks project focused on developing a
-                    user-friendly mobile application for ordering food, aimed at
-                    enhancing customer convenience and increasing sales. We
-                    implemented industry-standard security measures, including
-                    data encryption and secure payment gateways, to protect user
-                    information and transactions.
+                    We in IFT utilize technologies depending on the type of
+                    projects we are working on. The technologies on which we
+                    generally work on and have expertise in are : Front-end :-
+                    HTML, CSS, JavaScript and frameworks like React, Angular, or
+                    Vue.js, Back-end :- Python, Java, C#, PHP, Node.js,
+                    Databases :- MySQL, Oracle, MongoDB, etc. , For Version
+                    Control :- Git tools , project management tools like :- Jira
+                    and Asana.
                   </p>
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold rounded-xl">
-                  Client Satisfaction
+                  What qualifications do you need to trade stocks ?
                 </summary>
 
                 <span>
-                  <p>1. Client Satisfaction On Rumeno</p>
                   <p>
-                    Rumeno reported high levels of satisfaction with the
-                    user-friendly interface, efficient checkout process, and the
-                    positive impact on their sales and customer engagement.
+                    Anyone can safely start investing/trading in stocks, but
+                    there is always a risk of losing money. So, it's important
+                    to approach it with proper research, education, and a
+                    long-term perspective. Hence, it's better to have a degree
+                    in relevant subjects like management, business, economy or
+                    finance.
                   </p>
                 </span>
+              </details>
+              <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
+                <summary class="font-semibold  rounded-xl">
+                  How do you approach risk management in your trading
+                  strategies?
+                </summary>
+
                 <span>
-                  <p>2. Client satisfaction on Super Chicks</p>
                   <p>
-                    Super Chiks expressed satisfaction with the app’s intuitive
-                    design, ease of use, and its positive impact on their
-                    business. High client satisfaction has led to increased
-                    customer retention, higher sales volume, and an improved
-                    brand reputation in the competitive food delivery market.
+                    By integrating strategies like Diversification, Stop-Loss
+                    Orders, Continuous Monitoring, Utilizing advanced technology
+                    and algorithms and regularly conducting stress tests to
+                    assess how different scenarios could impact portfolios, we
+                    effectively navigate the complexities of the financial
+                    markets and protect capital against various risks.
                   </p>
                 </span>
               </details>
@@ -129,46 +87,51 @@ const FAQ = () => {
               data-aos-duration="1500"
             >
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
-                <summary class="font-semibold rounded-xl">Competitor</summary>
+                <summary class="font-semibold rounded-xl">
+                  Do you provide maintenance and updates in the Projects ?
+                </summary>
 
                 <span>
-                  Our main competitors include other IT service providers,
-                  software development companies, and consulting firms that
-                  offer similar services in software development, cybersecurity,
-                  and IT consulting. We differentiate ourselves through our
-                  tailored solutions, focus on customer collaboration, and
-                  commitment to using the latest technologies to ensure
-                  high-quality outcomes. We conduct regular market analysis,
-                  attend industry conferences, and utilize tools for competitive
-                  intelligence to stay informed about our competitors’ offerings
-                  and strategies.
+                  <p>
+                    Yes, we ensure that a project, such as software or a system,
+                    remains functional, secure, and relevant over time. This
+                    include bug fixes, performance improvements, security
+                    updates, feature enhancements, compliance and backup and
+                    Recovery of the software.
+                  </p>
                 </span>
               </details>
               <details class="question shadow-img bg-gray-200 mb-4 rounded-xl">
                 <summary class="font-semibold  rounded-xl">
-                  Education Related
+                  Is a degree necessary to succeed in IT, or are there
+                  Alternative routes?
                 </summary>
 
                 <span>
-                  We offer a variety of programs, including courses in
-                  programming languages such as HTML,CSS, JAVASCRIPT, REACT,
-                  NODE, PYTHON, ANGULAR. We provide courses for all skill
-                  levels, from complete beginners to advanced learners, ensuring
-                  everyone can find a suitable program. Our instructors are
-                  experienced professionals with backgrounds in the IT industry,
-                  ensuring that students receive practical knowledge and
-                  insights relevant to current job markets.
+                  <p>
+                    No, In IT sector having a degree is not necessary where
+                    skills and experience often hold more weight than formal
+                    education but having one can give you advantage when finding
+                    a job. Building a strong portfolio, having relevant
+                    certifications, participating in internships, and showcasing
+                    your abilities through projects or freelance work can all
+                    help you secure a job in the tech industry without a degree.
+                  </p>
                 </span>
               </details>
               <details class="question shadow-img mb-4 bg-gray-200  rounded-xl">
                 <summary class="font-semibold  rounded-xl">
-                  How can I communicate with you?
+                  How do I find entry-level jobs in IT companies?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  <p>
+                    You can easily get an entry-level job in a IT company if you
+                    have skills and experience in working on web-development on
+                    your own. If not, then you can develop web development
+                    skills by doing a certification course in front-end ,
+                    backend or full-stack development.
+                  </p>
                 </span>
               </details>
             </div>

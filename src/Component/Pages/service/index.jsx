@@ -30,17 +30,20 @@ const Service = () => {
   const cardData = [
     {
       image: Service2,
-      describe: "We offer the best and innovative IT solutions for your business .With a team of skilled professionals, we specialize in a wide range of services,including software development, cybersecurity, and IT consulting.",
+      describe:
+        "We offer the best and innovative IT solutions for your business .With a team of skilled professionals, we specialize in a wide range of services,including software development, cybersecurity, and IT consulting.",
       content: "INTELLIGENCE FUSION TECHNOLOGY",
     },
     {
       image: Service2,
-      describe:"Your Success, Our Algorithm. With our expert insights and tailored strategies, we help you to make smart and confident trading decisions.",
+      describe:
+        "Your Success, Our Algorithm. With our expert insights and tailored strategies, we help you to make smart and confident trading decisions.",
       content: "SKILL INTELLIGENCE TRADING",
     },
     {
       image: Service2,
-      describe:"If you are looking for  a way to expand your knowledge in the field of IT, Intelligence Educators is here to support you every step of the way.",
+      describe:
+        "If you are looking for  a way to expand your knowledge in the field of IT, Intelligence Educators is here to support you every step of the way.",
       content: "INTELLIGENCE EDUCATOR",
     },
   ];
@@ -76,17 +79,12 @@ const Service = () => {
                 key={index}
               >
                 <div className="service-img h-48 absolute transition duration-700 ease-in-out z-5 flex flex-col items-center justify-center">
-                  <img
-                    className="w-2/3"
-                    src={item.image}
-                    alt="Loading"
-                  />
+                  <img className="w-2/3" src={item.image} alt="Loading" />
                   <p className="text-white text-lg text-center pt-2 px-5">
                     {item.content}
                   </p>
                 </div>
                 <div className="service-textBox px-5 text-center flex flex-col items-center justify-center opacity-0 gap-3.5 transition duration-700 ease-in-out z-10">
-                  
                   <p className="text-gray-200 text-base">{item.describe}</p>
                   <div className="theme-btn">
                     <a href="#clients">
