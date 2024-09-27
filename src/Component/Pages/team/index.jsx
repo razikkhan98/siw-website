@@ -6,8 +6,12 @@ import Avatar5 from "../../assets/img/team/avatar5.png";
 import Avatar6 from "../../assets/img/team/avatar6.jpg";
 import Avatar7 from "../../assets/img/team/avatar7.png";
 import Avatar8 from "../../assets/img/team/avatar8.jpg";
-import Avatar9 from "../../assets/img/team/avatar9.png";
-import Avatar10 from "../../assets/img/team/avatar11.jpeg"
+import Avatar9 from "../../assets/img/team/avatar16.jpg";
+// import Avatar10 from "../../assets/img/team/avatar11.jpeg"
+import Avatar11 from "../../assets/img/team/avatar12.jpg";
+import Avatar12 from "../../assets/img/team/avatar13.jpg";
+import Avatar15 from "../../assets/img/team/avatar15.jpg";
+
 const Team = () => {
   const [currentCard, setCurrentCard] = useState("m1");
 
@@ -19,7 +23,7 @@ const Team = () => {
       title: "CTO & CEO",
       experience: "10 Years Experience",
       bio: "Specialization :- Automation, Python, Cloud, Machine Learning, Data Science, Cryptocurrencies, Financial Assistant & Business Analyst.",
-      education: "Qualification : Btech"
+      education: "Qualification : B.tech"
     },
     {
       id: "m2",
@@ -40,13 +44,21 @@ const Team = () => {
       education: "Qualification: MBA",
     },
     {
+      id: "m11",
+      image: Avatar11,
+      name: "ADIBA KHAN",
+      title: "Head Manager",
+      bio: "Social Media Manager.",
+      education: "Qualification: LLB.",
+    },
+    {
       id: "m4",
       image: Avatar6,
       name: "RAZIK KHAN",
       title: "SENIOR SOFTWARE DEVELOPER",
       experience: "3 Years Experience",
       bio: "Technologies:- React js, tailwind Css, Css, Html, Js, Node js, React Native.",
-      education:"Btech"
+      education:"Qualification: B.tech"
     },
     {
       id: "m5",
@@ -54,8 +66,8 @@ const Team = () => {
       name: "MOHAMMAD NOOR",
       title: "JUNIOR BUSINESS ANALYST",
       experience: "2 Years Experience",
-      bio: "Techologies:- MsExcel, Pyhton, Figma, SQL, Marketing Tools.",
-      education: "B.sc"
+      bio: "Techologies:- MsExcel, Python, Figma, SQL, Marketing Tools.",
+      education: "Qualification: B.sc"
     },
     {
       id: "m6",
@@ -64,39 +76,44 @@ const Team = () => {
       title: "JUNIOR SOFTWARE ENGINEER",
       experience: "2 Years Experience",
       bio: "Technologies:- React js, Tailwind Css, Css, Html, Java Script.",
-      education: "Btech"
+      education: "Qualification: B.tech"
+    },
+    {
+      id: "m9",
+      image: Avatar12,
+      name: "SHUMAILA KHAN",
+      title: "Front End Developer",     
+      bio: "Technologies:- Html, Css, Javascript, React js.",
+      education: "Qualification: B.sc(CS)",
     },
     {
       id: "m7",
       image: Avatar7,
-      name: "Sophia Wingston",
-      title: "Engineer",
-      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
-    
+      name: "USMAN Hasan",
+      title: "Full Stack Developer",
+      experience: "2+ Years Experience",
+      bio: "Technologies:- Angular, React js, Ionic, Electron, Meteor.js, Node.js, Next.js, Nust.js, D3.js, Vanilla.js, Express, React Native, Flutter, Typescript, MongoDB, Mongoose, AWS, MySQL, Google Console.",
+      education: "Qualification: B.tech(CS)"
       
     },
     {
       id: "m8",
       image: Avatar9 ,
-      name: "Olivia Brook",
-      title: "B.Tech",
-      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+      name: "JUNED ABBASI",
+      title: "Front End Developer",
+      bio: "Technologies:- Html, Css, Javascript, React js.",
+      education: "Qualification: B.sc(CS)",
     },
-    {
-      id: "m9",
-      image: Avatar10,
-      name: "Harry Parker",
-      title: "Consulting Member",
-      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
-    },
+    
     {
       id: "m10",
-      image:
-        "https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=400&auto=format&fit=crop",
-      name: "Jhony Deap",
-      title: "Team Head",
-      bio: " Visionary founder and CEO of EcoTech Innovations a trailblazing enterprise dedicated to sustainable technology solutions. With over 15 years of experience in environmental engineering John has been at the forefront of innovation driving the companys mission to revolutionize renewable energy sources.",
+      image: Avatar15,
+      name: "AREEBA MUJEEB",
+      title: "Front End Developer",
+      bio: "Technologies:- Html, Css, Javascript, React js.",
+      education: "Qualification: B.Tech(AI & ML).",
     },
+    
   ];
 
   useEffect(() => {
