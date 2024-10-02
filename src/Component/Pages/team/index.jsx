@@ -30,7 +30,7 @@ const Team = () => {
       image: Avatar4,
       name: "MOHAMMAD SHOEB KHAN",
       title: "HR MANAGER & DIRECTOR",
-      experience: "6 Years Experience",
+      experience: "10 Years Experience",
       bio: "Specialization:- Human Resource Development, Training & Placement, Marketing Accounting.",
       education: "Qualification: MBA"
     },
@@ -39,8 +39,8 @@ const Team = () => {
       image: Avatar5,
       name: "MOHAMMAD ZOEB KHAN",
       title: "CMO & CONSULTANT",
-      experience: "4 Years Experience",
-      bio: "Specialization:- Marketing, Accounting & Financial Specialist, Advisor & Consultant.",
+      experience: "9 Years Experience",
+      bio: "Specialization:- Accounting & Financial Specialist, Advisor & Consultant, Marketing, .",
       education: "Qualification: MBA",
     },
     {
